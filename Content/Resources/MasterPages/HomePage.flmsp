@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="228" MadCap:lastWidth="1269">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="197" MadCap:lastWidth="1285">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="" />
@@ -11,14 +11,14 @@
             <MadCap:bodyProxy />
             <div class="footer center">
                 <div class="HomeMasterPageFooter outer-row">
-                    <div><a href="../../Home.htm"><img src="../Images/CompanyLogo.png" alttext="" class="Hyperlinked footer-logo" /></a>
+                    <div><a href="../../Home.htm"><img src="../Images/dhis2_logo.png" alttext="" class="Hyperlinked footer-logo" style="width: 233px;height: 54px;" /></a>
                     </div>
                     <div>
                         <div class="footer-links"><a href="../../E_Footer Topics/PDF Downloads.htm">PDFs</a><a href="../../E_Footer Topics/Tips.htm">Tips</a><a href="../../E_Footer Topics/FAQs.htm">FAQs</a><a href="../../E_Footer Topics/Company Information.htm">Company</a>
                         </div>
                         <p class="Copyright">Copyright © <MadCap:variable name="General.Year" /> <MadCap:variable name="General.CompanyName" /></p>
                     </div>
-                    <div class="footer-icons"><a href="https://twitter.com/#!/MadCapDocTeam" target="_blank"><img src="../Images/TwitterIcon.png" alttext="" class="Hyperlinked" /></a><a href="http://www.facebook.com/madcapdocteam" target="_blank"><img src="../Images/FacebookIcon.png" alttext="" class="Hyperlinked" /></a>
+                    <div class="footer-icons"><a href="https://twitter.com/dhis_2" target="_blank"><img src="../Images/TwitterIcon.png" alttext="" class="Hyperlinked" /></a><a href="https://www.facebook.com/dhis2" target="_blank"><img src="../Images/FacebookIcon.png" alttext="" class="Hyperlinked" /></a>
                     </div>
                 </div>
             </div>
