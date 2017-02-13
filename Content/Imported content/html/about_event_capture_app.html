@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>22.1.&#160;About the Event Capture app</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/event_capture_app.html" title="Chapter&#160;22.&#160;Using the Event Capture app" /><link rel="prev" href="../Resources/event_capture_app.html" title="Chapter&#160;22.&#160;Using the Event Capture app" /><link rel="next" href="../Resources/event_capture_register_event.html" title="22.2.&#160;Register an event" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">22.1.&#160;About the Event
+ Capture
+ app</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="event_capture_app.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;22.&#160;Using the Event Capture
+ app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="event_capture_register_event.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="about_event_capture_app">
+                            </a>22.1.&#160;About the Event
+ Capture
+ app</h2>
+                    </div>
+                </div>
+            </div>
+            <p />
+            <div class="screenshot">
+                <div class="mediaobject" align="center">
+                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="70%">
+                        <tr>
+                            <td align="center">
+                                <img src="../Resources/event_list.png" align="middle" width="100%" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p />
+            <p>In the <span class="bold"><strong>Event Capture</strong></span> app you register events that
+ occurred at a particular time and place. An event can happen at any given point in time.
+ This
+ stands in contrast to routine data, which can be captured for predefined,
+ regular intervals. Events are sometimes called cases or records. In DHIS2,
+ events
+ are linked to a program. The <span class="bold"><strong>Event Capture</strong></span> app lets you
+ select the organisation unit and program and specify a date when a event happened, before
+ entering information for the event.</p>
+            <p>The <span class="bold"><strong>Event Capture</strong></span> app works online and offline. If the
+ Internet connectivity drops, you can continue to capture events. The events will be stored
+ locally in your web browser (client). When connectivity has returned, the system will ask you
+ to upload the locally stored data. The system then sends the data to the server where the data
+ is stored.</p>
+            <p />
+            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                <table border="0" summary="Note">
+                    <tr>
+                        <td rowspan="2" align="center" valign="top" width="25">
+                            <img alt="[Note]" src="../Resources/note.png" />
+                        </td>
+                        <th align="left">Note</th>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <p>If you close the web browser while in offline mode, it is not possible to reopen a new
+ web browser window and continue the working session. However the data will still be saved
+ locally and can be uploaded to the server the next time the machine is online and the you
+ have logged into the server.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p />
+            <div class="itemizedlist">
+                <ul class="itemizedlist" style="list-style-type: disc;">
+                    <li class="listitem">
+                        <p>You only see programs associated with the organisation unit you've selected and
+ programs you've access to view through your user role.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>Both
+ skip-logic
+ and validation error/warning messages are supported during
+ registration.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>When you close an organisation unit, you can't register or edit events
+ to
+ this organisation unit in the <span class="bold"><strong>Event Capture</strong></span> app. You can
+ still view and filter the event list and view the details of an event.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>On-the-fly indicator expression evaluation is supported. If a program has indicators
+ defined for it and the moment all values related to the indicator expression are filled,
+ the system will calculate indicator and display the result.</p>
+                        <p />
+                        <div class="screenshot">
+                            <div class="mediaobject" align="center">
+                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="70%">
+                                    <tr>
+                                        <td align="center">
+                                            <img src="../Resources/event_editing.png" align="middle" width="100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p />
+                    </li>
+                    <li class="listitem">
+                        <p>
+                            <span class="bold">
+                                <strong>Sorting:</strong>
+                            </span> this can be done by clicking the sorting
+ icon of each column header. A red sorting icon implies the current sorting column.
+ However, the sorting functionality works only within the page displayed. Currently, it is
+ not possible to do sorting from serverside.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>
+                            <span class="bold">
+                                <strong>Filtering:</strong>
+                            </span> this is done by clicking the small search
+ icon shown to the right of each column header. Clicking them provides an input field to
+ type a filtering criteria. The system starts applying the filter the moment a user starts
+ to type. During filtering it is possible to define start and end dates for date type data
+ elements and lower and upper limits for number types. Server side filtering is not-support
+ at the moment.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="event_capture_app.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="event_capture_app.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="event_capture_register_event.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">Chapter&#160;22.&#160;Using the Event Capture
+ app&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;22.2.&#160;Register
+ an
+ event</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

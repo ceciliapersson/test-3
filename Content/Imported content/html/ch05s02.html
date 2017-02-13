@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>5.2.&#160;Sharing and access control</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/sharing.html" title="Chapter&#160;5.&#160;Sharing" /><link rel="prev" href="../Resources/ch05s01.html" title="5.1.&#160;Sharing of objects" /><link rel="next" href="../Resources/ch05s03.html" title="5.3.&#160;Sharing applied" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">5.2.&#160;Sharing and access control</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="ch05s01.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;5.&#160;Sharing</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="ch05s03.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="d0e2830">
+                            </a>5.2.&#160;Sharing and access control</h2>
+                    </div>
+                </div>
+            </div>
+            <p>The objects which support sharing are indicator, indicator group, indicator group set,
+ data dictionary, data set, program, standard report, resource, report table, chart, map and
+ user group. Out of those objects, report table, chart, map and user group are open for
+ everyone to create privately. Private means that the objects are available only to yourself or
+ potentially to a number of user groups if you choose to share the object. These objects are
+ referred to as "open" objects and can be created by all users. The remaining objects require
+ that your user account has the authority to create them. These objects are referred to as
+ "non-open" objects.</p>
+            <p>A user can be granted the authority to create publicly accessible objects or privately
+ accessible objects. In order to create a publicly accessible object (available for viewing or
+ editing by anyone) your user account must have the authority to do so. As an example, to
+ create a publicly accessible chart, your user must have the "Create public chart" authority
+ granted. The authority to create private objects applies only to non-open objects. For
+ example, to allow a user to create indicators which will only be accessible to that user and
+ not to everyone, the user can be issued with the "Create private indicator" authority.</p>
+            <p>Sharing a non-open object with another person and let her edit the object requires that
+ the person's user account has the authority for updating that type of objects granted. For
+ instance, if you want to let another person edit your indicator, that person's user account
+ must have the "Update indicator" authority granted. This does not apply for open
+ objects.</p>
+            <p>When you create a new object it will automatically become viewable for everyone if your
+ user account has the authority to create public objects. As an example, if you create a
+ standard report and you have the "Create public standard report" authority granted, the report
+ will become viewable for everyone. If you do not have that authority granted the report will
+ be viewable only to yourself. After you have created an object, you may navigate to the
+ "Sharing settings" dialog and set your desired access control level.</p>
+            <p>If you need a user account which is able to view absolutely all objects you can create a
+ user role with the "ALL" authority and assign a user to that role. If you need to switch
+ between a "complete" view of objects and a "personal" view of objects it is recommended to
+ create two user accounts, one assigned with the "ALL" authority and one without.</p>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="ch05s01.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="sharing.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="ch05s03.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">5.1.&#160;Sharing of objects&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;5.3.&#160;Sharing applied</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

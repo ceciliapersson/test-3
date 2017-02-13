@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>26.7.&#160;Manage program notifications</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/configure_program.html" title="Chapter&#160;26.&#160;Configuring programs" /><link rel="prev" href="../Resources/manage_program_validation_rule.html" title="26.6.&#160;Manage program validation rules" /><link rel="next" href="../Resources/manage_custom_registration_forms.html" title="26.8.&#160;[Review ongoing] Manage custom registration forms" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">26.7.&#160;Manage
+ program
+ notifications</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="manage_program_validation_rule.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;26.&#160;Configuring
+ programs</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_custom_registration_forms.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="manage_program_notification">
+                            </a>26.7.&#160;Manage
+ program
+ notifications</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_notification.html#d0e30723">26.7.1. About program notifications</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_notification.html#d0e30990">26.7.2. Create a program notification</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_notification.html#d0e31276">26.7.3. Create a program stage notification</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e30723">
+                                </a>26.7.1.&#160;About program notifications</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can create program notifications for programs with registration and their program
+ stages. The notifications are sent either via the internal DHIS2 messaging system, via
+ e-mail or via text messages (SMS). You can use program notifications to, for example,
+ send an automatic reminder to a tracked entity 10 days before a scheduled appointment.
+ You use the program’s tracked entity attributes (for example first name) and program
+ parameters (for example enrollment date) to create a notification template.</p>
+                <p>In the <span class="bold"><strong>Parameters</strong></span> field, you'll find a list of
+ available tracked entity attributes and the following program parameters:</p>
+                <div class="table">
+                    <a name="d0e30733">
+                    </a>
+                    <p class="title">
+                        <b>Table&#160;26.12.&#160;</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="" border="1">
+                            <colgroup>
+                                <col class="newCol3" />
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                            <p>Notification type</p>
+                        </th>
+                                    <th>
+                            <p>Variable name</p>
+                        </th>
+                                    <th>
+                            <p>Variable code</p>
+                        </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                            <p>Program</p>
+                        </td>
+                                    <td>
+                            <p>Current date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{current_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Days since enrollment date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{days_since_enrollment_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Enrollment date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{enrollment_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Incident date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{incident_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Organisation unit name</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{org_unit_name}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Program name</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{program_name}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p>Program stage</p>
+                        </td>
+                                    <td>
+                            <p>Current date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{current_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Days since due date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{days_since_due_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Days until due date</p>
+                        </td>
+                                    <td>
+                            <pre class="screen" xml:space="preserve">V{days_until_due_date}</pre>
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Due date</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{due_date}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Organisation unit name</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{org_unit_name}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Program name</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{program_name}</pre><p />
+                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                            <p />
+                        </td>
+                                    <td>
+                            <p>Program stage name</p>
+                        </td>
+                                    <td>
+                            <p /><pre class="screen" xml:space="preserve">V{program_stage_name}</pre><p />
+                        </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e30990">
+                                </a>26.7.2.&#160;Create a program notification</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="screenshot">
+                    <div class="mediaobject">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                            <tr>
+                                <td>
+                                    <img src="../Resources/program_notification_ui.png" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click
+                        <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ notifications</strong></span>.</p>
+                            <p>A list of existing program notifications for the selected program opens. If
+ the program doesn't have any program notifications, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Add new</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a <span class="bold"><strong>Name</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Trigger by</strong></span> field, select what should
+ trigger the notification.</p>
+                            <div class="table">
+                                <a name="d0e31038">
+                                </a>
+                                <p class="title">
+                                    <b>Table&#160;26.13.&#160;</b>
+                                </p>
+                                <div class="table-contents">
+                                    <table class="table" summary="" border="1">
+                                        <colgroup>
+                                            <col class="c1" />
+                                            <col class="c2" />
+                                            <col class="newCol3" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                    <p>Trigger</p>
+                                </th>
+                                                <th>
+                                    <p>Description</p>
+                                </th>
+                                                <th>
+                                    <p>Note</p>
+                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                    <p>Program enrollment</p>
+                                </td>
+                                                <td>
+                                    <p>The program notification is sent when the TEI enrols in
+ the program.</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>Program completion</p>
+                                </td>
+                                                <td>
+                                    <p>The program notification is sent when the program of TEI
+ is completed</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>Days scheduled (incident date)</p>
+                                </td>
+                                                <td>
+                                    <p>The program notification is sent XX number of days before
+ or after the incident date</p>
+                                </td>
+                                                <td>
+                                    <p>You need to enter the number of days before or after the
+ scheduled date that the notification will be send.</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>Days scheduled (enrollment date)</p>
+                                </td>
+                                                <td>
+                                    <p>The program notification is sent XX number of days before
+ or after the enrollment date</p>
+                                </td>
+                                                <td>
+                                    <p>You need to enter the number of days before or after the
+ scheduled date that the notification will be send.</p>
+                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <br class="table-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Recipients</strong></span> field, select who should
+ receive the program notification.</p>
+                            <div class="table">
+                                <a name="d0e31132">
+                                </a>
+                                <p class="title">
+                                    <b>Table&#160;26.14.&#160;</b>
+                                </p>
+                                <div class="table-contents">
+                                    <table class="table" summary="" border="1">
+                                        <colgroup>
+                                            <col class="c1" />
+                                            <col class="c2" />
+                                            <col class="newCol3" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                    <p>Recipient type</p>
+                                </th>
+                                                <th>
+                                    <p>Description</p>
+                                </th>
+                                                <th>
+                                    <p>Note</p>
+                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                    <p>Tracked entity instance</p>
+                                </td>
+                                                <td>
+                                    <p>Receives program notifications via e-mail or text
+ message.</p>
+                                </td>
+                                                <td>
+                                    <p>To receive a program notification, the recipient must have
+ an e-mail address or a phone number attribute.</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>Organisation unit contact</p>
+                                </td>
+                                                <td>
+                                    <p>Receives program notifications via e-mail or text message.
+                                    </p>
+                                </td>
+                                                <td>
+                                    <p>To receive a program notification, the receiving
+ organisation unit must have a registered contact person with
+ e-mail address and phone number. </p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Users at organisation unit:</td>
+                                                <td>
+                                    <p>All users registered to the selected organisation unit
+ receive program notifications via the internal DHIS2
+ messaging system.</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>User group</p>
+                                </td>
+                                                <td>
+                                    <p>All members of the selected user group receive the program
+ notifications via the internal DHIS2 messaging system</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <br class="table-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Create the <span class="bold"><strong>Subject template</strong></span>.</p>
+                            <p>Double-click the parameters in the <span class="bold"><strong>Parameters</strong></span>
+                    field to add them to your subject.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>The subject is not included in text messages.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Create the <span class="bold"><strong>Message template</strong></span>.</p>
+                            <p>Double-click the parameter names in the <span class="bold"><strong>Parameters</strong></span> field to add them to your message. </p>
+                            <div class="example">
+                                <a name="d0e31242">
+                                </a>
+                                <p class="title">
+                                    <b>Example&#160;26.16.&#160;</b>
+                                </p>
+                                <div class="example-contents">
+                                    <p>Dear A{w75KJ2mc4zz}, You're now enrolled in V{program_name}.</p>
+                                </div>
+                            </div>
+                            <br class="example-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You configure when the program notifications are sent in the <span class="bold"><strong>Data Administration</strong></span> app &gt; <span class="bold"><strong>Scheduling</strong></span> &gt; <span class="bold"><strong>Program notifications
+ scheduler</strong></span>. </p>
+                                <div class="itemizedlist">
+                                    <ul class="itemizedlist" style="list-style-type: disc;">
+                                        <li class="listitem">
+                                            <p>Click <span class="bold"><strong>Run now</strong></span> to send the program
+ notifications immediately.</p>
+                                        </li>
+                                        <li class="listitem">
+                                            <p>Select a time and click <span class="bold"><strong>Start</strong></span> to schedule
+ the program notifications to be send at a specific time.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e31276">
+                                </a>26.7.3.&#160;Create a program stage notification</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click
+                        <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ stages</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program stage and select <span class="bold"><strong>View program
+ stage notifications</strong></span>.</p>
+                            <p>A list of existing program stage notifications for the selected program stage
+ opens. If the program stage doesn't have any program stage notifications, the
+ list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Add new</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a <span class="bold"><strong>Name</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Trigger by</strong></span> field, select what should
+ trigger the notification.</p>
+                            <div class="table">
+                                <a name="d0e31323">
+                                </a>
+                                <p class="title">
+                                    <b>Table&#160;26.15.&#160;</b>
+                                </p>
+                                <div class="table-contents">
+                                    <table class="table" summary="" border="1">
+                                        <colgroup>
+                                            <col class="c1" />
+                                            <col class="c2" />
+                                            <col class="newCol3" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                    <p>Trigger</p>
+                                </th>
+                                                <th>
+                                    <p>Description</p>
+                                </th>
+                                                <th>
+                                    <p>Note</p>
+                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                    <p>Program stage completion</p>
+                                </td>
+                                                <td>
+                                    <p>The program stage notification is sent when the program
+ stage is completed</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>Days scheduled (due date)</p>
+                                </td>
+                                                <td>
+                                    <p>The program stage notification is sent XX number of days
+ before or after the due date</p>
+                                </td>
+                                                <td>
+                                    <p>You need to enter the number of days before or after the
+ scheduled date that the notification will be send.</p>
+                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <br class="table-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Recipients</strong></span> field, select who should
+ receive the program stage notification. You can select:</p>
+                            <div class="table">
+                                <a name="d0e31385">
+                                </a>
+                                <p class="title">
+                                    <b>Table&#160;26.16.&#160;</b>
+                                </p>
+                                <div class="table-contents">
+                                    <table class="table" summary="" border="1">
+                                        <colgroup>
+                                            <col class="c1" />
+                                            <col class="c2" />
+                                            <col class="newCol3" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                    <p>Recipient type</p>
+                                </th>
+                                                <th>
+                                    <p>Description</p>
+                                </th>
+                                                <th>
+                                    <p>Note</p>
+                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                    <p>Tracked entity instance</p>
+                                </td>
+                                                <td>
+                                    <p>Receives program notifications via e-mail or text
+ message.</p>
+                                </td>
+                                                <td>
+                                    <p>To receive a program stage notification, the recipient
+ must have an e-mail address or a phone number
+ attribute.</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>Organisation unit contact</p>
+                                </td>
+                                                <td>
+                                    <p>Receives program notifications via e-mail or text message.
+                                    </p>
+                                </td>
+                                                <td>
+                                    <p>To receive a program stage notification, the receiving
+ organisation unit must have a registered contact person with
+ e-mail address and phone number. </p>
+                                    <p>The system selects the same organisation unit as where the
+ event took place.</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Users at organisation unit:</td>
+                                                <td>
+                                    <p>All users registered to the selected organisation unit
+ receive program notifications via the internal DHIS2
+ messaging system.</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                    <p>User group</p>
+                                </td>
+                                                <td>
+                                    <p>All members of the selected user group receive the program
+ notifications via the internal DHIS2 messaging system</p>
+                                </td>
+                                                <td>
+                                    <p>-</p>
+                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <br class="table-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Create the <span class="bold"><strong>Subject template</strong></span>.</p>
+                            <p>Double-click the parameter names in the <span class="bold"><strong>Parameters</strong></span> field to add them to your subject.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>The subject is not included in text messages.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Create the <span class="bold"><strong>Message template</strong></span>.</p>
+                            <p>Double-click the parameter names in the <span class="bold"><strong>Parameters</strong></span> field to add them to your message.</p>
+                            <div class="example">
+                                <a name="d0e31498">
+                                </a>
+                                <p class="title">
+                                    <b>Example&#160;26.17.&#160;</b>
+                                </p>
+                                <div class="example-contents">
+                                    <p>Dear A{w75KJ2mc4zz}, please come to your appointment the
+ V{due_date}.</p>
+                                </div>
+                            </div>
+                            <br class="example-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You configure when the program stage notifications are sent in the <span class="bold"><strong>Data Administration</strong></span> app &gt; <span class="bold"><strong>Scheduling</strong></span> &gt; <span class="bold"><strong>Program notifications
+ scheduler</strong></span>. </p>
+                                <div class="itemizedlist">
+                                    <ul class="itemizedlist" style="list-style-type: disc;">
+                                        <li class="listitem">
+                                            <p>Click <span class="bold"><strong>Run now</strong></span> to send the program
+ notifications immediately.</p>
+                                        </li>
+                                        <li class="listitem">
+                                            <p>Select a time and click <span class="bold"><strong>Start</strong></span> to schedule
+ the program notifications to be send at a specific time.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="manage_program_validation_rule.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="configure_program.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_custom_registration_forms.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">26.6.&#160;Manage program validation
+ rules&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;26.8.&#160;[Review ongoing] Manage custom registration
+ forms</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

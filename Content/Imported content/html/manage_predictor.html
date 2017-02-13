@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>9.12.&#160;Manage predictors</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/maintenance_app.html" title="Chapter&#160;9.&#160;Using the Maintenance app" /><link rel="prev" href="../Resources/manage_legend.html" title="9.11.&#160;Manage legends" /><link rel="next" href="../Resources/manage_push_report.html" title="9.13.&#160;Manage push reports" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">9.12.&#160;Manage predictors</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="manage_legend.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;9.&#160;Using the Maintenance app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_push_report.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="manage_predictor">
+                            </a>9.12.&#160;Manage predictors</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html#d0e13015">9.12.1. About predictors</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html#create_predictor">9.12.2. Create or edit a predictor</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html#d0e13181">9.12.3. Clone metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html#d0e13213">9.12.4. Delete metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html#d0e13253">9.12.5. Display details of metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html#d0e13269">9.12.6. Translate metadata objects</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e13015">
+                                </a>9.12.1.&#160;About predictors</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Predictors are data elements that are automatically generated from samples of current and
+ past data. You use predictors to analyse previous data in order to predict future values,
+ for example for disease surveillance.</p>
+                <p>A predictor specifies an expression and a set of sample constraints, identical to the
+ implementation of validation rules. This includes a period type, organisation unit levels,
+ and parameters specifying past or periodic sample windows. The expression should evaluate to
+ true or false.</p>
+                <p>In the <span class="bold"><strong>Maintenance</strong></span> app, you manage the following
+ predictor objects:</p>
+                <div class="table">
+                    <a name="d0e13029">
+                    </a>
+                    <p class="title">
+                        <b>Table&#160;9.19.&#160;Predictor objects in the Maintenance app</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="Predictor objects in the Maintenance app" border="1">
+                            <colgroup>
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                        <p>Object type</p>
+                    </th>
+                                    <th>
+                        <p>Available functions</p>
+                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                        <p>Predictor</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_predictor">
+                                </a>9.12.2.&#160;Create or edit a predictor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Other</strong></span> &gt; <span class="bold"><strong>Predictor</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add
+ button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Name</strong></span> field, type the predictor
+ name.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>Code</strong></span> field, assign a
+ code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select an <span class="bold"><strong>Output data element</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Type a <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a <span class="bold"><strong>Period type</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Assign organisation unit levels.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create a <span class="bold"><strong>Generator</strong></span>.</p>
+                            <p>The generator is the expression that is used to calculate the predicted
+ value.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Click <span class="bold"><strong>Sample skip test</strong></span> and create an
+ expression which is used to exclude data from the generation process. The expression
+ should evaluate to true or false.</p>
+                            <div class="example">
+                                <a name="d0e13131">
+                                </a>
+                                <p class="title">
+                                    <b>Example&#160;9.15.&#160;</b>
+                                </p>
+                                <div class="example-contents">
+                                    <p>Use the sample skip test when you want to calculate the average number of
+ malaria cases and you want to exclude the "spikes" you get from
+ outbreaks.</p>
+                                </div>
+                            </div>
+                            <br class="example-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a <span class="bold"><strong>Sequential sample count</strong></span> value.</p>
+                            <p>This value decides for how many sequential periods the calculation should go back
+ in time to collect data for the calculations. The sequential sample count depends on
+ the value type.</p>
+                            <div class="example">
+                                <a name="d0e13142">
+                                </a>
+                                <p class="title">
+                                    <b>Example&#160;9.16.&#160;</b>
+                                </p>
+                                <div class="example-contents">
+                                    <p>If the period type is "Monthly" and the sequential sample count is "3", the
+ predictor calculations will include data three months back in time.</p>
+                                </div>
+                            </div>
+                            <br class="example-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Enter an <span class="bold"><strong>Annual sample count</strong></span> value.</p>
+                            <p>This value decides for how many years the calculation should go back in time to
+ collect data for the calculations. The annual sample count depends on the value type
+ and sequential sample count.</p>
+                            <div class="example">
+                                <a name="d0e13153">
+                                </a>
+                                <p class="title">
+                                    <b>Example&#160;9.17.&#160;</b>
+                                </p>
+                                <div class="example-contents">
+                                    <p>If the period type is "Monthly", the sequential sample count is "3" and the
+ annual sample count is "4", the predictor calculations will include data three
+ months back in time for this year and
+ for
+ two (3-1) years back in time:</p>
+                                    <p>June, July, August 2016; June, July, August, 2015; and June, July, August
+ 2014.</p>
+                                </div>
+                            </div>
+                            <br class="example-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Enter a <span class="bold"><strong>Sequential skip count</strong></span>
+                value.</p>
+                            <p>This value decides how many periods the calculation should go back in time before
+ the sequential sample count starts. The sequential skip count depends on the value
+ type and sequential sample count.</p>
+                            <div class="example">
+                                <a name="d0e13170">
+                                </a>
+                                <p class="title">
+                                    <b>Example&#160;9.18.&#160;</b>
+                                </p>
+                                <div class="example-contents">
+                                    <p>If the period type is "Monthly", the sequential sample count is "3" and the
+ sequential sample count is " 2", the predictor calculations will go back two
+ months in time, then include the following three months in the
+ calculations:</p>
+                                    <p>April, May and June (July and August are skipped because the sequential skip
+ count is "2")</p>
+                                </div>
+                            </div>
+                            <br class="example-break" />
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e13181">
+                                </a>9.12.3.&#160;Clone metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Cloning a data element or other objects can save time when you create many similar
+ objects.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to clone.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Clone</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you
+ want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e13213">
+                                </a>9.12.4.&#160;Delete metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You can only delete a data element and other data element objects if no data is
+ associated
+ to the data element itself.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <p />
+                <div class="warning" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Warning">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Warning]" src="../Resources/warning.png" />
+                            </td>
+                            <th align="left">Warning</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Any data set that you delete from the system is irrevocably lost. All data entry
+ forms, and section forms which may have been developed will also be removed. Make
+ sure that you have made a backup of your database before deleting any data set in
+ case you need to restore it at some point in time.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to delete.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Delete</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Confirm</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e13253">
+                                </a>9.12.5.&#160;Display details of metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to view.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Show
+ details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e13269">
+                                </a>9.12.6.&#160;Translate metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>DHIS2 provides functionality for translations of database content, for example data
+ elements, data element groups, indicators, indicator groups or organisation units. You can
+ translate these elements to any number of locales. A locale represents a specific
+ geographical, political, or cultural region.</p>
+                <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Tip">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Tip]" src="../Resources/tip.png" />
+                            </td>
+                            <th align="left">Tip</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>To activate a
+ translation,
+ open the <span class="bold"><strong>System Settings</strong></span> app, click &gt; <span class="bold"><strong>Appearance</strong></span> and select a language.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to translate.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Translate</strong></span>.</p>
+                            <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Tip">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Tip]" src="../Resources/tip.png" />
+                                        </td>
+                                        <th align="left">Tip</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If you want to translate an organisation unit level, click directly on the
+                        <span class="bold"><strong>Translate</strong></span> icon next to each list
+ item.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>, <span class="bold"><strong>Short
+ name</strong></span> and <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="manage_legend.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="maintenance_app.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_push_report.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">9.11.&#160;Manage legends&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;9.13.&#160;Manage push reports</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

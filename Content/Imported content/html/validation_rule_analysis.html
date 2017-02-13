@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>8.2.&#160;Validation rule analysis</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/control_data_quality.html" title="Chapter&#160;8.&#160;Control data quality" /><link rel="prev" href="../Resources/about_data_quality.html" title="8.1.&#160;About data quality checks" /><link rel="next" href="../Resources/standard_deviation_analysis.html" title="8.3.&#160;Standard deviation outlier analysis" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">8.2.&#160;Validation rule
+ analysis</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="about_data_quality.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;8.&#160;Control data quality</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="standard_deviation_analysis.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="validation_rule_analysis">
+                            </a>8.2.&#160;Validation rule
+ analysis</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="validation_rule_analysis.html#d0e3933">8.2.1. About validation rule analysis</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="validation_rule_analysis.html#d0e3966">8.2.2. Workflow</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="validation_rule_analysis.html#d0e3998">8.2.3. Schedule a validation rule analysis to run
+ automatically</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="validation_rule_analysis.html#d0e4047">8.2.4. Run a validation rule analysis manually</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="validation_rule_analysis.html#d0e4138">8.2.5. See also</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e3933">
+                                </a>8.2.1.&#160;About validation rule analysis</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>A validation rule is based on an expression which defines a relationship between data
+ element values. The expression forms a condition which should assert that certain
+ logical criteria are met.</p>
+                <p>The expression consist of:</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                            <p>a left side</p>
+                        </li>
+                        <li class="listitem">
+                            <p>a right side</p>
+                        </li>
+                        <li class="listitem">
+                            <p>an operator </p>
+                        </li>
+                    </ul>
+                </div>
+                <p />
+                <div class="example">
+                    <a name="d0e3952">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;8.1.&#160;</b>
+                    </p>
+                    <div class="example-contents">
+                        <p>A validation rule could assert that "Suspected malaria cases tested" &gt;=
+ "Confirmed malaria cases".</p>
+                    </div>
+                </div>
+                <p>
+                    <br class="example-break" />
+        </p>
+                <p>The validation rule analysis tests validation rules against the data registered in the
+ system. Validation violations are reported when the condition defined in the validation
+ rule expression is not met, which means when the condition is false.</p>
+                <p>You can configure a validation rule analysis to automatically send out information
+ about validation violations to selected user groups. These messages are called
+                <span class="emphasis"><em>validation notifications</em></span> and you create them in the <span class="bold"><strong>Maintenance</strong></span> app. Validation notifications are sent via the
+ internal DHIS2 messaging system.</p>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e3966">
+                                </a>8.2.2.&#160;Workflow</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Maintenance</strong></span> app, create validation
+ rules and validation rule groups.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>Maintenance</strong></span> app, create
+ validation notifications.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Run the validation rule analysis, either automatically or manually.</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>In the <span class="bold"><strong>Data Administration</strong></span> app, you
+ schedule the validation rule analysis to run automatically for all
+ validation rules included in one or several validation notifications.
+ After the system has run the analysis, you'll see the validation
+ violations (if any) in the validation notifications sent via the
+ internal DHIS2 messaging system.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>In the <span class="bold"><strong>Data Quality</strong></span> app, you run the
+ validation rule analysis manually for selected validation rules. After
+ the analysis process has finished, you'll see a list of validation
+ violations (if any).</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e3998">
+                                </a>8.2.3.&#160;Schedule a validation rule analysis to run
+ automatically</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Only validation rules that are included in one or several validation
+ notifications will be a part of the validation rule analysis. If there's no
+ corresponding validation notification for a validation rule, the system has
+ nowhere to send the validation violations.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Verify that you have created all the validation rules, validation rule groups
+ and validation notifications you need.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Data Administration</strong></span> app and click
+                        <span class="bold"><strong>Scheduling</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>If scheduling is active, click <span class="bold"><strong>Stop</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Data monitoring</strong></span> section, select
+                        <span class="bold"><strong>All
+ daily</strong></span>. </p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Start</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e4047">
+                                </a>8.2.4.&#160;Run a validation rule analysis manually</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="screenshot">
+                    <div class="mediaobject" align="center">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                            <tr>
+                                <td align="center">
+                                    <img src="../Resources/Validation Rule_Analysis.png" align="middle" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Verify that you have created all the validation rules, validation rule groups
+ and validation notifications you need.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Data Quality</strong></span> app and click <span class="bold"><strong>Validation rule analysis</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Start date</strong></span> and <span class="bold"><strong>End date</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select which <span class="bold"><strong>Validation rule group</strong></span> you want
+ to include in the analysis.</p>
+                            <p>You can select all validation rules or all validation rules from a single
+ validation rule group.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Select <span class="bold"><strong>Send notifications</strong></span> to
+ trigger validation notifications.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If you want to send out validation notifications, you must first create
+ them in the <span class="bold"><strong>Maintenance</strong></span> app.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a <span class="bold"><strong>Parent organisation unit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Validate</strong></span>.</p>
+                            <p>The analysis process duration depends on the amount of data that is being
+ analysed. If there are no violations of the validation rules, you'll see a
+ message saying <span class="italic">Validation passed
+ successfully</span>. If there are validation violations, they will be
+ presented in a list.</p>
+                            <p />
+                            <div class="screenshot">
+                                <div class="mediaobject" align="center">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="../Resources/Validation Rule_Analysis Result.png" align="middle" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <p />
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Click the show details icon to get more information about a
+ validation violation. In the pop-up window you'll find information about the
+ data elements included in the validation rules and their corresponding data
+ values. You can use this information to identify the source of the validation
+ rule violation.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Click <span class="bold"><strong>Download as PDF</strong></span>, <span class="bold"><strong>Download as Excel</strong></span> or <span class="bold"><strong>Download
+ as CSV</strong></span> to download the validation violations list in PDF, Excel
+ or CSV formats.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e4138">
+                                </a>8.2.5.&#160;See also</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                            <p>
+                                <a class="link" href="https://docs.dhis2.org/master/en/user/html/manage_validation_rule.html" target="_top">Manage validation rules</a>
+                            </p>
+                        </li>
+                        <li class="listitem">
+                            <p>
+                    <a class="link" href="https://docs.dhis2.org/master/en/user/html/data_admin.html" target="_top">Data
+ Administration app</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="about_data_quality.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="control_data_quality.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="standard_deviation_analysis.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">8.1.&#160;About data quality
+ checks&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;8.3.&#160;Standard deviation outlier
+ analysis</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>7.2.&#160;Enter data in a data entry form</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/data_entry_app.html" title="Chapter&#160;7.&#160;Using the Data Entry app" /><link rel="prev" href="../Resources/about_data_entry_app.html" title="7.1.&#160;About the Data Entry app" /><link rel="next" href="../Resources/mark_data_for_followup_in_data_entry_form.html" title="7.3.&#160;Mark a data value for follow-up" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">7.2.&#160;Enter data in a data entry form</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="about_data_entry_app.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;7.&#160;Using the Data Entry app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="mark_data_for_followup_in_data_entry_form.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="enter_data_in_data_entry_form">
+                            </a>7.2.&#160;Enter data in a data entry form</h2>
+                    </div>
+                </div>
+            </div>
+            <p />
+            <div class="screenshot">
+                <div class="mediaobject" align="center">
+                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                        <tr>
+                            <td align="center">
+                                <img src="../Resources/data_entry_overview.png" align="middle" width="100%" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p />
+            <div class="orderedlist">
+                <ol class="orderedlist" style="list-style-type: decimal;">
+                    <li class="listitem">
+                        <p>Open the <span class="bold"><strong>Data Entry</strong></span> app.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>In the organisation unit tree to the left, select an organisation unit.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>Select a <span class="bold"><strong>Data set</strong></span>.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>Select a <span class="bold"><strong>Period</strong></span>. </p>
+                        <p>The available periods are controlled by the period type of the data set (reporting
+ frequency). You can jump a year back or forward by clicking <span class="bold"><strong>Prev
+ year</strong></span> or  <span class="bold"><strong>Next year</strong></span>.</p>
+                        <p />
+                        <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                            <table border="0" summary="Note">
+                                <tr>
+                                    <td rowspan="2" align="center" valign="top" width="25">
+                                        <img alt="[Note]" src="../Resources/note.png" />
+                                    </td>
+                                    <th align="left">Note</th>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top">
+                                        <p>Depending on how you've configured the data entry form, you might have to enter
+ additional information before you can open the date entry
+ form.
+ This can for example be a project derived from a category combination.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p />
+                    </li>
+                    <li class="listitem">
+                        <p>Enter data in the data entry form.</p>
+                        <div class="itemizedlist">
+                            <ul class="itemizedlist" style="list-style-type: disc;">
+                                <li class="listitem">
+                                    <p>A green field means that the system has saved the value.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>A grey field means that the field is disabled and you can't enter a value. The
+ cursor will automatically jump to the next open field.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>To move to the next field, press the Tab key or the Down Arrow key.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>To move back to the previous field, press Shift+Tab or the Up Arrow key.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>If you type in an invalid value, for example a character in a field that only
+ accepts numeric values, you'll get a pop-up that explains the problem and the field will
+ be coloured yellow (not saved) until you have corrected the value.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>If you have defined a minimum maximum value range for the field and you enter a
+ value that is outside this range, you'll get a pop-up message that says the value is out
+ of range. The value remains
+ unsaved
+ until you've changed the value or updated the value range and then re-entered the
+ value.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="listitem">
+                        <p>When you've filled in the form, click <span class="bold"><strong>Run validation</strong></span> in
+ the top right corner or below the data entry form.</p>
+                        <p>All validation rules which involves data elements in the current data entry form (data
+ set) are then run against the new data. If there are no violations of the validation rules,
+ you'll see a message saying <span class="italic">The data entry screen successfully
+ passed validation</span>. If there are validation violations, they will be presented
+ in a list.</p>
+                        <p />
+                        <div class="screenshot">
+                            <div class="mediaobject" align="center">
+                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                    <tr>
+                                        <td align="center">
+                                            <img src="../Resources/Validation Rule_Result.png" align="middle" width="100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p />
+                    </li>
+                    <li class="listitem">
+                        <p>(Optional) Correct validation violations.</p>
+                        <p />
+                        <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                            <table border="0" summary="Note">
+                                <tr>
+                                    <td rowspan="2" align="center" valign="top" width="25">
+                                        <img alt="[Note]" src="../Resources/note.png" />
+                                    </td>
+                                    <th align="left">Note</th>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top">
+                                        <p>Zero (0) will delete the value if the data element has been configured to not store
+ zeros.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p />
+                    </li>
+                    <li class="listitem">
+                        <p>When you've corrected errors and you're done with data entry, click <span class="bold"><strong>Complete</strong></span>.</p>
+                        <p>The system uses this information when generating completeness reports for district,
+ county, province or the national level.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="about_data_entry_app.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="data_entry_app.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="mark_data_for_followup_in_data_entry_form.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">7.1.&#160;About the Data Entry app&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;7.3.&#160;Mark a data value for follow-up</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

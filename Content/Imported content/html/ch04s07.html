@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>4.7.&#160;Decentralize user management</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/manage_user_role_group.html" title="Chapter&#160;4.&#160;Manage users, user roles and user groups" /><link rel="prev" href="../Resources/open_id.html" title="4.6.&#160;Enable support for OpenID" /><link rel="next" href="../Resources/ch04s08.html" title="4.8.&#160;Example: user management in a health system" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">4.7.&#160;Decentralize
+ user
+ management</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="open_id.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;4.&#160;Manage users, user roles and user groups</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="ch04s08.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="d0e2613">
+                            </a>4.7.&#160;Decentralize
+ user
+ management</h2>
+                    </div>
+                </div>
+            </div>
+            <p>DHIS2 supports a concept for user management referred to as <span class="italic">managed users</span> which allows to explicitly define which users should be
+ allowed to manage or modify which users. To "manage a user" implies that you can
+ see and modify that user. The basic concept for user management is that you can see and
+ modify users which you have been granted all of the authorities; in other words you can
+ modify users which have a subset of your own authorities. The managed users concept gives
+ you greater control over this.</p>
+            <p>The managed users concept allows you to define which users should be able to manage which
+ users. This is configured through user groups and memberships within such groups. A user
+ group can be configured to be allowed to manage other user groups from the standard add and
+ update user interface. The effect is that a specific user can manage all users which are
+ members of user groups which can be managed by a user group that the user is member of. In
+ other words, users can be managed by all members of user groups which are managing user
+ groups they are member of.</p>
+            <p>To enable this concept you should grant users the authority to "Add/update users
+ within managed groups", and <span class="italic">not</span> grant access to the
+ standard "Add/update users" authority. An implication of the managed users concept
+ is that when creating a user with the "Add/update users within managed groups"
+ only, the user must be made a member of at least one user group that the current user can
+ manage. If not, the current user would lose access to the user being created immediately.
+ This is validated by the system.</p>
+            <p>When granted the "Add/update users within managed groups" authority, the system
+ lets a user add members to user groups for which she has read-only access to. The purpose of
+ this is to allow for decentralized user management. You may define a range of user groups
+ where other users may add or remove members, but not remove or change the name of the
+ group.</p>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="open_id.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="manage_user_role_group.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="ch04s08.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">4.6.&#160;Enable support for OpenID&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;4.8.&#160;Example: user
+ management
+ in a health system</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

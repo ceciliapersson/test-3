@@ -1,0 +1,1223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>9.5.&#160;Manage organisation units</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/maintenance_app.html" title="Chapter&#160;9.&#160;Using the Maintenance app" /><link rel="prev" href="../Resources/manage_indicator.html" title="9.4.&#160;Manage indicators" /><link rel="next" href="../Resources/manage_program_metadata.html" title="9.6.&#160;Manage program metadata" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">9.5.&#160;Manage
+ organisation units</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="manage_indicator.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;9.&#160;Using the Maintenance app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_program_metadata.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="manage_organisation_unit">
+                            </a>9.5.&#160;Manage
+ organisation units</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#about_organisation_unit">9.5.1. [Review ongoing] About organisation units</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#workflow_organisation_unit">9.5.2. Workflow</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#create_organisation_unit">9.5.3. Create or edit an
+ organisation
+ unit</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#create_organisation_unit_group">9.5.4. Create or edit an organisation unit group</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#create_organisation_unit_group_set">9.5.5. Create or edit an organisation unit group set</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#name_organisation_unit_level">9.5.6. Assign
+ names to organisation unit levels</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#move_organisation_unit">9.5.7. Move
+ organisation units within a hierarchy</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#close_organisation_unit">9.5.8. [Review ongoing] Close an organisation unit</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#d0e9738">9.5.9. Clone metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#d0e9770">9.5.10. Change sharing settings for metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#d0e9822">9.5.11. Delete metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#d0e9862">9.5.12. Display details of metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html#d0e9878">9.5.13. Translate metadata objects</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <p>In this section you will learn how to:</p>
+            <p />
+            <div class="itemizedlist">
+                <ul class="itemizedlist" style="list-style-type: disc;">
+                    <li class="listitem">
+                        <p>Create a new organisation unit and build up the organisation unit
+ hierarchy</p>
+                    </li>
+                    <li class="listitem">
+                        <p>Create organisation unit groups, group sets, and assign organisation units to
+ them</p>
+                    </li>
+                    <li class="listitem">
+                        <p>Modify
+ the organisation unit hierarchy</p>
+                    </li>
+                </ul>
+            </div>
+            <p />
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="about_organisation_unit">
+                                </a>9.5.1.&#160;[Review ongoing] About organisation units</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>The organisation unit hierarchy defines the organisation structure of DHIS2, for example
+ how health facilities, administrative areas and other geographical areas are arranged with
+ respect to each other. It is the "where" dimension of DHIS2, similar to how
+ periods represent the "when" dimension.</p>
+                <p>The organisation unit hierarchy is built up by parent-child relations. In DHIS2,
+ each
+ of these nodes is an organisation unit. A country might for example have
+ eight provinces, and each province might have a number of districts as children. Normally,
+ the lowest levels consist of facilities where data is collected. Data collecting facilities
+ can also be located at higher levels, for example national or provincial hospitals.
+ Therefore, you can create
+ skewed
+ organisation trees in DHIS2.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                            <p>You can only have one organisation hierarchy at the same time.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>You can have any number of levels in a hierarchy.</p>
+                            <p>Typically national organisation hierarchies in public health have four to six
+ levels.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>You
+ can
+ create additional classifications by using organisation groups
+ and organisation group sets.</p>
+                            <p>For example to create parallel administrative boundaries to the health care
+ sector.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>It is recommended to use organisation unit groups to create a non-geographical
+ hierarchy.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>An organisation unit can only be a member of a single organisation unit group
+ within an organisation unit group set.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>The organisation unit hierarchy is the main vehicle for data aggregation on the
+ geographical dimension.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>When you close an organisation unit, you can't register or edit events
+ to
+ this organisation unit in the <span class="bold"><strong>Event Capture</strong></span> and
+                    <span class="bold"><strong>Tracker Capture</strong></span> apps.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="important" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Important: Changing the organisation unit hierarchy">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Important]" src="../Resources/important.png" />
+                            </td>
+                            <th align="left">Changing the organisation unit hierarchy</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You can change the organisation unit hierarchy after you've created it, even
+ organisation units that collect data. However, DHIS2 always uses the latest hierarchy
+ for data aggregation. So if you change the hierarchy, you loose the temporal
+ representation of the hierarchy across time.</p>
+                                <div class="example">
+                                    <a name="d0e8975">
+                                    </a>
+                                    <p class="title">
+                                        <b>Example&#160;9.9.&#160;</b>
+                                    </p>
+                                    <div class="example-contents">
+                                        <p>District A is sub-divided into District B and District C. Facilities which
+ belonged to District A are reassigned to District B and C. Any historical data,
+ which you entered before the split occurred, is still registered as belonging to
+ District B and C, not to the obsolete District A.</p>
+                                    </div>
+                                </div>
+                                <br class="example-break" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p>In the <span class="bold"><strong>Maintenance</strong></span> app, you manage the following
+ organisation unit objects:</p>
+                <div class="table">
+                    <a name="d0e8983">
+                    </a>
+                    <p class="title">
+                        <b>Table&#160;9.10.&#160;Organisation
+ unit
+ objects in the Maintenance app</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="Organisation             unit             objects in the Maintenance app" border="1">
+                            <colgroup>
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                        <p>Object type</p>
+                    </th>
+                                    <th>
+                        <p>Available functions</p>
+                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                        <p>Organisation unit</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Organisation unit group</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Organisation unit group set</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Organisation unit level</p>
+                    </td>
+                                    <td>
+                        <p>Edit and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Hierarchy operations</p>
+                    </td>
+                                    <td>
+                        <p>Move organisation units</p>
+                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="workflow_organisation_unit">
+                                </a>9.5.2.&#160;Workflow</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>The recommended workflow is: </p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Create organisation units.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create organisation unit groups.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create organisation unit group sets.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_organisation_unit">
+                                </a>9.5.3.&#160;Create or edit an
+ organisation
+ unit</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="screenshot">
+                    <div class="mediaobject" align="center">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                            <tr>
+                                <td align="center">
+                                    <img src="../Resources/create_new_orgunit.png" align="middle" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p />
+                <p>You add organisation units to the hierarchy one by one, either as a
+ root
+ unit or as a child of a selected organisation unit. You can only have one
+ root unit.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Organisation unit</strong></span> &gt; <span class="bold"><strong>Organisation
+ unit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select which organisation unit your new organisation unit will belong to:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>Click <span class="bold"><strong>Parent organisation unit</strong></span>.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>In the organisation unit tree, locate the parent organisation unit and
+ select it. Your selection is marked in yellow.</p>
+                                        <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                            <table border="0" summary="Tip">
+                                                <tr>
+                                                    <td rowspan="2" align="center" valign="top" width="25">
+                                                        <img alt="[Tip]" src="../Resources/tip.png" />
+                                                    </td>
+                                                    <th align="left">Tip</th>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top">
+                                                        <p>Click the arrows to expand the organisation unit
+ tree.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Click <span class="bold"><strong>Select</strong></span>.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a <span class="bold"><strong>Name</strong></span> of the organisation unit.</p>
+                            <p>Each organisation unit must have an unique name.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a <span class="bold"><strong>Short name</strong></span> for the organisation
+ unit.</p>
+                            <p>Typically, the short name is an abbreviation of the full organisation unit name.
+ This attribute is often used in reports to display the name of the organisation
+ unit, where space is limited.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Assign a <span class="bold"><strong>Code</strong></span>.</p>
+                            <p>In many countries organisation units are assigned a code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Type a <span class="bold"><strong>Description</strong></span> of the organisation
+ unit.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select an <span class="bold"><strong>Opening date</strong></span>.</p>
+                            <p>The opening dates control which organisation units that existed at a point in
+ time, for example when analysing historical data.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>If applicable, select a <span class="bold"><strong>Closed date</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Comment</strong></span> field, enter any additional
+ information that you would like to add.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>URL</strong></span> field, enter a link to an
+ external web site that has additional information about the organisation
+ unit.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter contact information:</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>Contact person</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Address</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>E-mail</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Phone number</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional)
+ Enter <span class="bold"><strong>Latitude</strong></span> and <span class="bold"><strong>Longitude</strong></span>.</p>
+                            <p>You must have latitude and longitude values to create maps in the <span class="bold"><strong>GIS</strong></span> app. Then your organisation units can be represented
+ as points on a map, for example a health facility. Without this information, the
+                    <span class="bold"><strong>GIS</strong></span> app will not work. </p>
+                            <p>It might be more efficient to import coordinates later as a batch job for all
+ organisation units using the <span class="bold"><strong>Import-Export</strong></span> app. You
+ also use the <span class="bold"><strong>Import-Export</strong></span> app to create polygons.
+ A polygon is an organisation unit that represent an administrative boundary.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>If applicable, select <span class="bold"><strong>Data
+ sets</strong></span> and assign
+ them.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>You control whether a user should be able to assign data sets to an
+ organisation unit in the <span class="bold"><strong>System Settings</strong></span>
+                    app:</p>
+                                            <p>Open the <span class="bold"><strong>System Settings</strong></span> app, click <span class="bold"><strong>Access</strong></span> and select <span class="bold"><strong>Allow
+ assigning object to related objects during add or update</strong></span>.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>If applicable, enter custom attributes values, for example <span class="bold"><strong>HR identifier</strong></span>.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>You configure the custom attributes in the <span class="bold"><strong>Maintenance</strong></span> app:</p>
+                                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Other</strong></span> &gt; <span class="bold"><strong>Attribute</strong></span>. </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_organisation_unit_group">
+                                </a>9.5.4.&#160;Create or edit an organisation unit group</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Organisation unit groups allow you to classify related organisation units into a
+ common theme. You can for example group all organisation units that are hospitals in an
+                <span class="bold"><strong>Hospital</strong></span> group.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Organisation unit</strong></span> &gt; <span class="bold"><strong>Organisation
+ unit group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in the form:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>: Provide a precise, unique and
+ descriptive name for the organisation unit group.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Short name</strong>
+                                            </span>: The short name should be
+ less than 25 characters. Typically, the short name is an abbreviation of
+ the full organisation unit name. This attribute is used in certain
+ places in DHIS2 where space is limited.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Code</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Symbol</strong>
+                                            </span>: Select a symbol which will be
+ used to display the organisation unit (points only) when the layer is
+ displayed in the <span class="bold"><strong>GIS</strong></span> app.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the organisation tree, click the organisation units you want to add to the
+ organisation unit
+ group.</p>
+                            <p>You can locate an organisation unit in the tree by expanding the branches
+ (click on the arrow symbol), or by searching for it by
+ name.</p>
+                            <p>The selected organisation units display in orange.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_organisation_unit_group_set">
+                                </a>9.5.5.&#160;Create or edit an organisation unit group set</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Organisation unit group sets allows you to create additional classifications of
+ organisation units. The group sets create new dimensions so that you can make a more
+ detailed data analysis. You an easily filter, organise or aggregate data by groups within a
+ group set.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                            <p>You can have any number of organisation unit group sets.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>The default organisation unit group sets are <span class="bold"><strong>Type</strong></span>
+                and <span class="bold"><strong>Ownership</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>An organisation unit group set is always exclusive: an organisation unit can't be
+ a member of more than one group in a group set.</p>
+                            <p>You can only select a single organisation group membership for each group set when
+ you create a new organisation unit.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>You can define whether an organisation unit group set is compulsory or not, which
+ will affect the completeness of the data. Compulsory means that all organisation
+ units must be member of a group in that group set.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note: Data completeness">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Data completeness</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>In the <span class="bold"><strong>Data integrity</strong></span> part of the <span class="bold"><strong>Data administration</strong></span> app you can verify if you've accidentally
+ assigned the same organisation unit to multiple groups within the same group set. In
+ this app you also find information about organisation units that are not members of a
+ compulsory organisation unit group set.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Organisation unit</strong></span> &gt; <span class="bold"><strong>Organisation
+ unit group set</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>: Provide a precise name for the
+ organisation unit group set.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Code</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Description</strong>
+                                            </span>: Describe what the
+ organisation unit group set measures or captures.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>If you want all organisation units to be members of a group within the group set,
+ select <span class="bold"><strong>Compulsory</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Select <span class="bold"><strong>Data
+ dimension</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Select <span class="bold"><strong>Include subhierarchy in
+ analytics</strong></span>.</p>
+                            <p>If you select this, a sub-organisation unit will inherit the organisation unit
+ group property from its closest "parent" organisation unit. Any property on the
+ sub-organisation unit will override the inherit value.</p>
+                            <p>If an organisation unit have no associated organisation unit group, the
+ organisation unit can inherit its closest parent's organisation unit group. If none
+ of the parent organisation unit groups have an organisation unit group for a given
+ org unit group set, the result will still be "blank", but if at least one parent has
+ an organisation unit group, sub-organisation unit will inherit it.</p>
+                            <p>include subhierarchy in analytics" is enabled, which means the org units inherit
+ their closest parents org unit group IF the org unit is white (no org unit group
+ associated with it). </p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select organisation unit groups and assign them.</p>
+                            <p>In the left-hand list, you find the available organisation unit groups. Use the
+ arrows to move selected groups between the two lists.</p>
+                            <p>If there are no organisation unit groups in the left-hand list, click <span class="bold"><strong>Add new</strong></span>. In the form that opens, create the organisation
+ units group you
+ need.
+ When you're done, click <span class="bold"><strong>Refresh values</strong></span>.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>An organisation unit can only be a member of a single organisation unit group
+ within an organisation unit group set.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+                <p />
+                <div class="example">
+                    <a name="d0e9516">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.10.&#160;Classify facilities based on ownership</b>
+                    </p>
+                    <div class="example-contents">
+                        <p />
+                        <div class="screenshot">
+                            <div class="mediaobject" align="center">
+                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                    <tr>
+                                        <td align="center">
+                                            <img src="../Resources/organisation_unit_hiearchy.png" align="middle" width="100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p />
+                        <p>You want to analyse data based on the ownership of the facilities. All facilities
+ have an owner so you need to make sure that all organisation units get this
+ classification. To do that you can use the <span class="bold"><strong>Compulsory</strong></span> option:</p>
+                        <div class="orderedlist">
+                            <ol class="orderedlist" style="list-style-type: decimal;">
+                                <li class="listitem">
+                                    <p>Create a group for each ownership type, for example "MoH", "Private" and
+ "Faith-based".</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Assign all facilities in the database to one of these groups.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Create an organisation unit group set called "Ownership" and select
+                            <span class="bold"><strong>Compulsory</strong></span>.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Assign the organisation unit groups "MoH", "Private" and "Faith-based" to
+ the "Ownership" organisation group set.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <br class="example-break" />
+    </p>
+                <div class="example">
+                    <a name="d0e9553">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.11.&#160;Create parallel dynamic administrative organisation unit structure</b>
+                    </p>
+                    <div class="example-contents">
+                        <p />
+                        <div class="screenshot">
+                            <div class="mediaobject" align="center">
+                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                    <tr>
+                                        <td align="center">
+                                            <img src="../Resources/analytics-include-org-unit-subhierarchy.png" align="middle" width="100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p />
+                        <p />
+                        <div class="screenshot">
+                            <div class="mediaobject" align="center">
+                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                    <tr>
+                                        <td align="center">
+                                            <img src="../Resources/include-subhierarchy-analytics.png" align="middle" width="100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p />
+                        <p>Group you organisation unit in two ways and aggregate data on these two parallel
+ hierarchies</p>
+                        <p>Use to aggregate data (only in analytics apps)</p>
+                        <p>An additional setting to the organisation unit group set, creates a dynamic
+ "membership" to a organisation unit group set.</p>
+                    </div>
+                </div>
+                <p>
+                    <br class="example-break" />You don't change the organisation unit hierarchy</p>
+                <p>Scalable and dynamic</p>
+                <p>Dynamic inclusion of hierarchy</p>
+                <p>Dynamic additional classification</p>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="name_organisation_unit_level">
+                                </a>9.5.6.&#160;Assign
+ names to organisation unit levels</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>When you add children to an organisation unit, DHIS2 automatically creates a new
+ organisation unit level if necessary. The system also assigns a generic name to this level,
+ for example "Level 5". You can replace the generic name with a
+ contextual
+ name, for example "Country",
+ "Province",
+ "District" or "Health Facility". DHIS2 uses the contextual names anywhere
+ levels are referred to, for example in the <span class="bold"><strong>GIS</strong></span> app. </p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Organisation unit</strong></span> &gt; <span class="bold"><strong>Organisation
+ unit level</strong></span>.</p>
+                            <p>The loading time of the list depends on the depth of the organisation unit
+ hierarchy tree.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>For the organisation unit levels you want to modify, type a name.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select the number of offline levels.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>You configure the default value in the <span class="bold"><strong>System
+ Settings</strong></span> app:</p>
+                                            <p>Open the <span class="bold"><strong>System Settings</strong></span> app, click <span class="bold"><strong>General</strong></span> and select a level in the <span class="bold"><strong>Max offline organisation unit levels</strong></span> list.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="move_organisation_unit">
+                                </a>9.5.7.&#160;Move
+ organisation units within a hierarchy</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can move organisation units within in the hierarchy by changing the parent of a
+ selected
+ organisation
+ unit.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Organisation unit</strong></span> &gt; <span class="bold"><strong>Hierarchy
+ operations</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the left-hand hierarchy tree, select the organisation unit(s) you want to
+ move.</p>
+                            <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Note">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Note]" src="../Resources/note.png" />
+                                        </td>
+                                        <th align="left">Note</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If the selected organisation unit is has sub-organisation units, all of them
+ move to the new parent organisation unit.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the right-hand hierarchy tree, select which organisation unit you want to move
+ the selected organisation unit(s) to.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Move x organisation units</strong></span>, where x stands
+ for the number of organisation units you have selected.</p>
+                            <p>Your changes are immediately reflected in the left-hand side hierarchy
+ tree.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="close_organisation_unit">
+                                </a>9.5.8.&#160;[Review ongoing] Close an organisation unit</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>When you close an organisation unit, you can't register or edit events
+ to
+ this organisation unit in the <span class="bold"><strong>Event Capture</strong></span> and <span class="bold"><strong>Tracker Capture</strong></span> apps.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Organisation unit</strong></span> &gt; <span class="bold"><strong>Organisation
+ unit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Edit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a <span class="bold"><strong>Closed date</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e9738">
+                                </a>9.5.9.&#160;Clone metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Cloning a data element or other objects can save time when you create many similar
+ objects.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to clone.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Clone</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you
+ want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e9770">
+                                </a>9.5.10.&#160;Change sharing settings for metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can assign different rights to the for example a data set based on user groups and
+ user roles.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to modify.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Sharing settings</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Search for a user group and select it. The user group is added to the
+ list.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Change the settings for the user
+ groups
+ you want to modify.</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can view</strong>
+                                            </span>: Everyone in the user group can
+ view the object</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can edit</strong>
+                                            </span>: Everyone in the user group can
+ view and edit the object</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>The default setting is that everyone (<span class="bold"><strong>Public
+ access</strong></span>) can view and edit objects.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Close</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e9822">
+                                </a>9.5.11.&#160;Delete metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You can only delete a data element and other data element objects if no data is
+ associated
+ to the data element itself.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <p />
+                <div class="warning" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Warning">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Warning]" src="../Resources/warning.png" />
+                            </td>
+                            <th align="left">Warning</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Any data set that you delete from the system is irrevocably lost. All data entry
+ forms, and section forms which may have been developed will also be removed. Make
+ sure that you have made a backup of your database before deleting any data set in
+ case you need to restore it at some point in time.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to delete.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Delete</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Confirm</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e9862">
+                                </a>9.5.12.&#160;Display details of metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to view.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Show
+ details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e9878">
+                                </a>9.5.13.&#160;Translate metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>DHIS2 provides functionality for translations of database content, for example data
+ elements, data element groups, indicators, indicator groups or organisation units. You can
+ translate these elements to any number of locales. A locale represents a specific
+ geographical, political, or cultural region.</p>
+                <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Tip">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Tip]" src="../Resources/tip.png" />
+                            </td>
+                            <th align="left">Tip</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>To activate a
+ translation,
+ open the <span class="bold"><strong>System Settings</strong></span> app, click &gt; <span class="bold"><strong>Appearance</strong></span> and select a language.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to translate.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Translate</strong></span>.</p>
+                            <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Tip">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Tip]" src="../Resources/tip.png" />
+                                        </td>
+                                        <th align="left">Tip</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If you want to translate an organisation unit level, click directly on the
+                        <span class="bold"><strong>Translate</strong></span> icon next to each list
+ item.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>, <span class="bold"><strong>Short
+ name</strong></span> and <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="manage_indicator.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="maintenance_app.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_program_metadata.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">9.4.&#160;Manage indicators&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;9.6.&#160;Manage program 
+ metadata</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

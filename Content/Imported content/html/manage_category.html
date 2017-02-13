@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>9.1.&#160;Manage categories</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/maintenance_app.html" title="Chapter&#160;9.&#160;Using the Maintenance app" /><link rel="prev" href="../Resources/maintenance_app.html" title="Chapter&#160;9.&#160;Using the Maintenance app" /><link rel="next" href="../Resources/manage_data_element.html" title="9.2.&#160;Manage data elements" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">9.1.&#160;Manage categories</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="maintenance_app.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;9.&#160;Using the Maintenance app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_data_element.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="manage_category">
+                            </a>9.1.&#160;Manage categories</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#about_category">9.1.1. About categories</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#workflow_category">9.1.2. Workflow</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#create_category_option">9.1.3. Create or edit a category option</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#create_category">9.1.4. Create or edit a
+ category</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#create_category_combination">9.1.5. Create or edit a category
+ combination</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#create_category_option_group">9.1.6. Create or edit a category option group</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#create_category_option_group_set">9.1.7. Create or edit a category option group set</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#use_category_combo_for_data_set">9.1.8. Use category combinations for data sets</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#assign_code_category_option_combo">9.1.9. Assign a code to a category option
+ combination</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#d0e5289">9.1.10. Clone metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#d0e5321">9.1.11. Change sharing settings for metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#d0e5373">9.1.12. Delete metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#d0e5413">9.1.13. Display details of metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html#d0e5429">9.1.14. Translate metadata objects</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="about_category">
+                                </a>9.1.1.&#160;About categories</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Categories are typically a concept, for example "Gender", "Age" or "Disease Status". Data
+ elements such as "Number of cases of confirmed malaria" are often broken into
+ smaller component parts to determine, for example, the number of confirmed malaria cases of
+ particular age groups.</p>
+                <p>Use categories to disaggregate data elements into individual components. You
+ can
+ also use categories to assign metadata attributes to all data recorded in a specific
+ dataset, such as "Implementing partner" or "Funding
+ agency."</p>
+                <div class="example">
+                    <a name="d0e4725">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.1.&#160;Three age categories</b>
+                    </p>
+                    <div class="example-contents">
+                        <p>Create three categories: "Under 1", "1-5" and "Over 5". Assign them as categories to
+ the data element. This creates three separate fields for this data in the data entry
+ forms:</p>
+                        <div class="itemizedlist">
+                            <ul class="itemizedlist" style="list-style-type: disc;">
+                                <li class="listitem">
+                                    <p>Number of confirmed malaria cases (Under 1)</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Number of confirmed malaria cases (1-5)</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Number of confirmed malaria cases (Over 5)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Without categories, you would have had to create each of the data elements listed
+ above separately.</p>
+                    </div>
+                </div>
+                <br class="example-break" />
+                <p>In the <span class="bold"><strong>Maintenance</strong></span> app, you manage the following and
+ category objects:</p>
+                <div class="table">
+                    <a name="d0e4747">
+                    </a>
+                    <p class="title">
+                        <b>Table&#160;9.1.&#160;Category objects
+ in the Maintenance app</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="Category objects             in the Maintenance app" border="1">
+                            <colgroup>
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                        <p>Object type</p>
+                    </th>
+                                    <th>
+                        <p>Available functions</p>
+                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                        <p>Category option</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Category</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Category combination</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Category option combination</p>
+                    </td>
+                                    <td>
+                        <p>Edit and show details</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Category option group</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Category option group set</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="workflow_category">
+                                </a>9.1.2.&#160;Workflow</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Create all category options.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create categories composed by the multiple category options you've created.
+            </p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create category combinations composed by either one or multiple categories.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create data elements and assign them to a category combination.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_category_option">
+                                </a>9.1.3.&#160;Create or edit a category option</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>When possible, recycle category options. For instance, there might be two categories which
+ might share a particular category option (for example &lt;1 year of age). When creating the
+ categories, this category option could be reused. This is important if particular category
+ options (or category option combinations) that need to be analyzed together.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Category</strong></span> &gt; <span class="bold"><strong>Category
+ option</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in the form:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Short name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Start date</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>End date</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select organisation units and assign them.</p>
+                            <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Tip">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Tip]" src="../Resources/tip.png" />
+                                        </td>
+                                        <th align="left">Tip</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>You can automatically select all organisation units that belong to an
+ organisation unit level or organisation unit group, for example "Chiefdom" or
+ "Urban. To do this:</p>
+                                            <p>Select an <span class="bold"><strong>Organisation unit level</strong></span> or
+                        <span class="bold"><strong>Organisation unit group</strong></span> and click <span class="bold"><strong>Select</strong></span>.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_category">
+                                </a>9.1.4.&#160;Create or edit a
+ category</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>When you have created all category options for a particular category, you can create that
+ category.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the  <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Category</strong></span> &gt; <span class="bold"><strong>Category</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in the form:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Code</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Data dimension type</strong>
+                                            </span>
+                                        </p>
+                                        <p>A category either be of type "Disaggregation" or
+ "Attribute". For disaggregation of data elements, you select
+                            <span class="bold"><strong>Disaggregation</strong></span>. The data dimension type
+ "Attribute" allows the category to be used to assign a combination
+ of categories to data recorded through a data set.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Data dimension</strong>
+                                            </span>
+                                        </p>
+                                        <p>If you select <span class="bold"><strong>Data dimension</strong></span>, the
+ category will be available to the analytics as another dimension, in
+ addition to the standard dimensions of "Period" and
+ "Organisation unit".</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select category options and assign them.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_category_combination">
+                                </a>9.1.5.&#160;Create or edit a category
+ combination</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Category combinations lets you combine multiple categories into a related set.</p>
+                <div class="example">
+                    <a name="d0e4995">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.2.&#160;Category combination</b>
+                    </p>
+                    <div class="example-contents">
+                        <p>You can disaggregate the data element "Number of new HIV infections" into
+ the following categories:</p>
+                        <div class="itemizedlist">
+                            <ul class="itemizedlist" style="list-style-type: disc;">
+                                <li class="listitem">
+                                    <p>HIV Service: "Other", "PMTCT", "TB"</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Gender: "Male", "Female"</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>In this example, there are two levels of disaggregation that consist of two separate
+ data element categories. Each data element category consist of several data element
+ category options.</p>
+                    </div>
+                </div>
+                <br class="example-break" />
+                <p>In
+ DHIS2,
+ different data elements are disaggregated according to a common set of categories. By
+ combining these different categories into a category combination and assigning these
+ combinations to data elements, you can apply the appropriate disaggregation levels quickly
+ to a large number of data elements.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Category</strong></span> &gt; <span class="bold"><strong>Category
+ combination</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in the form:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Code</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Data dimension type</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Skip category total in reports</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select categories and assign them.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_category_option_group">
+                                </a>9.1.6.&#160;Create or edit a category option group</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can group and classify category options by using category option groups. The main
+ purpose of the category option group set is to add more
+ dimensionality
+ to your captured data for analysis in for example the <span class="bold"><strong>Pivot
+ table</strong></span> or <span class="bold"><strong>Data Visualizer</strong></span> apps.</p>
+                <div class="example">
+                    <a name="d0e5077">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.3.&#160;Category options groups and group sets</b>
+                    </p>
+                    <div class="example-contents">
+                        <p>In a system, data is collected by "projects", where projects is modeled as
+ category options. The system must be able to analyse data based on which donor that
+ supports the project. In this case, create a category option group set called
+ "Donor". Each donor can be created as a category option group, where each
+ category option / project is put in the appropriate group. In the data analysis
+ applications, the "Donor" group set will appear as a data dimension, while
+ each donor appear as dimension items, ready to be included in reports.</p>
+                    </div>
+                </div>
+                <br class="example-break" />
+                <p>To create a category option group:</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Category</strong></span> &gt; <span class="bold"><strong>Category option
+ group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add
+ button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in the form:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Short name</strong>
+                                            </span>: Define a short name for the
+ data element.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Code</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Data dimension type</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Category options</strong></span> and assign them.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_category_option_group_set">
+                                </a>9.1.7.&#160;Create or edit a category option group set</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can group category option groups in category option group sets. The main purpose of
+ the category option group set is to add more
+ dimensionality
+ to your captured data for analysis in for example the <span class="bold"><strong>Pivot
+ table</strong></span> or <span class="bold"><strong>Data Visualizer</strong></span> apps.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Category</strong></span> &gt; <span class="bold"><strong>Category option group
+ set</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add
+ button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Fill in the form:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Description</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Data dimension</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Data dimension type</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Category option groups</strong></span> and assign
+ them.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="use_category_combo_for_data_set">
+                                </a>9.1.8.&#160;Use category combinations for data sets</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>When categories and category combinations have the data dimension type
+ "Attribute", they can apply a common set of attributes to a related set of data
+ values contained in a data set. When category combinations are used as a attribute, they
+ serve as another dimension (similar to "Period" and "Organisation unit")
+ which you can use in your analysis.</p>
+                <div class="example">
+                    <a name="d0e5215">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.4.&#160;Use category combination for a data set</b>
+                    </p>
+                    <div class="example-contents">
+                        <p>Suppose
+ that a NGO is providing ART services in a given facility. They would need to report each
+ month on the "ART monthly summary", which would contain a number of data
+ elements. The NGO and project could potentially change over time. In order to attribute
+ data to a given NGO and project at any point in time, you need to record this
+ information with each data value at the time of data entry.</p>
+                        <div class="orderedlist">
+                            <ol class="orderedlist" style="list-style-type: decimal;">
+                                <li class="listitem">
+                                    <p>Create two categories with the data dimension type "Attribute":
+ "Implementing partner" and "Projects".</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Create a category combination with the data dimension type "Attribute":
+ "Implementing partners and projects". </p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Assign the categories you've created to the category combination.</p>
+                                </li>
+                                <li class="listitem">
+                                    <p>Create a data set called "ART monthly summary" and select the
+ "Implementing partners and projects" category combination.</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <p>When you enter data in the <span class="bold"><strong>Data entry</strong></span> app, you can
+ select an "Implementing partner" and a "Project". Each recorded data
+ value, is assigned a specific combination of these categories as an attribute. These
+ attributes (when specified as a dimension) can be used in the analysis applications
+ similar to other dimensions, for example the period and organisation unit.</p>
+                        <p />
+                        <div class="screenshot">
+                            <div class="mediaobject" align="center">
+                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                    <tr>
+                                        <td align="center">
+                                            <img src="../Resources/categories_dataset_attributes.png" align="middle" width="100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p />
+                    </div>
+                </div>
+                <br class="example-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="assign_code_category_option_combo">
+                                </a>9.1.9.&#160;Assign a code to a category option
+ combination</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can assign a code to category option combinations. This makes data exchange between
+ DHIS2 and external systems easier. The system creates the category option combinations
+ automatically.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p> Open the <span class="bold"><strong>Maintenance</strong></span>  app and click <span class="bold"><strong>Category</strong></span> &gt; <span class="bold"><strong>Category option
+ combination</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the list, find the object you want to modify.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the options menu and select <span class="bold"><strong>Edit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e5289">
+                                </a>9.1.10.&#160;Clone metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Cloning a data element or other objects can save time when you create many similar
+ objects.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to clone.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Clone</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you
+ want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e5321">
+                                </a>9.1.11.&#160;Change sharing settings for metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can assign different rights to the for example a data set based on user groups and
+ user roles.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to modify.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Sharing settings</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Search for a user group and select it. The user group is added to the
+ list.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Change the settings for the user
+ groups
+ you want to modify.</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can view</strong>
+                                            </span>: Everyone in the user group can
+ view the object</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can edit</strong>
+                                            </span>: Everyone in the user group can
+ view and edit the object</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>The default setting is that everyone (<span class="bold"><strong>Public
+ access</strong></span>) can view and edit objects.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Close</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e5373">
+                                </a>9.1.12.&#160;Delete metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You can only delete a data element and other data element objects if no data is
+ associated
+ to the data element itself.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <p />
+                <div class="warning" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Warning">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Warning]" src="../Resources/warning.png" />
+                            </td>
+                            <th align="left">Warning</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Any data set that you delete from the system is irrevocably lost. All data entry
+ forms, and section forms which may have been developed will also be removed. Make
+ sure that you have made a backup of your database before deleting any data set in
+ case you need to restore it at some point in time.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to delete.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Delete</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Confirm</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e5413">
+                                </a>9.1.13.&#160;Display details of metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to view.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Show
+ details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e5429">
+                                </a>9.1.14.&#160;Translate metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>DHIS2 provides functionality for translations of database content, for example data
+ elements, data element groups, indicators, indicator groups or organisation units. You can
+ translate these elements to any number of locales. A locale represents a specific
+ geographical, political, or cultural region.</p>
+                <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Tip">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Tip]" src="../Resources/tip.png" />
+                            </td>
+                            <th align="left">Tip</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>To activate a
+ translation,
+ open the <span class="bold"><strong>System Settings</strong></span> app, click &gt; <span class="bold"><strong>Appearance</strong></span> and select a language.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to translate.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Translate</strong></span>.</p>
+                            <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Tip">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Tip]" src="../Resources/tip.png" />
+                                        </td>
+                                        <th align="left">Tip</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If you want to translate an organisation unit level, click directly on the
+                        <span class="bold"><strong>Translate</strong></span> icon next to each list
+ item.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>, <span class="bold"><strong>Short
+ name</strong></span> and <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="maintenance_app.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="maintenance_app.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_data_element.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">Chapter&#160;9.&#160;Using the Maintenance app&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;9.2.&#160;Manage data elements</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

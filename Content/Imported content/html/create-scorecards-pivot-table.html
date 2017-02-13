@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>29.1.&#160;Create Scorecards using the Pivot Table app</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/dhis2_tutorials.html" title="Chapter&#160;29.&#160;DHIS2 Tutorials" /><link rel="prev" href="../Resources/dhis2_tutorials.html" title="Chapter&#160;29.&#160;DHIS2 Tutorials" /><link rel="next" href="../Resources/ch30.html" title="Chapter&#160;30.&#160;DHIS2 Frequently Asked Questions" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">29.1.&#160;Create Scorecards using the Pivot Table app</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="dhis2_tutorials.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;29.&#160;DHIS2 Tutorials</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="ch30.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="create-scorecards-pivot-table">
+                            </a>29.1.&#160;Create Scorecards using the Pivot Table app</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="create-scorecards-pivot-table.html#d0e31921">29.1.1. Create a legend for your scorecard</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="create-scorecards-pivot-table.html#d0e31979">29.1.2. Create a scorecard in the Pivot Table app</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="create-scorecards-pivot-table.html#d0e32070">29.1.3. Organise the layout and display of your scorecard</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="create-scorecards-pivot-table.html#d0e32169">29.1.4. Save and share your scorecard</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <p>
+                <span class="emphasis">
+                    <em>
+                        <span class="bold">
+                            <strong>Scorecards definition:</strong>
+                        </span> In public health
+ settings such as Ministries of Health, scorecards offer a useful and standardized method for combining related indicators into one table. A scorecard gives an overall view of the performance of a health program such as a vaccination program, highlighting successes, weaknesses, and areas for improvement
+ Here's what a typical scorecard looks like:</em>
+                </span>  
+        </p>
+            <div class="screenshot">
+                <div class="mediaobject" align="left">
+                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="90%">
+                        <tr>
+                            <td align="left">
+                                <img src="../Resources/scorecards_pivot_result.png" align="left" width="100%" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p>This tutorial explains how to create a scorecard in the DHIS2 Pivot Table app. There are
+ several advantages to using the Pivot Table to create a scorecard, such as:</p>
+            <div class="itemizedlist">
+                <ul class="itemizedlist" style="list-style-type: disc;">
+                    <li class="listitem">
+                        <p>You can save the scorecard on the dashboard and use it offline.</p>
+                    </li>
+                    <li class="listitem">
+                        <p>You can share the scorecard with other DHIS2 users.</p>
+                    </li>
+                </ul>
+            </div>
+            <p>Let's get started!</p>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e31921">
+                                </a>29.1.1.&#160;Create a legend for your scorecard</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>First, we’ll create a 3-color “traffic light” legend for the scorecard. With three
+ basic colors, the scorecard is easy to scan and easy to understand.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app. Click the menu in
+ the top right corner and select Maintenance from the list of apps. You can also
+ type the first letters of the word maintenance in the search field to find the app.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_maintenance_app.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the Maintenance app, scroll to the bottom of the page right down to the
+                        <span class="bold"><strong>Other</strong></span> section.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Legend</strong></span> and click the <span class="bold"><strong>+</strong></span>.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="25%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_maintenance_legend.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Legend Management</strong></span> page, scroll to the
+ bottom of the page and create a new legend by clicking the blue + button.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="6%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_maintenance_addbtn.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a name for the legend such as “Traffic light”, a start value and an end
+ value in the fields. The values you enter here depend on the performance ratings
+ you wish to set for the scorecard.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Change <span class="bold"><strong>Number of legend items</strong></span> to 3 to display
+ three colors in the scorecard. To change the legend item colors, click the blue
+ + button and then edit the colors.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="70%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_maintenance_legend_color.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e31979">
+                                </a>29.1.2.&#160;Create a scorecard in the Pivot Table app</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Pivot Table</strong></span> app from the top right
+ menu of the dashboard. You can also enter the first letters of Pivot Table in
+ the search field.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Data</strong></span> in the pane on the left side and
+ select <span class="bold"><strong>Indicators</strong></span> in the list.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select an <span class="bold"><strong>Indicator group</strong></span> such as “ANC” in
+ the second list.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Using the arrows, select the type of indicators you want to see in your scorecard.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_pivot_indicators.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>. This button is in the menu at
+ the top of the workspace</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Periods</strong></span> and select a period for which
+ you want to display data. In this “traffic light” example, we’ll use the
+ relative period section. In <span class="bold"><strong>Quarters</strong></span>, select
+                        <span class="bold"><strong>This quarter </strong></span>and <span class="bold"><strong>Last
+ quarter</strong></span>. Clear any other checkboxes and click <span class="bold"><strong>Update</strong></span>.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_pivot_period.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Organisation Units</strong></span> in the same left
+ side pane, and click the arrow next to the gear button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Select levels</strong></span>.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_pivot_orgunit_level.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>District</strong></span> from the list (next to the
+ gear button). Click <span class="bold"><strong>Update</strong></span>.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_pivot_orgunit_level2.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <p>As you can see, the scorecard is starting to take shape in the workspace. Now it’s time to fine-tune the look and feel.</p>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e32070">
+                                </a>29.1.3.&#160;Organise the layout and display of your scorecard</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the workspace, click <span class="bold"><strong>Layout</strong></span>. </p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_pivot_layout.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In <span class="bold"><strong>Table layout</strong></span>, drag <span class="bold"><strong>Organisation units</strong></span> down to the <span class="bold"><strong>Row
+ dimensions</strong></span> section.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Drag <span class="bold"><strong>Data</strong></span> to the <span class="bold"><strong>Column
+ dimensions</strong></span> section.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Column dimensions</strong></span> pane, drag <span class="bold"><strong>Periods</strong></span> below <span class="bold"><strong>Data</strong></span>,
+ and click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the workspace, click <span class="bold"><strong>Options</strong></span>.</p>
+                            <div class="screenshot">
+                                <div class="mediaobject" align="left">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="50%">
+                                        <tr>
+                                            <td align="left">
+                                                <img src="../Resources/scorecards_pivot_options.png" align="left" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Data</strong></span> and clear all the
+ checkboxes.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Style</strong></span> &gt; <span class="bold"><strong>Legend
+ set</strong></span> and from the list, select the legend you created in the
+ Maintenance app. In this example, we called it Traffic light.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Go to <span class="bold"><strong>Style</strong></span> &gt; <span class="bold"><strong>Legend
+ display style</strong></span> and select <span class="bold"><strong>Background
+ color</strong></span>. </p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>. </p>
+                        </li>
+                    </ol>
+                </div>
+                <p>The Scorecard is ready! </p>
+                <div class="screenshot">
+                    <div class="mediaobject" align="left">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="100%">
+                            <tr>
+                                <td align="left">
+                                    <img src="../Resources/scorecards_pivot_result.png" align="left" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e32169">
+                                </a>29.1.4.&#160;Save and share your scorecard</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the workspace, go to the <span class="bold"><strong>Favorites</strong></span>
+                    menu.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save as</strong></span>. Enter a name for your
+ Scorecard.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>To share your Scorecard, select <span class="bold"><strong>Favorites</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter the name of a user group name, and click <span class="bold"><strong>Save</strong></span>. Your scorecard can be viewed by people that you share a
+ dashboard with.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="dhis2_tutorials.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="dhis2_tutorials.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="ch30.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">Chapter&#160;29.&#160;DHIS2 Tutorials&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;Chapter&#160;30.&#160;DHIS2 Frequently Asked Questions</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

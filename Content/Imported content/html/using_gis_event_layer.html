@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>13.3.&#160;Manage event layers</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/using_gis.html" title="Chapter&#160;13.&#160;Using the GIS app" /><link rel="prev" href="../Resources/using_gis_create_map.html" title="13.2.&#160;Create a new thematic map" /><link rel="next" href="../Resources/using_gis_facility_layer.html" title="13.4.&#160;Manage facility layers" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">13.3.&#160;Manage event layers</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="using_gis_create_map.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;13.&#160;Using the GIS app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="using_gis_facility_layer.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="using_gis_event_layer">
+                            </a>13.3.&#160;Manage event layers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="using_gis_event_layer.html#gis_create_event_layer">13.3.1. Create or modify event layer</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="using_gis_event_layer.html#d0e17051">13.3.2. Turn off cluster</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="using_gis_event_layer.html#d0e17084">13.3.3. Modify cluster style</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="using_gis_event_layer.html#d0e17118">13.3.4. Modify information in event pop-up windows</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="using_gis_event_layer.html#d0e17177">13.3.5. Clear event layer</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <p>The event layer displays the geographical location of events registered in the DHIS2
+ tracker. Provided that events have associated GPS coordinates, you can use this layer to drill
+ down from the aggregated data displayed in the thematic layers to the underlying individual
+ events or cases. </p>
+            <p>You can also display aggregated events at the facility or at the boundary level. You do
+ this through a thematic layer using event data items. This is useful when you only have the
+ coordinates for the Org Unit under which the events are recorded.</p>
+            <div class="screenshot">
+                <p class="title">
+                    <b>Event layer</b>
+                </p>
+                <div class="mediaobject" align="left">
+                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                        <tr>
+                            <td align="left">
+                                <img src="../Resources/gis_event_layer.png" align="left" width="100%" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="gis_create_event_layer">
+                                </a>13.3.1.&#160;Create or modify event layer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the top menu, click the event layer icon.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Edit layer</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a program and then select a program stage. </p>
+                            <p>If there is only one stage available for the selected program, the stage is
+ automatically selected. A list of data elements and attributes will appear in the
+              <span class="bold"><strong>Available data items</strong></span> panel. </p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select any data element or attribute from this list as part of your query. </p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>To select you can either double-click a data element or (multi) select and use
+ the single-arrow downward button. The double-arrow button will select all data
+ elements in the list. All selected data elements will get their own row in the
+                  <span class="bold"><strong>Selected data items</strong></span>. </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>For data elements of type text you will get two choices: <span class="bold"><strong>Contains</strong></span> implies that the query will match all values which contains
+ your search value, and <span class="bold"><strong>Is exact</strong></span> implies that only
+ values which is completely identical to your search query will be returned. </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>For data elements of type option set, you can select any of the options from the
+ drop down box by using the down-wards arrow or by start typing directly in the box
+ to filter for options.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Periods</strong></span> section, select the time span for
+ when the events took place. You can select either a fixed period or a relative
+ period.</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>Fixed period: In the <span class="bold"><strong>Period</strong></span> field, select
+                  <span class="bold"><strong>Start/end dates</strong></span> and fill in a start date and an
+ end date. </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Relative period: In the <span class="bold"><strong>Period</strong></span> field, select
+ one of the relative periods, for example <span class="bold"><strong>This month</strong></span>
+                or <span class="bold"><strong>Last year</strong></span>.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Organisation units</strong></span> section, select the
+ organisation units you want to include in the query.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Options</strong></span> section, you can:</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>Select a value from the <span class="bold"><strong>Coordinate field</strong></span> for
+ the positions shown on the map. By default, "Event location" is selected.
+ Depending on the data elements or attributes that belong to a program, other
+ coordinates such as "Household position" are available.</p>
+                                        <div class="screenshot">
+                                            <div class="mediaobject" align="left">
+                                                <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <img src="../Resources/gis_coordinates.png" align="left" width="100%" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Select or clear <span class="bold"><strong>Clustering</strong></span> to group nearby
+ events.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Go to <span class="bold"><strong>Style</strong></span> to select a color for the cluster
+ points or change the radius of clusters (between 1 and 20).</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+            <span class="bold"><strong>Clustering</strong></span> if you want to group nearby events and
+ change the style of the cluster points.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e17051">
+                                </a>13.3.2.&#160;Turn off cluster</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>By default events are clustered in a map. You can turn off this function to display all
+ events separately.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the top menu, click the event layer icon.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Edit layer</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Options</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Clear <span class="bold"><strong>Group nearby events</strong></span> check box.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e17084">
+                                </a>13.3.3.&#160;Modify cluster style</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the top menu, click the event layer icon.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Edit layer</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Options</strong></span> section, change the <span class="bold"><strong>Point color</strong></span> and <span class="bold"><strong>Point
+ radius</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+                <p />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e17118">
+                                </a>13.3.4.&#160;Modify information in event pop-up windows</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>For events in a cluster map, you can modify the information displayed in the event
+ pop-up window.</p>
+                <div class="screenshot">
+                    <p class="title">
+                        <b>Pop-up window with event information</b>
+                    </p>
+                    <div class="mediaobject" align="left">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="40%">
+                            <tr>
+                                <td align="left">
+                                    <img src="../Resources/gis_eventlayer_eventinfopopup.png" align="left" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Programs / Attributes</strong></span> app.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program you want to modify and select <span class="bold"><strong>View program
+ stages</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program stage name and select <span class="bold"><strong>Edit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Scroll down to the <span class="bold"><strong>Selected data elements</strong></span>
+              section.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>For every data element you want to display in the pop-up window, select
+ corresponding <span class="bold"><strong>Display in reports</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+                <p />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e17177">
+                                </a>13.3.5.&#160;Clear event layer</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>To clear all data in a map: </p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the top menu, click the event layer icon.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Clear</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="using_gis_create_map.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="using_gis.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="using_gis_facility_layer.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">13.2.&#160;Create a new thematic
+ map&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;13.4.&#160;Manage facility layers</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>14.1.&#160;Context</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/gis_creating.html" title="Chapter&#160;14.&#160;Setting up GIS" /><link rel="prev" href="../Resources/gis_creating.html" title="Chapter&#160;14.&#160;Setting up GIS" /><link rel="next" href="../Resources/gis_creating_setup.html" title="14.2.&#160;Importing coordinates" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">14.1.&#160;Context</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="gis_creating.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;14.&#160;Setting up GIS</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="gis_creating_setup.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="gis_creating_context">
+                            </a>14.1.&#160;Context</h2>
+                    </div>
+                </div>
+            </div>
+            <p>Setting up the GIS simply means storing coordinates for the organisation units you want to
+ show on the map in the database. Coordinates are often distributed in proprietary formats and
+ will need to be converted to a format which DHIS2 understands. ESRI shapefiles are the most
+ common geospatial vector data format for desktop applications. You might find shapefiles for
+ your country <a class="link" href="http://www.diva-gis.org/gdata" target="_top">here</a> or in many other
+ geospatial data repositories on the web. Some amount of work needs to be done in order to use
+ these coordinates in DHIS2 GIS, namely transforming the data into a suitable format and
+ ensuring the name which are contained in the geospatial data match exactly with the names of
+ the organization units which they should be matched to. </p>
+            <p>If you go to the organisation unit module and edit one of the units, you can see a text
+ field called Coordinates. Here you may fill in its coordinates directly (geojson format) which
+ is useful if you just want to update a couple of units.</p>
+            <p>An example point/facility coordinate:</p>
+            <p />
+            <pre class="programlisting" xml:space="preserve">
+                <strong class="userinput">
+                    <code>[29.341,-11.154]</code>
+                </strong>
+            </pre>
+            <p />
+            <p>An example polygon/area coordinates string:</p>
+            <p />
+            <pre class="programlisting" xml:space="preserve">
+                <strong class="userinput">
+                    <code>[[[[29.343,-11.154],[28.329,-11.342],[28.481,-10.239],[29.833,-10.412]]]]</code>
+                </strong>
+            </pre>
+            <p />
+            <p>However, if you are going to e.g. add coordinates for all units at a certain level you
+ don't want to do that manually. This is where the automatic GML import comes into play
+ and the following section explains the preferred way of using it.</p>
+            <div class="important" style="margin-left: 0.5in;margin-right: 0.5in;">
+                <table border="0" summary="Important">
+                    <tr>
+                        <td rowspan="2" align="center" valign="top" width="25">
+                            <img alt="[Important]" src="../Resources/important.png" />
+                        </td>
+                        <th align="left">Important</th>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <p>The only co-ordinate reference system supported by DHIS2 is EPSG:4326, also known as
+ geographic longitude/latitude. Coordinates must be stored with the longitude (east/west
+ position) proceeding the latitude (north/south position). If your vector data is in a
+ different CRS than EPSG 4326, you will need to re-project the data first before importing
+ into DHIS2. </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="gis_creating.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="gis_creating.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="gis_creating_setup.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">Chapter&#160;14.&#160;Setting up GIS&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;14.2.&#160;Importing coordinates</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

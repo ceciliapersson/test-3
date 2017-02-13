@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>8.3.&#160;Standard deviation outlier analysis</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/control_data_quality.html" title="Chapter&#160;8.&#160;Control data quality" /><link rel="prev" href="../Resources/validation_rule_analysis.html" title="8.2.&#160;Validation rule analysis" /><link rel="next" href="../Resources/min_max_analysis.html" title="8.4.&#160;Minimum maximum outlier analysis" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">8.3.&#160;Standard deviation outlier
+ analysis</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="validation_rule_analysis.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;8.&#160;Control data quality</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="min_max_analysis.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="standard_deviation_analysis">
+                            </a>8.3.&#160;Standard deviation outlier
+ analysis</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="standard_deviation_analysis.html#d0e4157">8.3.1. About standard deviation outlier analysis</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="standard_deviation_analysis.html#d0e4170">8.3.2. Run a standard deviation outlier analysis</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="standard_deviation_analysis.html#d0e4264">8.3.3. Modify a standard deviation outlier value</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e4157">
+                                </a>8.3.1.&#160;About standard deviation outlier analysis</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>The standard deviation outlier analysis identifies values that are numerically distant
+ from the rest of the data. The analysis is based on the standard normal distribution.
+ The system calculates the average, based on values since the beginning of time, for one
+ particular combination of organisation unit, data element, category option combination
+ and attribute option combination. Outliers can occur by chance but often indicate a
+ measurement error or a heavy-tailed distribution which leads to very high numbers. You
+ should investigate measurement errors and try to correct them before you discard them
+ from the analysis.</p>
+                <p />
+                <div class="warning" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Warning">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Warning]" src="../Resources/warning.png" />
+                            </td>
+                            <th align="left">Warning</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>It's not recommended to use tools or interpretations that assume a normal
+ distribution for heavy-tailed distributions.</p>
+                                <p>For example: the standard deviation outlier analysis is not an appropriate
+ tool when you expect huge seasonal variations in the data.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e4170">
+                                </a>8.3.2.&#160;Run a standard deviation outlier analysis</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="screenshot">
+                    <div class="mediaobject" align="center">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                            <tr>
+                                <td align="center">
+                                    <img src="../Resources/Data Quality_Std Deviation Analysis.png" align="middle" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Data Quality</strong></span> app and click <span class="bold"><strong>Std dev outlier analysis</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>From date</strong></span> and <span class="bold"><strong>To
+ date</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select
+ data
+ set(s).</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Parent
+ organisation
+ unit</strong></span>.</p>
+                            <p>All children of the organisation unit will be included. The analysis is made
+ on raw data "under" the parent organisation unit, not on aggregated data.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a number of standard
+ deviations.</p>
+                            <p>This refers to the number of standard deviations the data is allowed to
+ deviate from the mean before it is classified as an outlier.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Start</strong></span>.</p>
+                            <p>The analysis process duration depends on the amount of data that is being
+ analysed. If there are
+ standard
+ deviations outliers, they will be presented in a list.</p>
+                            <p />
+                            <div class="screenshot">
+                                <div class="mediaobject" align="center">
+                                    <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="../Resources/std-dev-outlier-analysis-result.png" align="middle" width="100%" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <p />
+                            <p>For each outlier, you'll see the data element, organisation unit, period,
+ minimum value, actual value and maximum value. The minimum and maximum values
+ refer to the border values derived from the number of standard deviations
+ selected for the analysis.</p>
+                        </li>
+                    </ol>
+                </div>
+                <p />
+                <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Tip">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Tip]" src="../Resources/tip.png" />
+                            </td>
+                            <th align="left">Tip</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Click the star icon to mark an outlier value for further follow-up.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e4264">
+                                </a>8.3.3.&#160;Modify a standard deviation outlier value</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can modify an outlier value directly in the analysis result list:</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>In the value column, click inside the field that contains the value you want
+ to change.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter a value and then navigate away from that field either by clicking tab or
+ anywhere outside the field.</p>
+                            <p>The system provides an alert if the value is still outside the defined minimum
+ and maximum values, but the value will be saved in any case.
+ The
+ field will have a red background color if the value is outside the range, and a
+ green if inside.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="validation_rule_analysis.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="control_data_quality.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="min_max_analysis.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">8.2.&#160;Validation rule
+ analysis&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;8.4.&#160;Minimum maximum
+ outlier
+ analysis</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
