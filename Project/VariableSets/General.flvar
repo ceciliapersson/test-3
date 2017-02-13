@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultVariableSet>
   <Variable
     Comment=""
-    Name="CompanyName">My Company Name, LLC</Variable>
+    Name="CompanyName"
+    EvaluatedDefinition="DHIS2">DHIS2</Variable>
   <Variable
     Comment=""
     Name="PhoneNumber">858 123 4567</Variable>
@@ -14,7 +15,8 @@
   <Variable
     Name="ProductName"
     Comment=""
-    OriginalName="ProductName">FictionSoft</Variable>
+    OriginalName="ProductName"
+    EvaluatedDefinition="DHIS2">DHIS2</Variable>
   <Variable
     Name="Fax"
     Comment=""
@@ -22,7 +24,8 @@
   <Variable
     Name="CityStateZip"
     Comment=""
-    Definition="Some text">La Jolla, CA 92037</Variable>
+    Definition="Some text"
+    EvaluatedDefinition="Oslo, Norway">Oslo, Norway</Variable>
   <Variable
     Name="Year"
     Comment=""
