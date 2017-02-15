@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>9.7.&#160;[Work in progress] Manage validation rules</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/maintenance_app.html" title="Chapter&#160;9.&#160;Using the Maintenance app" /><link rel="prev" href="../Resources/manage_program_metadata.html" title="9.6.&#160;Manage program metadata" /><link rel="next" href="../Resources/manage_attribute.html" title="9.8.&#160;Manage attributes" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">9.7.&#160;[Work in progress] Manage validation rules</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="manage_program_metadata.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;9.&#160;Using the Maintenance app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_attribute.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="manage_validation_rule">
+                            </a>9.7.&#160;[Work in progress] Manage validation rules</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#about_validation_rule">9.7.1. About validation rules, validation rule groups and validation notifications </a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#create_validation_rule">9.7.2. Create or edit a validation rule</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#create_validation_rule_group">9.7.3. Create or edit a validation rule
+ group</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#create_validation_notification">9.7.4. Create or edit a validation
+ notification</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#d0e11505">9.7.5. Clone metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#d0e11537">9.7.6. Change sharing settings for metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#d0e11589">9.7.7. Delete metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#d0e11629">9.7.8. Display details of metadata objects</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html#d0e11645">9.7.9. Translate metadata objects</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="about_validation_rule">
+                                </a>9.7.1.&#160;About validation rules, validation rule groups and validation notifications </h3>
+                        </div>
+                    </div>
+                </div>
+                <p>A validation rule is based on an expression which defines a relationship between data
+ element values. The expression forms a condition which should assert that certain logical
+ criteria are met.</p>
+                <p>The expression consist of:</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                            <p>a left side</p>
+                        </li>
+                        <li class="listitem">
+                            <p>a right side</p>
+                        </li>
+                        <li class="listitem">
+                            <p>an operator </p>
+                        </li>
+                    </ul>
+                </div>
+                <p />
+                <div class="example">
+                    <a name="d0e10956">
+                    </a>
+                    <p class="title">
+                        <b>Example&#160;9.12.&#160;</b>
+                    </p>
+                    <div class="example-contents">
+                        <p>A validation rule could assert that the total number of vaccines given to infants
+ is less than or equal to the total number of infants.</p>
+                    </div>
+                </div>
+                <p>
+                    <br class="example-break" />
+    </p>
+                <p>A validation rule group allows you to group related validation rules. When you then
+ run
+ a <span class="emphasis"><em>validation rule analysis</em></span>, you can select whether to run all
+ validation rules in the system, or just the validation rules in one group.</p>
+                <p>You can configure a validation rule analysis to automatically send out information about
+ validation violations to selected user groups. These messages are called
+            <span class="emphasis"><em>validation notifications</em></span> and are sent via the internal DHIS2
+ messaging system.</p>
+                <p>In the <span class="bold"><strong>Maintenance</strong></span> app, you manage the following
+ validation rule objects:</p>
+                <div class="table">
+                    <a name="d0e10979">
+                    </a>
+                    <p class="title">
+                        <b>Table&#160;9.14.&#160;Validation rule objects in the Maintenance app</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="Validation rule objects in the Maintenance app" border="1">
+                            <colgroup>
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                        <p>Object type</p>
+                    </th>
+                                    <th>
+                        <p>Available functions</p>
+                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                        <p>Validation rule</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Validation rule group</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, share, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                        <p>Validation notification</p>
+                    </td>
+                                    <td>
+                        <p>Create, edit, clone, delete, show details and translate</p>
+                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_validation_rule">
+                                </a>9.7.2.&#160;Create or edit a validation rule</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Validation</strong></span> &gt; <span class="bold"><strong>Validation
+ rule</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add
+ button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>.</p>
+                            <p>The name must be unique among the validation rules.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>Code</strong></span> field, assign a
+ code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Type a <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select an <span class="bold"><strong>Importance</strong></span>:
+                    <span class="bold"><strong>High</strong></span>, <span class="bold"><strong>Medium</strong></span>
+                or <span class="bold"><strong>Low</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a <span class="bold"><strong>Period
+ type</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select an <span class="bold"><strong>Operator</strong></span>:
+                    <span class="bold"><strong>Compulsory pair</strong></span>, <span class="bold"><strong>Equal
+ to</strong></span>, <span class="bold"><strong>Exclusive pair</strong></span>, <span class="bold"><strong>Greater than</strong></span>, <span class="bold"><strong>Greater than or equal
+ to</strong></span> or <span class="bold"><strong>Not equal to</strong></span>.</p>
+                            <p>The <span class="bold"><strong>Compulsory pair</strong></span> operator allows to require
+ that data values must be entered for a form for both left and right sides of the
+ expression, or for neither side. This means that you can require that if one field
+ in a form is filled, then one or more other fields must also be filled.</p>
+                            <p>The <span class="bold"><strong>Exclusive pair</strong></span> allows to assert that if any
+ value exist on the left side then there should be no values on the right side (or
+ vice versa). This means that data elements which compose the rule on either side
+ should be mutually exclusive from each other, for a given time period / organisation
+ unit /attribute option combo.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create the left side of the expression:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>Click <span class="bold"><strong>Left side</strong></span>.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Select a <span class="bold"><strong>Missing value strategy</strong></span>. This
+ selection sets how the system evaluates a validation rule if data is
+ missing.</p>
+                                        <div class="informaltable">
+                                            <table class="informaltable" border="1">
+                                                <colgroup>
+                                                    <col class="c1" />
+                                                    <col class="c2" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                        <p>Option</p>
+                                    </th>
+                                                        <th>
+                                        <p>Description</p>
+                                    </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                        <p>Skip if any value is missing</p>
+                                    </td>
+                                                        <td>
+                                        <p>The validation rule will be skipped if any of the
+ values which compose the expression are missing. This is
+ the default option.</p>
+                                        
+                                        <p>Always select this option you use the <span class="bold"><strong>Exclusive pair</strong></span> or <span class="bold"><strong>Compulsory pair</strong></span>
+                                            operator.</p>
+                                        
+                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                        <p>Skip if all values are missing</p>
+                                    </td>
+                                                        <td>
+                                        <p>The validation rule will be skipped only if all of the
+ operands
+ which compose it are missing. </p>
+                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                        <p>Never skip</p>
+                                    </td>
+                                                        <td>
+                                        <p>The validation rule will never be skipped in case of
+ missing data, and all missing operands will be treated
+ effectively as a zero.</p>
+                                    </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Type a <span class="bold"><strong>Description</strong></span>.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Build an expression based on the available data elements, program objects,
+ organisation units, counts and constants.</p>
+                                        <p>In the right pane, double-click the data objects you want to include in
+ the expression. Combine with the mathematical operators located below the
+ left pane.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Create the right side of the expression:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>Click <span class="bold"><strong>Right side</strong></span>.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Select a <span class="bold"><strong>Missing value strategy</strong></span>. This
+ selection sets how the system evaluates a validation rule if data is
+ missing.</p>
+                                        <div class="informaltable">
+                                            <table class="informaltable" border="1">
+                                                <colgroup>
+                                                    <col class="c1" />
+                                                    <col class="c2" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                        <p>Option</p>
+                                    </th>
+                                                        <th>
+                                        <p>Description</p>
+                                    </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                        <p>Skip if any value is missing</p>
+                                    </td>
+                                                        <td>
+                                        <p>The validation rule will be skipped if any of the
+ values which compose the expression are missing. This is
+ the default option.</p>
+                                        
+                                        <p>Always select this option you use the <span class="bold"><strong>Exclusive pair</strong></span> or <span class="bold"><strong>Compulsory pair</strong></span>
+                                            operator.</p>
+                                        
+                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                        <p>Skip if all values are missing</p>
+                                    </td>
+                                                        <td>
+                                        <p>The validation rule will be skipped only if all of the
+ operands
+ which compose it are missing. </p>
+                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                        <p>Never skip</p>
+                                    </td>
+                                                        <td>
+                                        <p>The validation rule will never be skipped in case of
+ missing data, and all missing operands will be treated
+ effectively as a zero.</p>
+                                    </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Type a <span class="bold"><strong>Description</strong></span>.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Build an expression based on the available data elements, program objects,
+ organisation units, counts and constants.</p>
+                                        <p>In the right pane, double-click the data objects you want to include in
+ the expression. Combine with the mathematical operators located below the
+ left pane.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_validation_rule_group">
+                                </a>9.7.3.&#160; Create or edit a validation rule
+ group</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Validation</strong></span> &gt; <span class="bold"><strong>Validation rule
+ group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add
+ button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>Code</strong></span> field, assign a
+ code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Type a <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Double-click the <span class="bold"><strong>Validation rules</strong></span> you want to
+ assign to the group.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_validation_notification">
+                                </a>9.7.4.&#160;Create or edit a validation
+ notification</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Validation</strong></span> &gt; <span class="bold"><strong>Validation
+ notification</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add
+ button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>Code</strong></span> field, assign a
+ code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Validation
+ rules</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Recipient user groups</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Select <span class="bold"><strong>Notify users in hierarchy
+ only</strong></span>.</p>
+                            <p>If you select this option, the system will filter the recipient users. (The system
+ derives the recipient users from the recipient user groups.) The filter is based on
+ which organisation unit the recipient user belongs to. The users linked to
+ organisation units which are ancestors of the organisation unit where the violation
+ took place will receive validation notifications. The system will ignore other users
+ and these users won't receive validation notifications.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create the message template:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>Create the <span class="bold"><strong>Subject
+ template</strong></span>.</p>
+                                        <p>Double-click the parameters in the <span class="bold"><strong>Template
+ variables</strong></span> field to add them to your subject.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Create the <span class="bold"><strong>Message
+ template</strong></span>.</p>
+                                        <p>Double-click the parameter names in the <span class="bold"><strong>Template
+ variables</strong></span> field to add them to your message.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e11505">
+                                </a>9.7.5.&#160;Clone metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Cloning a data element or other objects can save time when you create many similar
+ objects.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to clone.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Clone</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you
+ want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e11537">
+                                </a>9.7.6.&#160;Change sharing settings for metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can assign different rights to the for example a data set based on user groups and
+ user roles.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to modify.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Sharing settings</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Search for a user group and select it. The user group is added to the
+ list.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Change the settings for the user
+ groups
+ you want to modify.</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can view</strong>
+                                            </span>: Everyone in the user group can
+ view the object</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can edit</strong>
+                                            </span>: Everyone in the user group can
+ view and edit the object</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>The default setting is that everyone (<span class="bold"><strong>Public
+ access</strong></span>) can view and edit objects.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Close</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e11589">
+                                </a>9.7.7.&#160;Delete metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You can only delete a data element and other data element objects if no data is
+ associated
+ to the data element itself.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <p />
+                <div class="warning" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Warning">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Warning]" src="../Resources/warning.png" />
+                            </td>
+                            <th align="left">Warning</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Any data set that you delete from the system is irrevocably lost. All data entry
+ forms, and section forms which may have been developed will also be removed. Make
+ sure that you have made a backup of your database before deleting any data set in
+ case you need to restore it at some point in time.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to delete.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Delete</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Confirm</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e11629">
+                                </a>9.7.8.&#160;Display details of metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to view.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Show
+ details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e11645">
+                                </a>9.7.9.&#160;Translate metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>DHIS2 provides functionality for translations of database content, for example data
+ elements, data element groups, indicators, indicator groups or organisation units. You can
+ translate these elements to any number of locales. A locale represents a specific
+ geographical, political, or cultural region.</p>
+                <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Tip">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Tip]" src="../Resources/tip.png" />
+                            </td>
+                            <th align="left">Tip</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>To activate a
+ translation,
+ open the <span class="bold"><strong>System Settings</strong></span> app, click &gt; <span class="bold"><strong>Appearance</strong></span> and select a language.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to translate.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Translate</strong></span>.</p>
+                            <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Tip">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Tip]" src="../Resources/tip.png" />
+                                        </td>
+                                        <th align="left">Tip</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If you want to translate an organisation unit level, click directly on the
+                        <span class="bold"><strong>Translate</strong></span> icon next to each list
+ item.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>, <span class="bold"><strong>Short
+ name</strong></span> and <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="manage_program_metadata.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="maintenance_app.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_attribute.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">9.6.&#160;Manage program 
+ metadata&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;9.8.&#160;Manage attributes</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

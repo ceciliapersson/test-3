@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultToc
   Version="1">
   <TocEntry
@@ -53,5 +53,15 @@
     <TocEntry
       Title="Tables"
       Link="/Content/C_Conditions Notes Tables/Tables.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Visualize and analyze data in maps">
+    <TocEntry
+      Title="New Entry" />
+  </TocEntry>
+  <TocEntry
+    Title="Configure the system">
+    <TocEntry
+      Title="New Entry" />
   </TocEntry>
 </CatapultToc>

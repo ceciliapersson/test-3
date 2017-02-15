@@ -1,0 +1,1313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>26.4.&#160;Manage program indicators</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/configure_program.html" title="Chapter&#160;26.&#160;Configuring programs" /><link rel="prev" href="../Resources/manage_program_stage.html" title="26.3.&#160;Manage program stages" /><link rel="next" href="../Resources/manage_program_rule.html" title="26.5.&#160;Manage program rules" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">26.4.&#160;Manage program
+ indicators</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="manage_program_stage.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;26.&#160;Configuring
+ programs</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_program_rule.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;">
+                            <a name="manage_program_indicator">
+                            </a>26.4.&#160;Manage program
+ indicators</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#about_program_indicator">26.4.1. About program indicators</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_indicator.html#d0e28463">26.4.1.1. About analytics types</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_indicator.html#d0e28485">26.4.1.2. About aggregation
+ types</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_indicator.html#d0e28528">26.4.1.3. About
+ expressions</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_indicator.html#d0e28572">26.4.1.4. About
+ filters</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_indicator.html#d0e28656">26.4.1.5. About
+ functions</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_indicator.html#d0e28735">26.4.1.6. About
+ variables</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#create_program_indicator">26.4.2. Create a program indicator</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#create_program_indicator_group">26.4.3. Create a program indicator group</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29147">26.4.4. Edit program indicators</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29187">26.4.5. Change sharing settings for program indicators</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29250">26.4.6. Delete program indicators</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29283">26.4.7. Display program indicators</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29310">26.4.8. Translate program indicators</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29358">26.4.9. Edit program indicator groups</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29386">26.4.10. Delete program indicator groups</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29407">26.4.11. Display program indicator groups</a>
+                        </span>
+                    </dt>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_indicator.html#d0e29426">26.4.12. Translate program indicator groups</a>
+                        </span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="about_program_indicator">
+                                </a>26.4.1.&#160;About program indicators</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Program indicators are expressions based on data elements and attributes of tracked
+ entities which can be used to calculate values based on a formula.</p>
+                <p>Program indicators consist of:</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                            <p>an analytics type</p>
+                        </li>
+                        <li class="listitem">
+                            <p>an aggregation type</p>
+                        </li>
+                        <li class="listitem">
+                            <p>an expression</p>
+                        </li>
+                        <li class="listitem">
+                            <p>a filter</p>
+                        </li>
+                    </ul>
+                </div>
+                <p>Program indicators are evaluated based on the assigned aggregation type, expression and
+ filter. The order of evaluation is as follows:</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>The <span class="italic">filter</span> will filter the events which become part
+ of the evaluation / aggregation routine.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>The <span class="italic">expression</span> will be evaluated per event.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>All evaluated expression values will be <span class="italic">aggregated</span>
+          according to the aggregation type of the program indicator.</p>
+                        </li>
+                    </ol>
+                </div>
+                <p>In the <span class="bold"><strong>Programs / Attributes</strong></span> app, you manage the
+ following program indicator objects:</p>
+                <div class="table">
+                    <a name="d0e28422">
+                    </a>
+                    <p class="title">
+                        <b>Table&#160;26.5.&#160;Program indicator objects in the Programs / Attributes app</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="Program indicator objects in the Programs / Attributes app" border="1">
+                            <colgroup>
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+              <p>Object type</p>
+            </th>
+                                    <th>
+              <p>Available functions</p>
+            </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+              <p>Program indicator</p>
+            </td>
+                                    <td>
+              <p>Create, edit, share, delete, show details and translate</p>
+            </td>
+                                </tr>
+                                <tr>
+                                    <td>
+              <p>Program indicator group</p>
+            </td>
+                                    <td>
+              <p>Create, edit, delete, show details and translate</p>
+            </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+                <div class="section">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h4 class="title">
+                                    <a name="d0e28463">
+                                    </a>26.4.1.1.&#160;About analytics types</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The available analytics types are <span class="emphasis"><em>events</em></span> and
+          <span class="emphasis"><em>enrollments</em></span>. The analytics type defines whether the program indicator
+ is calculated based on events or program enrollments. This has an impact on what type of
+ calculations can be made.</p>
+                    <div class="itemizedlist">
+                        <ul class="itemizedlist" style="list-style-type: disc;">
+                            <li class="listitem">
+                                <p>
+                                    <span class="emphasis">
+                                        <em>Events</em>
+                                    </span> implies a data source where each event exists as an
+ independent row. This is suitable for performing aggregations such as counts and sums. </p>
+                            </li>
+                            <li class="listitem">
+                                <p>
+                                    <span class="emphasis">
+                                        <em>Enrollments</em>
+                                    </span> implies a data source where all events for a single
+ enrollment is combined on the same row. This allows for calculations which can compare
+ event data from various program stages within a program enrollment.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h4 class="title">
+                                    <a name="d0e28485">
+                                    </a>26.4.1.2.&#160;About aggregation
+ types</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The aggregation type determines how the program indicator will be aggregated. The
+ following aggregation types are available:</p>
+                    <div class="itemizedlist">
+                        <ul class="itemizedlist" style="list-style-type: disc;">
+                            <li class="listitem">
+                                <p>Average</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Sum</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Count</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Standard Deviation</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Variance</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Min</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Max</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Custom</p>
+                                <p>The "custom" aggregation type allows you to specify the aggregation type in-line in
+ the expression. All other aggregation types are applied to the entire expression.</p>
+                                <p>Using the "custom" aggregation type might lead to an exception of the order of
+ evaluation described above where individual parts of the expression can be evaluated and
+ aggregated, as opposed to the entire expression being evaluated prior to
+ aggregation.</p>
+                                <p>The following aggregation type operators can be used within expressions: sum, count,
+ stddev, variance, min, max.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h4 class="title">
+                                    <a name="d0e28528">
+                                    </a>26.4.1.3.&#160;About
+ expressions</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The expression defines how the indicator is being calculated. The expression can contain
+ references to various entities which will be substituted with a related values when the
+ indicator is calculated:</p>
+                    <div class="itemizedlist">
+                        <ul class="itemizedlist" style="list-style-type: disc;">
+                            <li class="listitem">
+                                <p>Data elements: Will be substituted with the value of the data element for the time
+ period and organisation unit for which the calculation is done. Refers to both program
+ stage and data element.</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Attributes: Will be substituted with the value of the attribute for the person /
+ tracked entity for which the calculation is done.</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Variables: Will be substituted with special values linked to the program,
+ including incident date and date of enrollment for the person, current date and count
+ of values in the expression for the time period and organisation unit for which the
+ calculation is done.</p>
+                            </li>
+                            <li class="listitem">
+                                <p>Constants: Will be substituted with the value of the constant.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>The expression is a mathematical expression that can contain operators which include
+ multiply, divide, plus and minus. The expression will be evaluated <span class="italic">per event</span>, then aggregated according to its aggregation type.</p>
+                    <div class="screenshot">
+                        <p class="title">
+                            <b>Program indicator list with context menu</b>
+                        </p>
+                        <div class="mediaobject" align="center">
+                            <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                <tr>
+                                    <td align="center">
+                                        <img src="../Resources/program-indicator-expression.png" align="middle" width="100%" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="example">
+                        <a name="d0e28560">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.6.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that includes both attributes, data elements and constants looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">(A{GPkGfbmArby} + #{mCXR7u4kNBW.NFkjsNiQ9PH}) * C{bCqvfPR02Im}</pre>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                    <div class="example">
+                        <a name="d0e28565">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.7.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression which uses the custom aggregation type and hence can use inline
+ aggregation types looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">(sum(#{mCXR7u4kNBW.K0A4BauXJDl} * #{mCXR7u4kNBW.NFkjsNiQ9PH}) / sum(#{mCXR7u4kNBW.NFkjsNiQ9PH})) * 100</pre>
+                            <p>Note how the "sum" aggregation operator is used inside the expression itself.</p>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                </div>
+                <div class="section">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h4 class="title">
+                                    <a name="d0e28572">
+                                    </a>26.4.1.4.&#160;About
+ filters</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The filter is applied to events and filters the data source used for the calculation of
+ the indicator. I.e. the filter is applied to the set of events before the indicator
+ expression is being evaluated. The filter must evaluate to either true or false. It filter
+ is applied to each individual event. If the filter evaluates to true then the event is
+ included later in the expression evaluation, if not it is ignored. The filter can, in a
+ similar way as expressions, contain references to data elements, attributes and
+ constants.</p>
+                    <p>The indicator filter can in addition use logical operators including the
+ following:</p>
+                    <div class="table">
+                        <a name="d0e28582">
+                        </a>
+                        <p class="title">
+                            <b>Table&#160;26.6.&#160;Operators</b>
+                        </p>
+                        <div class="table-contents">
+                            <table class="table" summary="Operators" border="1">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>and</td>
+                                        <td>Logical AND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>or</td>
+                                        <td>Logical OR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>==</td>
+                                        <td>Equal to</td>
+                                    </tr>
+                                    <tr>
+                                        <td>!=</td>
+                                        <td>Not equal to</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&lt;</td>
+                                        <td>Less than</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&lt;=</td>
+                                        <td>Less than or equal to</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&gt;</td>
+                                        <td>Greater than</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&gt;=</td>
+                                        <td>Greater than or equal to</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br class="table-break" />
+                    <p>These operators can be used to form logical expressions which ultimately evaluate to
+ either true or false. For example you can assert that multiple data elements must be a
+ specific value, or that specific attributes must have numerical values less or greater than
+ a constant.</p>
+                    <div class="screenshot">
+                        <p class="title">
+                            <b>Program indicator list with context menu</b>
+                        </p>
+                        <div class="mediaobject" align="center">
+                            <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="60%">
+                                <tr>
+                                    <td align="center">
+                                        <img src="../Resources/program-indicator-filter.png" align="middle" width="100%" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <p>You can switch between data elements, attributes, variables and constants by using the
+ tabs. You can include such items into expressions and filters by double-clicking in the
+ list. The buttons below the expression area can be used to insert operators.</p>
+                    <div class="example">
+                        <a name="d0e28645">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.8.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>A filter that uses both attributes and data elements looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">A{cejWyOfXge6} == 'Female' and #{A03MvHHogjR.a3kGcGDCuk6} &lt;= 2</pre>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                    <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                        <table border="0" summary="Tip">
+                            <tr>
+                                <td rowspan="2" align="center" valign="top" width="25">
+                                    <img alt="[Tip]" src="../Resources/tip.png" />
+                                </td>
+                                <th align="left">Tip</th>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <p>DHIS2 is using the JEXL library for evaluating expressions which supports additional
+ syntax beyond what is covered in this documentation. See the reference at the <a class="link" href="http://commons.apache.org/proper/commons-jexl/reference/syntax.html" target="_top">project
+ home page</a> to learn how you can create more sophisticated expressions</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h4 class="title">
+                                    <a name="d0e28656">
+                                    </a>26.4.1.5.&#160;About
+ functions</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The indicator expression and filter support a range of functions. The functions can be
+ applied to data elements and attributes:</p>
+                    <div class="table">
+                        <a name="d0e28664">
+                        </a>
+                        <p class="title">
+                            <b>Table&#160;26.7.&#160;Functions</b>
+                        </p>
+                        <div class="table-contents">
+                            <table class="table" summary="Functions" border="1">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="newCol2" />
+                                    <col class="c2" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Function</th>
+                                        <th>Arguments</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>d2:daysBetween</td>
+                                        <td>(date, date)</td>
+                                        <td>Produces the number of days between two data elements/attributes of type date.
+ The static date format is 'yyyy-MM-dd'.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>d2:condition</td>
+                                        <td>(boolean-expr, true-val, false-val)</td>
+                                        <td>Evaluates the conditional expression and if true returns the true value, if
+ false returns the false value. The conditional expression must be quoted.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>d2:zing</td>
+                                        <td>(number)</td>
+                                        <td>Evaluates the data element/attribute of type number to zero if the value is
+ negative, otherwise to the value itself.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>d2:oizp</td>
+                                        <td>(number)</td>
+                                        <td>Evaluates the data element/attribute of type number to one if the value is zero
+ or positive, otherwise to zero. </td>
+                                    </tr>
+                                    <tr>
+                                        <td>d2:zpvc</td>
+                                        <td>(object, [,object, object,...])</td>
+                                        <td>Returns the number of numeric zero and positive values among the given object
+ arguments. Can be provided any number of arguments.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br class="table-break" />
+                    <div class="example">
+                        <a name="d0e28715">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.9.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that uses the "zing" and "oizp" functions looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">d2:zing(A{GPkGfbmArby}) + d2:oizp(#{mCXR7u4kNBW.NFkjsNiQ9PH}))</pre>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                    <div class="example">
+                        <a name="d0e28720">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.10.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that uses the "daysBetween" function looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">d2:daysBetween(#{mCXR7u4kNBW.k8ja2Aif1Ae},'2015-06-01')</pre>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                    <div class="example">
+                        <a name="d0e28725">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.11.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that uses the "condition" function looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">d2:condition('#{mCXR7u4kNBW.NFkjsNiQ9PH} &gt; 100',150,50)</pre>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                    <div class="example">
+                        <a name="d0e28730">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.12.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that uses the "zpvc" function looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">d2:zpvc(A{GPkGfbmArby}),#{mCXR7u4kNBW.NFkjsNiQ9PH}),4,-1)</pre>
+                        </div>
+                    </div>
+                    <br class="example-break" />
+                </div>
+                <div class="section">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h4 class="title">
+                                    <a name="d0e28735">
+                                    </a>26.4.1.6.&#160;About
+ variables</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The indicator expression and filter support a range of variables:</p>
+                    <p />
+                    <div class="table">
+                        <a name="d0e28745">
+                        </a>
+                        <p class="title">
+                            <b>Table&#160;26.8.&#160;Variables for analytics type events</b>
+                        </p>
+                        <div class="table-contents">
+                            <table class="table" summary="Variables for analytics type events" border="1">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="newCol1" />
+                                    <col class="c2" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                  <p>Variable</p>
+                </th>
+                                        <th>
+                  <p>Used for analytics type</p>
+                </th>
+                                        <th>
+                  <p>Description</p>
+                </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{completed_date}</pre><p />
+                </td>
+                                        <td>
+                  <p>Events</p>
+                  <p>Enrollments</p>
+                </td>
+                                        <td>NEW<p>Analytics type: Enrollment: for enrollment analytics er dette den
+ datoen som er satt som enddate, men bare dersom status er "completed
+                    </p><p>Events: For events er dette datoen for når eventen ble satt
+ completed</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{current_date}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The current date.</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{due_date}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The date when an event is due.</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{enrollment_count}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The count of enrollments (useful in combination with filters).</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{enrollment_date}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The date of when the tracked entity instance was enrolled in the
+ program.</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{enrollment_status}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>inneholder status for enrollmenten</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{event_count}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The count of events (useful in combination with filters).</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{event_date}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>Enrollment mode: for enrollment analytics er dette den datoen når den siste
+ eventen fant sted<p>The date of when the event took place.</p><p>Event:
+ as before "The date of when the event took place."</p><p>This variable was
+ previously called:</p><pre class="screen" xml:space="preserve">V{excecution_date}</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{incident_date}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The date of the incidence of the event.</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{tei_count}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The count of tracked entity instances (useful in combination with
+ filters).</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{value_count}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>
+                  <p>The number of non-null values in the expression part of the event.</p>
+                </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                  <p /><pre class="screen" xml:space="preserve">V{zero_pos_value_count}</pre><p />
+                </td>
+                                        <td>&#160;</td>
+                                        <td>The number of numeric positive values in the expression part of the
+ event.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <p>
+                        <br class="table-break" />
+      </p>
+                    <p />
+                    <div class="example">
+                        <a name="d0e28963">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.13.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that uses the "value count" variable looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">(#{A03MvHHogjR.a3kGcGDCuk6} + #{A03MvHHogjR.wQLfBvPrXqq}) / V{value_count}</pre>
+                        </div>
+                    </div>
+                    <p>
+                        <br class="example-break" />
+      </p>
+                    <p />
+                    <div class="example">
+                        <a name="d0e28971">
+                        </a>
+                        <p class="title">
+                            <b>Example&#160;26.14.&#160;</b>
+                        </p>
+                        <div class="example-contents">
+                            <p>An expression that uses the "event_date" and "incident_date" variables looks like
+ this:</p>
+                            <pre class="screen" xml:space="preserve">d2:daysBetween(V{incident_date},V{event_date})</pre>
+                            <p />
+                        </div>
+                    </div>
+                    <p>
+                        <br class="example-break" />
+      </p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_program_indicator">
+                                </a>26.4.2.&#160;Create a program indicator</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>A program indicator belongs to exactly one program.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program you want to add a program indicator to and select <span class="bold"><strong>View program indicators</strong></span>.</p>
+                            <p>A list of existing indicators for the selected program opens. If the program doesn't
+ have any program indicators, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Add new</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter program indicator details:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Short name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Code</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Description</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select number of <span class="bold"><strong>Decimals in data output</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Analytics type</strong></span>: <span class="bold"><strong>Events</strong></span> or <span class="bold"><strong>Enrollments</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select <span class="bold"><strong>Aggregation type</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a <span class="bold"><strong>Legend
+ set</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a if you want to <span class="bold"><strong>Display in form</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create an <span class="bold"><strong>Expression</strong></span>.</p>
+                            <p>In the <span class="bold"><strong>Data elements</strong></span> tab, click <span class="bold"><strong>Select program stage</strong></span> to load the data elements which belong to the selected
+ program.</p>
+                            <p>Double-click on a data element to display the formula of the selected data element in
+ the <span class="bold"><strong>Expression</strong></span> field.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Create a <span class="bold"><strong>Filter</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Add</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="create_program_indicator_group">
+                                </a>26.4.3.&#160;Create a program indicator group</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program indicator group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Add new</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Enter program indicator group details:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Name</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Description</strong>
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>In the list of <span class="bold"><strong>Available program indicators</strong></span>,
+ double-click the program indicators you want to assign to your group.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Add</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29147">
+                                </a>26.4.4.&#160;Edit program indicators</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ indicators</strong></span>.</p>
+                            <p>A list of existing indicators for the selected program opens. If the program doesn't
+ have any program indicators, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program indicator you want to modify and select <span class="bold"><strong>Edit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you
+ want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29187">
+                                </a>26.4.5.&#160;Change sharing settings for program indicators</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ indicators</strong></span>.</p>
+                            <p>A list of existing indicators for the selected program opens. If the program doesn't
+ have any program indicators, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program indicator you want to modify and select <span class="bold"><strong>Sharing settings</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) Add a user group:</p>
+                            <div class="orderedlist">
+                                <ol class="orderedlist" style="list-style-type: lower-alpha;">
+                                    <li class="listitem">
+                                        <p>Search for a user group and select it.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Click the plus icon.</p>
+                                        <p>The user group is added to the list.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Change the settings for the user
+ groups
+ you want to modify.</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can view</strong>
+                                            </span>: Everyone in the user group can view the
+ program indicator.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>
+                                            <span class="bold">
+                                                <strong>Can edit and view</strong>
+                                            </span>: Everyone in the user group can
+ view and edit the program indicator.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29250">
+                                </a>26.4.6.&#160;Delete program indicators</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ indicators</strong></span>.</p>
+                            <p>A list of existing indicators for the selected program opens. If the program doesn't
+ have any program indicators, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program indicator you want to delete and select <span class="bold"><strong>Remove</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>OK</strong></span> to confirm.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29283">
+                                </a>26.4.7.&#160;Display program indicators</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ indicators</strong></span>.</p>
+                            <p>A list of existing indicators for the selected program opens. If the program doesn't
+ have any program indicators, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program indicator you want to display and select <span class="bold"><strong>Show
+ details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29310">
+                                </a>26.4.8.&#160;Translate program indicators</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the relevant program and select <span class="bold"><strong>View program
+ indicators</strong></span>.</p>
+                            <p>A list of existing indicators for the selected program opens. If the program doesn't
+ have any program indicators, the list is empty.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the program indicator you want to modify and select <span class="bold"><strong>Translate</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>, <span class="bold"><strong>Short
+ name</strong></span> and <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29358">
+                                </a>26.4.9.&#160;Edit program indicator groups</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program indicator group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the list, click the program indicator group you want to edit and select <span class="bold"><strong>Edit</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Update</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29386">
+                                </a>26.4.10.&#160;Delete program indicator groups</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program indicator group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the list, click the program indicator group you want to delete and select <span class="bold"><strong>Remove</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29407">
+                                </a>26.4.11.&#160;Display program indicator groups</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program indicator group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the list, click the program indicator group you want to view and select <span class="bold"><strong>Show details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title">
+                                <a name="d0e29426">
+                                </a>26.4.12.&#160;Translate program indicator groups</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Program / Attributes</strong></span> app and click <span class="bold"><strong>Program indicator group</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the list, click the program indicator group you want to translate and select
+            <span class="bold"><strong>Translate</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="manage_program_stage.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="u" href="configure_program.html">Up</a>
+                    </td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_program_rule.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">26.3.&#160;Manage program stages&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;26.5.&#160;Manage program
+ rules</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

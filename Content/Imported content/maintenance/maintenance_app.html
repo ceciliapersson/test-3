@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+      
+   <title>Chapter&#160;9.&#160;Using the Maintenance app</title><link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" /><link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="up" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" /><link rel="prev" href="../Resources/follow_up_analysis.html" title="8.5.&#160;Follow-up analysis" /><link rel="next" href="../Resources/manage_category.html" title="9.1.&#160;Manage categories" /></head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">Chapter&#160;9.&#160;Using the Maintenance app</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left">
+                        <a accesskey="p" href="follow_up_analysis.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">&#160;</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_category.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="chapter">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h1 class="title">
+                            <a name="maintenance_app">
+                            </a>Chapter&#160;9.&#160;Using the Maintenance app</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <p>
+                    <b>Table of Contents</b>
+                </p>
+                <dl class="toc">
+                    <dt>
+                        <span class="section">
+                            <a href="manage_category.html">9.1. Manage categories</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#about_category">9.1.1. About categories</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#workflow_category">9.1.2. Workflow</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#create_category_option">9.1.3. Create or edit a category option</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#create_category">9.1.4. Create or edit a
+ category</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#create_category_combination">9.1.5. Create or edit a category
+ combination</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#create_category_option_group">9.1.6. Create or edit a category option group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#create_category_option_group_set">9.1.7. Create or edit a category option group set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#use_category_combo_for_data_set">9.1.8. Use category combinations for data sets</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#assign_code_category_option_combo">9.1.9. Assign a code to a category option
+ combination</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#d0e5289">9.1.10. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#d0e5321">9.1.11. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#d0e5373">9.1.12. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#d0e5413">9.1.13. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_category.html#d0e5429">9.1.14. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_data_element.html">9.2. Manage data elements</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#about_data_element">9.2.1. About data elements</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#workflow_data_element">9.2.2. Workflow</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#create_data_element">9.2.3. Create or edit a
+ data
+ element</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#create_data_element_group">9.2.4. Create or edit a data element group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#create_data_element_group_set">9.2.5. Create or edit a data element group set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#d0e6367">9.2.6. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#d0e6399">9.2.7. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#d0e6451">9.2.8. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#d0e6491">9.2.9. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_element.html#d0e6507">9.2.10. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_data_set.html">9.3. Manage
+ data sets and
+ data
+ entry forms</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#about_dataset_dataform">9.3.1. About data sets and data entry forms</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#workflow_data_set">9.3.2. Workflow</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#create_data_set">9.3.3. Create or edit a data
+ set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#override_dataelement_catcombo_in_dataset">9.3.4. Override data elements'
+ category
+ combinations in a data set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#edit_compulsory_dataelement_in_dataset">9.3.5. Edit compulsory data elements in a data set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#download_defaultform_pdf">9.3.6. Download default data
+ forms
+ in PDF format</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#manage_section_form">9.3.7. Manage section forms</a>
+                                </span>
+                            </dt>
+                            <dd>
+                                <dl>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7286">9.3.7.1. Create a section form</a>
+                                        </span>
+                                    </dt>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7398">9.3.7.2. Edit a section form</a>
+                                        </span>
+                                    </dt>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7445">9.3.7.3. Manage
+ grey fields in a section form</a>
+                                        </span>
+                                    </dt>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7499">9.3.7.4. Change section display order in a section form</a>
+                                        </span>
+                                    </dt>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7540">9.3.7.5. Delete a section in a section form</a>
+                                        </span>
+                                    </dt>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7574">9.3.7.6. Translate a section in a section form</a>
+                                        </span>
+                                    </dt>
+                                </dl>
+                            </dd>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#manage_customform">9.3.8. Manage custom forms</a>
+                                </span>
+                            </dt>
+                            <dd>
+                                <dl>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7614">9.3.8.1. Create a custom
+ form</a>
+                                        </span>
+                                    </dt>
+                                    <dt>
+                                        <span class="section">
+                                            <a href="manage_data_set.html#d0e7683">9.3.8.2. Scripting
+ in custom forms</a>
+                                        </span>
+                                    </dt>
+                                </dl>
+                            </dd>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#d0e7900">9.3.9. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#d0e7952">9.3.10. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#d0e7992">9.3.11. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_data_set.html#d0e8008">9.3.12. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_indicator.html">9.4. Manage indicators</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#about_indicator">9.4.1. About indicators</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#workflow_indicator">9.4.2. Workflow</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#create_indicator_type">9.4.3. Create or edit an indicator type</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#create_indicator">9.4.4. Create or edit an indicator</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#create_indicator_group">9.4.5. Create or edit an indicator group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#create_indicator_group_set">9.4.6. Create or edit an indicator group set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#d0e8689">9.4.7. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#d0e8721">9.4.8. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#d0e8773">9.4.9. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#d0e8813">9.4.10. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_indicator.html#d0e8829">9.4.11. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_organisation_unit.html">9.5. Manage
+ organisation units</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#about_organisation_unit">9.5.1. [Review ongoing] About organisation units</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#workflow_organisation_unit">9.5.2. Workflow</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#create_organisation_unit">9.5.3. Create or edit an
+ organisation
+ unit</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#create_organisation_unit_group">9.5.4. Create or edit an organisation unit group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#create_organisation_unit_group_set">9.5.5. Create or edit an organisation unit group set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#name_organisation_unit_level">9.5.6. Assign
+ names to organisation unit levels</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#move_organisation_unit">9.5.7. Move
+ organisation units within a hierarchy</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#close_organisation_unit">9.5.8. [Review ongoing] Close an organisation unit</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#d0e9738">9.5.9. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#d0e9770">9.5.10. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#d0e9822">9.5.11. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#d0e9862">9.5.12. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_organisation_unit.html#d0e9878">9.5.13. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_program_metadata.html">9.6. Manage program 
+ metadata</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#about_program_metadata">9.6.1. About program metadata</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#create_tracked_entity_attribute">9.6.2. Create or edit a tracked entity attribute</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#create_tracked_entity_attribute_group">9.6.3. Create or edit a tracked entity attribute group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#create_relationship_type">9.6.4. Create or edit a relationship
+ type</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#create_tracked_entity">9.6.5. Create or edit a tracked
+ entity</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#d0e10736">9.6.6. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#d0e10768">9.6.7. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#d0e10808">9.6.8. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#d0e10860">9.6.9. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_program_metadata.html#d0e10876">9.6.10. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_validation_rule.html">9.7. [Work in progress] Manage validation rules</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#about_validation_rule">9.7.1. About validation rules, validation rule groups and validation notifications </a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#create_validation_rule">9.7.2. Create or edit a validation rule</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#create_validation_rule_group">9.7.3. Create or edit a validation rule
+ group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#create_validation_notification">9.7.4. Create or edit a validation
+ notification</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#d0e11505">9.7.5. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#d0e11537">9.7.6. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#d0e11589">9.7.7. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#d0e11629">9.7.8. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_validation_rule.html#d0e11645">9.7.9. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_attribute.html">9.8. Manage attributes</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_attribute.html#about_attribute">9.8.1. About attributes</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_attribute.html#d0e11750">9.8.2. Create or edit an attribute</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_attribute.html#d0e11831">9.8.3. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_attribute.html#d0e11863">9.8.4. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_attribute.html#d0e11903">9.8.5. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_attribute.html#d0e11919">9.8.6. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_constant.html">9.9. Manage constants</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#about_constant">9.9.1. About constants</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#create_constant">9.9.2. Create or edit a constant</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#d0e12083">9.9.3. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#d0e12115">9.9.4. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#d0e12167">9.9.5. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#d0e12207">9.9.6. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_constant.html#d0e12223">9.9.7. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_option_set.html">9.10. Manage option sets</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#about_option_set">9.10.1. About option sets</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#create_option_set">9.10.2. Create or edit an option set</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#d0e12419">9.10.3. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#d0e12451">9.10.4. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#d0e12503">9.10.5. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#d0e12543">9.10.6. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_option_set.html#d0e12559">9.10.7. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_legend.html">9.11. Manage legends</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#about_legend">9.11.1. About legends</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#create_legend">9.11.2. Create or edit a legend</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#d0e12789">9.11.3. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#d0e12821">9.11.4. Change sharing settings for metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#d0e12873">9.11.5. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#d0e12913">9.11.6. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#d0e12929">9.11.7. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#d0e12987">9.11.8. Assign a legend to indicator or data
+ element</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_legend.html#see_also_legend">9.11.9. See also</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_predictor.html">9.12. Manage predictors</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_predictor.html#d0e13015">9.12.1. About predictors</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_predictor.html#create_predictor">9.12.2. Create or edit a predictor</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_predictor.html#d0e13181">9.12.3. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_predictor.html#d0e13213">9.12.4. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_predictor.html#d0e13253">9.12.5. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_predictor.html#d0e13269">9.12.6. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_push_report.html">9.13. Manage push reports</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#about_push_report">9.13.1. About push reports</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#create_push_report">9.13.2. Create or edit a
+ push
+ report</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#preview_push_report">9.13.3. Preview push reports</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#run_push_report">9.13.4. Run push report jobs</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#d0e13576">9.13.5. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#d0e13608">9.13.6. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#d0e13648">9.13.7. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_push_report.html#d0e13664">9.13.8. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="manage_external_maplayer.html">9.14. Manage external map layers</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_external_maplayer.html#about_gis_map_layers">9.14.1. About external map layers</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_external_maplayer.html#create_external_map_layer">9.14.2. Create or edit an external map layer</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_external_maplayer.html#d0e13906">9.14.3. Clone metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_external_maplayer.html#d0e13938">9.14.4. Delete metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_external_maplayer.html#d0e13978">9.14.5. Display details of metadata objects</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="manage_external_maplayer.html#d0e13994">9.14.6. Translate metadata objects</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                    <dt>
+                        <span class="section">
+                            <a href="edit_multiple_object_groups.html">9.15. Edit multiple object groups at
+ once</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt>
+                                <span class="section">
+                                    <a href="edit_multiple_object_groups.html#d0e14169">9.15.1. Edit multiple objects in an object group</a>
+                                </span>
+                            </dt>
+                            <dt>
+                                <span class="section">
+                                    <a href="edit_multiple_object_groups.html#d0e14210">9.15.2. Edit an object in multiple object groups</a>
+                                </span>
+                            </dt>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="navfooter">
+            <hr />
+            <table width="100%" summary="Navigation footer">
+                <tr>
+                    <td width="40%" align="left">
+                        <a accesskey="p" href="follow_up_analysis.html">Prev</a>&#160;</td>
+                    <td width="20%" align="center">&#160;</td>
+                    <td width="40%" align="right">&#160;<a accesskey="n" href="manage_category.html">Next</a></td>
+                </tr>
+                <tr>
+                    <td width="40%" align="left" valign="top">8.5.&#160;Follow-up
+ analysis&#160;</td>
+                    <td width="20%" align="center">
+                        <a accesskey="h" href="dhis2_user_manual_en.html">Home</a>
+                    </td>
+                    <td width="40%" align="right" valign="top">&#160;9.1.&#160;Manage categories</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

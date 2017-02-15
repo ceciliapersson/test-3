@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3476" MadCap:lastWidth="1127">
+    <head><title>9.8.&#160;Manage attributes</title>
+        <link rel="stylesheet" type="text/css" href="../Resources/docbook_bsd.css" />
+        <link rel="home" href="../Resources/dhis2_user_manual_en.html" title="DHIS2 User guide" />
+        <link rel="up" href="../Resources/maintenance_app.html" title="Chapter&#160;9.&#160;Using the Maintenance app" />
+        <link rel="prev" href="../Resources/manage_validation_rule.html" title="9.7.&#160;[Work in progress] Manage validation rules" />
+        <link rel="next" href="../Resources/manage_constant.html" title="9.9.&#160;Manage constants" />
+    </head>
+    <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+        <div class="navheader">
+            <table width="100%" summary="Navigation header">
+                <tr>
+                    <th colspan="3" align="center">9.8.&#160;Manage attributes</th>
+                </tr>
+                <tr>
+                    <td width="20%" align="left"><a accesskey="p" href="manage_validation_rule.html">Prev</a>&#160;</td>
+                    <th width="60%" align="center">Chapter&#160;9.&#160;Using the Maintenance app</th>
+                    <td width="20%" align="right">&#160;<a accesskey="n" href="manage_constant.html">Next</a></td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div class="section">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both;"><a name="manage_attribute"></a>9.8.&#160;Manage attributes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="toc">
+                <dl class="toc">
+                    <dt><span class="section"><a href="manage_attribute.html#about_attribute">9.8.1. About attributes</a></span>
+                    </dt>
+                    <dt><span class="section"><a href="manage_attribute.html#d0e11750">9.8.2. Create or edit an attribute</a></span>
+                    </dt>
+                    <dt><span class="section"><a href="manage_attribute.html#d0e11831">9.8.3. Clone metadata objects</a></span>
+                    </dt>
+                    <dt><span class="section"><a href="manage_attribute.html#d0e11863">9.8.4. Delete metadata objects</a></span>
+                    </dt>
+                    <dt><span class="section"><a href="manage_attribute.html#d0e11903">9.8.5. Display details of metadata objects</a></span>
+                    </dt>
+                    <dt><span class="section"><a href="manage_attribute.html#d0e11919">9.8.6. Translate metadata objects</a></span>
+                    </dt>
+                </dl>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title"><a name="about_attribute"></a>9.8.1.&#160;About attributes</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>You can use metadata attributes to add additional information to metadata objects. In
+ addition to the standard attributes for each of these objects it may be useful to store
+ information for additional attributes, for example the collection method for a data
+ element.</p>
+                <div class="screenshot">
+                    <div class="mediaobject" align="center">
+                        <table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0;cellspacing: 0;" width="80%">
+                            <tr>
+                                <td align="center">
+                                    <img src="../Resources/attribute_create.png" align="middle" width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p>In the <span class="bold"><strong>Maintenance</strong></span> app, you manage the following
+ attribute objects:</p>
+                <div class="table"><a name="d0e11720"></a>
+                    <p class="title"><b>Table&#160;9.15.&#160;Attribute objects in the Maintenance app</b>
+                    </p>
+                    <div class="table-contents">
+                        <table class="table" summary="Attribute objects in the Maintenance app" border="1">
+                            <colgroup>
+                                <col class="c1" />
+                                <col class="c2" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p>Object type</p>
+                                    </th>
+                                    <th>
+                                        <p>Available functions</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>Attribute</p>
+                                    </td>
+                                    <td>
+                                        <p>Create, edit, clone, delete, show details and translate</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br class="table-break" />
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title"><a name="d0e11750"></a>9.8.2.&#160;Create or edit an attribute</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and click <span class="bold"><strong>Attribute</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click the add button.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the <span class="bold"><strong>Name</strong></span> field, type the name of the
+ attribute.</p>
+                            <p>Each attribute must have a unique name</p>
+                        </li>
+                        <li class="listitem">
+                            <p>(Optional) In the <span class="bold"><strong>Code</strong></span> field, assign a
+ code.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a <span class="bold"><strong>Value type</strong></span>.</p>
+                            <p>If the value supplied for the attribute does not match the value type you will get
+ a warning.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select
+ an
+                <span class="bold"><strong>Option set </strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Select the
+ options
+ you want, for example:</p>
+                            <div class="itemizedlist">
+                                <ul class="itemizedlist" style="list-style-type: disc;">
+                                    <li class="listitem">
+                                        <p>Select <span class="bold"><strong>Mandatory</strong></span> if you want an object to
+ always have the dynamic attribute.</p>
+                                    </li>
+                                    <li class="listitem">
+                                        <p>Select <span class="bold"><strong>Unique</strong></span> if you want the system to
+ enforce that values are unique for a specific object type.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                            <p>The dynamic attribute is now available for the objects you assigned it to.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title"><a name="d0e11831"></a>9.8.3.&#160;Clone metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>Cloning a data element or other objects can save time when you create many similar
+ objects.</p>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to clone.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Clone</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Modify the options you
+ want.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title"><a name="d0e11863"></a>9.8.4.&#160;Delete metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p />
+                <div class="note" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Note">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Note]" src="../Resources/note.png" />
+                            </td>
+                            <th align="left">Note</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>You can only delete a data element and other data element objects if no data is
+ associated
+ to the data element itself.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <p />
+                <div class="warning" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Warning">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Warning]" src="../Resources/warning.png" />
+                            </td>
+                            <th align="left">Warning</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>Any data set that you delete from the system is irrevocably lost. All data entry
+ forms, and section forms which may have been developed will also be removed. Make
+ sure that you have made a backup of your database before deleting any data set in
+ case you need to restore it at some point in time.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p />
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to delete.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Delete</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Confirm</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title"><a name="d0e11903"></a>9.8.5.&#160;Display details of metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to view.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Show
+ details</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="section">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h3 class="title"><a name="d0e11919"></a>9.8.6.&#160;Translate metadata objects</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>DHIS2 provides functionality for translations of database content, for example data
+ elements, data element groups, indicators, indicator groups or organisation units. You can
+ translate these elements to any number of locales. A locale represents a specific
+ geographical, political, or cultural region.</p>
+                <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                    <table border="0" summary="Tip">
+                        <tr>
+                            <td rowspan="2" align="center" valign="top" width="25">
+                                <img alt="[Tip]" src="../Resources/tip.png" />
+                            </td>
+                            <th align="left">Tip</th>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <p>To activate a
+ translation,
+ open the <span class="bold"><strong>System Settings</strong></span> app, click &gt; <span class="bold"><strong>Appearance</strong></span> and select a language.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="orderedlist">
+                    <ol class="orderedlist" style="list-style-type: decimal;">
+                        <li class="listitem">
+                            <p>Open the <span class="bold"><strong>Maintenance</strong></span> app and find the type of
+ metadata object you want to translate.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>In the object list, click the options menu and select <span class="bold"><strong>Translate</strong></span>.</p>
+                            <div class="tip" style="margin-left: 0.5in;margin-right: 0.5in;">
+                                <table border="0" summary="Tip">
+                                    <tr>
+                                        <td rowspan="2" align="center" valign="top" width="25">
+                                            <img alt="[Tip]" src="../Resources/tip.png" />
+                                        </td>
+                                        <th align="left">Tip</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <p>If you want to translate an organisation unit level, click directly on the
+                        <span class="bold"><strong>Translate</strong></span> icon next to each list
+ item.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="listitem">
+                            <p>Select a locale.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Type a <span class="bold"><strong>Name</strong></span>, <span class="bold"><strong>Short
+ name</strong></span> and <span class="bold"><strong>Description</strong></span>.</p>
+                        </li>
+                        <li class="listitem">
+                            <p>Click <span class="bold"><strong>Save</strong></span>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
