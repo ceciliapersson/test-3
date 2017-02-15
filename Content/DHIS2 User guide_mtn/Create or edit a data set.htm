@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="933">
+            <h2 class="Heading2">Create or edit a data set</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit a data set.png" style="visibility: visible;mso-wrap-style: square;width: 502px;height: 344px;" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Open the Maintenance app and click Data set &gt; Data set.</li>
+            <li>Click the add button.</li>
+            <li>In the Name field, type the precise name of the data set.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Using the Maintenance appCreate or edit a data set</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="4">
+            <li>In the Short name field, define a short name for the data set.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Typically, the short name is an abbreviation of the full data set name. This attribute is often used to display the name of the data set where space is limited.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="5">
+            <li>(Optional) In the Code field, assign a code.</li>
+            <li>In the Description field, type a description of the data set.</li>
+            <li>Enter the number of Expiry days.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The number of expiry days controls for how long it should be possible to enter data in the Data entry app for this data set. Expiry days refer to the number of days after the end date of the selected data entry period where the data entry form should be open for entry. After the number of days has expired, the data set will be locked for further entry.</p>
+        <p>&#160;</p>
+        <p>You can set manual exceptions to this using the lock exception functionality in the Data Administration app.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>&#160;</p>
+        <p>To allow data entry into all possible historical time periods, set the number of expiry days to zero.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="8">
+            <li>If you want it to be possible to enter data for future periods, type the number of periods in the Open future periods for data entry field.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The value is the number of future periods which are available for data entry. Example 9.6. Open future periods for data entry</p>
+        <p>For a monthly data set a value of 2 allows you to enter data for 2 months in advance. This is useful for, by example, population, target and planning data.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="9">
+            <li>In the Days after period to qualify for timely submission field, type the number of days in which data can be entered to be considered reported on time.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>To verify the number of timely reports submitted, go to Reports &gt; Reporting rate summary.</p>
+        <p>10S. elect a Period type.</p>
+        <p>&#160;</p>
+        <p>The period type defines the frequency of reporting for the particular data set. The frequency can for example be daily, quarterly or yearly.</p>
+        <p>11S. elect a Category combination to assign it to the data set.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit a category.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 18px;" />&#160;&#160;&#160;&#160;&#160;&#160; Tip</p>
+        <p>&#160;</p>
+        <p>Click Add new to create category combinations that you're missing. In the form that opens, create the category combinations you need. When you're done, click Refresh values.</p>
+        <p>12I.n the Complete notification recipients list, select a user group that should receive a message when the data set is marked as complete in the Data Entry app.</p>
+        <p>&#160;</p>
+        <p>The message is delivered through the DHIS2 messaging system.</p>
+        <p>13I.f you want the user who entered the data to receive a message when the data set is marked as complete in the Data entry app, select Send notification to completing user.</p>
+        <p>&#160;</p>
+        <p>The message is delivered through the DHIS2 messaging system.</p>
+        <p>14I.f applicable, select, a Data approval workflow.</p>
+        <p>15I.f you want it to be possible to use the data set within the Java mobile DHIS 2 application, select Enable for Java mobile client.</p>
+        <p>&#160;</p>
+        <p>Using the Maintenance appOverride data elements' category combinations in a data set</p>
+        <p>&#160;</p>
+        <p>16I.f you want it to be mandatory to fill all values for a data element in data entry if one or more values have been filled, select All fields for data elements required.</p>
+        <p>&#160;</p>
+        <p>This means that if you enter one data value for a data element in an entry field (that is for a category option combination), then you must enter data for all fields belonging to that data element (that is all category option combinations).</p>
+        <p>17I.f you want it to be possible to mark a data entry form as complete only if the validation of that form is successful, select Complete allowed only if validation passes.</p>
+        <p>&#160;</p>
+        <p>If you select this option, you can't mark the form as complete if validation fails.</p>
+        <p>18I.f you want it to be mandatory that any missing values require a comment to justify their absence, select Missing values requires comment on complete.</p>
+        <p>19(.Optional) Assign one or multiple Legends. 20I.f applicable, select Skip offline.</p>
+        <p>This option controls whether this data entry form should be downloaded and saved in the user's web browser. Normally you shouldn't select Skip offline. This is the default setting. If you have big forms which are rarely used you can consider selecting this option to speed up initial loading in the data entry module.</p>
+        <p>21I.f applicable, select Data element decoration</p>
+        <p>&#160;</p>
+        <p>If you select this option, descriptions of data elements render in call-outs in downloaded data sets in offline mode in the Data entry app.</p>
+        <p>22I.f applicable, select Render sections as tabs.</p>
+        <p>&#160;</p>
+        <p>This option is only applicable for section forms. The option allows you to render each section as a tab horizontally above the data set. This is useful for long data sets as it allows appropriate sections to be selected quickly without going through the entire form.</p>
+        <p>23I.f applicable, select Render vertically.</p>
+        <p>&#160;</p>
+        <p>This option is only applicable for section forms.</p>
+        <p>24S. elect data elements and assign them.</p>
+        <p>&#160;</p>
+        <p>You can override the category combination for each selected data set by clicking on the gear icon above the list of selected data elements. This allows you to utilize a specific category combination (disaggregation) within the current data set instead of the category combination associated directly with the data element itself.</p>
+        <p>25S. elect indicators and assign them.</p>
+        <p>26I.n the organisation unit tree, select the organisation units you want to assign the data set to.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit a category.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 18px;" />&#160;&#160;&#160;&#160;&#160;&#160; Tip</p>
+        <ul style="list-style-type: square;margin-left: 84pt;">
+            <li>Click Organisation unit level to select all organisation units that belong to a certain organisation level.</li>
+            <li>Click Organisation unit group to select all organisation units that belong to a certain organisation unit group.</li>
+        </ul>
+        <p>27C. lick Save.</p>
+        <p>&#160;</p>
+        <p>You can now use the data set in the Data Entry app for the organisation units that you have assigned to and for periods according to the selected frequency (period type).</p>
+        <p>&#160;</p>
+    </body>
+</html>

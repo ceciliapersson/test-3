@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 41pt;" start="913">
+            <h1 class="Heading1">Manage push reports</h1>
+        </ol>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 49pt;" start="9131">
+            <h2 class="Heading2">About push reports</h2>
+        </ol>
+        <p>Push reports allows you to increase awareness and usage of data analysis by sending reports with charts, tables and maps directly to users e-mail addresses.</p>
+        <ul style="list-style-type: square;margin-left: 40pt;">
+            <li>A push report gets its content from existing dashboards.</li>
+            <li>A push report lists the dashboard items in the same order as on the dashboard.</li>
+            <li>A push report can only contain dashboard items with charts, maps or tables.</li>
+            <li>You create the push report and its schedule in the Maintenance app.</li>
+            <li>The Title and Message parameters you set up in the Maintenance app, are included in each report. The Name you give the report is not included in the report. Instead, the name is used to identify the push analysis object in the system. This way a report can be named one thing, and the title of the report can be another.</li>
+            <li>When you run a push report job, the system compiles a list of recipients from the user groups you've selected. The system then generates a report for each member of the selected user groups. Each of the dashboard items are generated specifically for each user. This means that the data included in the report reflects the data the user has access to. All users could therefore get the same report (if all the data is "static") or custom reports (if all the data is "dynamic"), or a combination of the two.</li>
+            <li>Push reports are sent by e-mail to the recipients, not through the internal DHIS2 messaging system. If a user doesn't have a valid e-mail, or if the job fails, no e-mails are sent. In this case, the problem is logged on the server.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>The data generated in the push reports is public so verify that you don't include any sensitive data.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Example 9.19. Push report</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Manage push reports.jpg" style="visibility: visible;mso-wrap-style: square;width: 501px;height: 736px;" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <div style="left: 1622;top: 901;width: 68pt;height: 28pt;">
+                <p>Object type</p>
+                <p>Push analysis</p>
+            </div>
+            <div style="left: 6315;top: 901;width: 222pt;height: 41pt;">
+                <p>Available functions</p>
+                <p>Create,  edit,  clone,  delete,  show  details, translate, preview and run</p>
+            </div>In the Maintenance app, you manage the following push reports objects: Table 9.20. Push reports objects in the Maintenance app</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

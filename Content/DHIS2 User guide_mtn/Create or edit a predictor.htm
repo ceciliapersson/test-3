@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 49pt;" start="9122">
+            <h2 class="Heading2">Create or edit a predictor</h2>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Open the Maintenance app and click Other &gt; Predictor.</li>
+            <li>Click the add button.</li>
+            <li>In the Name field, type the predictor name.</li>
+            <li>(Optional) In the Code field, assign a code.</li>
+            <li>Select an Output data element.</li>
+            <li>(Optional) Type a Description.</li>
+            <li>Select a Period type.</li>
+            <li>(Optional) Assign organisation unit levels.</li>
+            <li>Create a Generator.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The generator is the expression that is used to calculate the predicted value.</p>
+        <p>10(.Optional) Click Sample skip test and create an expression which is used to exclude data from the generation process. The expression should evaluate to true or false.</p>
+        <p>&#160;</p>
+        <p>Example 9.15.</p>
+        <p>&#160;</p>
+        <p>Use the sample skip test when you want to calculate the average number of malaria cases and you want to exclude the "spikes" you get from outbreaks.</p>
+        <p>11E. nter a Sequential sample count value.</p>
+        <p>&#160;</p>
+        <p>This value decides for how many sequential periods the calculation should go back in time to collect data for the calculations. The sequential sample count depends on the value type.</p>
+        <p>&#160;</p>
+        <p>Example 9.16.</p>
+        <p>&#160;</p>
+        <p>If the period type is "Monthly" and the sequential sample count is "3", the predictor calculations will include data three months back in time.</p>
+        <p>12E. nter an Annual sample count value.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>This value decides for how many years the calculation should go back in time to collect data for the calculations. The annual sample count depends on the value type and sequential sample count.</p>
+        <p>&#160;</p>
+        <p>Example 9.17.</p>
+        <p>&#160;</p>
+        <p>If the period type is "Monthly", the sequential sample count is "3" and the annual sample count is "4", the predictor calculations will include data three months back in time for this year and for two (3-1) years back in time:</p>
+        <p>&#160;</p>
+        <p>June, July, August 2016; June, July, August, 2015; and June, July, August 2014.</p>
+        <p>13(.Optional) Enter a Sequential skip count value.</p>
+        <p>&#160;</p>
+        <p>This value decides how many periods the calculation should go back in time before the sequential sample count starts. The sequential skip count depends on the value type and sequential sample count.</p>
+        <p>&#160;</p>
+        <p>Example 9.18.</p>
+        <p>&#160;</p>
+        <p>If the period type is "Monthly", the sequential sample count is "3" and the sequential sample count is " 2", the predictor calculations will go back two months in time, then include the following three months in the calculations:</p>
+        <p>&#160;</p>
+        <p>April, May and June (July and August are skipped because the sequential skip count is "2") 14C. lick Save.</p>
+        <p>&#160;</p>
+    </body>
+</html>

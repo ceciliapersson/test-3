@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="972">
+            <h2 class="Heading2">Create or edit a validation rule</h2>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Open the Maintenance app and click Validation &gt; Validation rule.</li>
+            <li>Click the add button.</li>
+            <li>Type a Name.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The name must be unique among the validation rules.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="4">
+            <li>(Optional) In the Code field, assign a code.</li>
+            <li>(Optional) Type a Description.</li>
+            <li>Select an Importance: High, Medium or Low.</li>
+            <li>Select a Period type.</li>
+            <li>Select an Operator: Compulsory pair, Equal to, Exclusive pair, Greater than, Greater than or equal to or Not equal to.</li>
+        </ol>
+        <p>The Compulsory pair operator allows to require that data values must be entered for a form for both left and right sides of the expression, or for neither side. This means that you can require that if one field in a form is filled, then one or more other fields must also be filled.</p>
+        <p>The Exclusive pair allows to assert that if any value exist on the left side then there should be no values on the right side (or vice versa). This means that data elements which compose the rule on either side should be mutually exclusive from each other, for a given time period / organisation unit /attribute option combo.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="9">
+            <li>Create the left side of the expression:</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="1">
+            <li>Click Left side.</li>
+            <li>Select a Missing value strategy. This selection sets how the system evaluates a validation rule if data is missing.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <div style="left: 124;top: 86;width: 135pt;height: 28pt;">
+                <p>Option</p>
+                <p>Skip if any value is missing</p>
+            </div>
+            <div style="left: 4576;top: 86;width: 210pt;height: 54pt;">
+                <p>Description</p>
+                <p>The validation rule will be skipped if any of the values which compose the expression are missing. This is the default option.</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <p>Using the Maintenance appCreate or edit a validation rule group</p>
+        <p>&#160;</p>
+        <p>
+            <div style="left: 1087;top: 137;width: 142pt;height: 114pt;">
+                <p>Option</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>Skip if all values are missing</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>Never skip</p>
+            </div>
+            <div style="left: 5539;top: 137;width: 210pt;height: 153pt;">
+                <p>Description</p>
+                <p>Always  select  this  option  you&#160;  use the Exclusive pair or Compulsory pair operator.</p>
+                <p>The validation rule will be skipped only if all of the operands which compose it are missing.</p>
+                <p>The validation rule will never be skipped in case of missing data, and all missing operands will be treated effectively as a zero.</p>
+            </div>
+        </p>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="3">
+            <li>Type a Description.</li>
+            <li>Build an expression based on the available data elements, program objects, organisation units, counts and constants.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>In the right pane, double-click the data objects you want to include in the expression. Combine with the mathematical operators located below the left pane.</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="5">
+            <li>Click Save.</li>
+        </ol>
+        <p>10C. reate the right side of the expression:</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="1">
+            <li>Click Right side.</li>
+            <li>Select a Missing value strategy. This selection sets how the system evaluates a validation rule if data is missing.</li>
+        </ol>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Skip if any value is missing</p>
+                    </td>
+                    <td>
+                        <p>The validation rule will be skipped if any of</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>the values which compose the expression</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>are missing. This is the default option.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Alwaysselectthisoptionyouuse</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>the Exclusive pair or Compulsory pair</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>operator.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Skip if all values are missing</p>
+                    </td>
+                    <td>
+                        <p>The validation rule will be skipped only if</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>all of the operands which compose it are</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>missing.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Never skip</p>
+                    </td>
+                    <td>
+                        <p>The validation rule will never be skipped</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>in case of missing data, and all missing</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>operands will be treated effectively as a</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>zero.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="3">
+            <li>Type a Description.</li>
+            <li>Build an expression based on the available data elements, program objects, organisation units, counts and constants.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>In the right pane, double-click the data objects you want to include in the expression. Combine with the mathematical operators located below the left pane.</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="5">
+            <li>Click Save. 11C. lick Save.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

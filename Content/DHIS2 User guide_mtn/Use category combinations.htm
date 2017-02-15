@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="918">
+            <h2 class="Heading2">Use category combinations for data sets</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>When categories and category combinations have the data dimension type "Attribute", they can apply a common set of attributes to a related set of data values contained in a data set. When category combinations are used as a attribute, they serve as another dimension (similar to "Period" and "Organisation unit") which you can use in your analysis.</p>
+        <p>&#160;</p>
+        <p>Example 9.4. Use category combination for a data set</p>
+        <p>&#160;</p>
+        <p>Suppose that a NGO is providing ART services in a given facility. They would need to report each month on the "ART monthly summary", which would contain a number of data elements. The NGO and project could potentially change over time. In order to attribute data to a given NGO and project at any point in time, you need to record this information with each data value at the time of data entry.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Create two categories with the data dimension type "Attribute": "Implementing partner" and "Projects".</li>
+            <li>Create a category combination with the data dimension type "Attribute": "Implementing partners and projects".</li>
+            <li>Assign the categories you've created to the category combination.</li>
+            <li>Create a data set called "ART monthly summary" and select the "Implementing partners and projects" category combination.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>When you enter data in the Data entry app, you can select an "Implementing partner" and a "Project". Each recorded data value, is assigned a specific combination of these categories as an attribute. These attributes (when specified as a dimension) can be used in the analysis applications similar to other dimensions, for example the period and organisation unit.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Use category combinations.jpg" style="visibility: visible;mso-wrap-style: square;width: 503px;height: 251px;" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

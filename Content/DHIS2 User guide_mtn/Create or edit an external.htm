@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 49pt;" start="9142">
+            <h2 class="Heading2">Create or edit an external map layer</h2>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>DHIS 2 only supports the Web Mercator projection (EPSG:3857) so make sure that the external service supports this projection.</p>
+        <p>&#160;</p>
+        <p>Using the Maintenance appCreate or edit an external map layer</p>
+        <p>&#160;</p>
+        <p>Table 9.21. External map layer objects in the Maintenance app</p>
+        <p>&#160;</p>
+        <p>
+            <div style="left: 124;top: 86;width: 95pt;height: 28pt;">
+                <p>Object type</p>
+                <p>External map layer</p>
+            </div>
+            <div style="left: 4816;top: 86;width: 222pt;height: 41pt;">
+                <p>Available functions</p>
+                <p>Create, edit, clone, delete, show details and translate</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Open the Maintenance app and click Other &gt; External map layer.</li>
+            <li>Click the add button.</li>
+            <li>In the Name field, type a name that describes the content of the external map layer.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>This is the name you'll see in the GIS app.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="4">
+            <li>(Optional) In the Code field, assign a code.</li>
+            <li>Select a Map service format.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>DHIS2 supports three common map service formats:</p>
+        <ul style="list-style-type: square;margin-left: 52pt;">
+            <li>Web Map Service (WMS)</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Image format: PNG format allows layers to be transparent, JPG format offers better compression and is often faster to load.</p>
+        <p>&#160;</p>
+        <p>Layers: A WMS can contain several individual layers, and you can specify which you want to include (comma separated). Refer to the WMS GetCapabilities document to see the available&#160;  layers.</p>
+        <ul style="list-style-type: square;margin-left: 52pt;">
+            <li>Tile Map Service (TMS)</li>
+            <li>XYZ tiles (can also be used for WMTS)</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="6">
+            <li>Enter the URL to the map service.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>XYZ and TMS URLs must contain placeholders {}, for example: http://{s}.tile.osm.org/</p>
+        <p>{z}/{x}/{y}.png.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="7">
+            <li>(Optional) Enter Source of the map layers. The field can contain HTML tags if you want to link to the source.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>When you use an external map service it is important to highlight where the data comes from.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="8">
+            <li>Select a Placement:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 52pt;">
+            <li>Bottom - basemap: places the external map layer above other DHIS2 base maps but below the thematic map layers.</li>
+            <li>Top - overlay: places the external map layer above the thematic map layers but below facility and event data layers.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="9">
+            <li>(Optional) Add a legend.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>You can add a legend in two ways:</p>
+        <ul style="list-style-type: square;margin-left: 52pt;">
+            <li>Select a predefined Legend to describe the colors of the map layer.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit a category.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 18px;" />&#160;&#160;&#160;&#160;&#160;&#160; Tip</p>
+        <p>Click Add new to create legends that you're missing. In the form that opens, create the legends you need. When you're done, click Refresh values.</p>
+        <ul style="list-style-type: square;margin-left: 52pt;">
+            <li>Enter a link to an external image legend in Legend image URL.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>These are often provided for WMS. See under LegendURL in the WMS GetCapabilites document.</p>
+        <p>10C. lick Save.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="943">
+            <h2 class="Heading2">Create or edit an indicator type</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit an indicator.png" style="visibility: visible;mso-wrap-style: square;width: 505px;height: 236px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Indicator types define a factor that is applied during aggregation. Indicator values that are calculated during a data mart export or report table generation process will appear properly formatted, and will therefore not require an additional multiplier (for example 100 in the case of percents) for the values to appear correctly formatted.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>&#160;</p>
+        <p>As of version 2.4 of DHIS2, the "Calculated data element" object has been deprecated. Instead, you can create a calculated data element by creating an indicator type with a factor of "1" and by setting the "Number" option to "Yes". The effect of setting the "Number" option to "Yes" will be that the indicator will effectively not have a denominator. You will therefore only be able to define a numerator, which will serve as the formula of the calculated data element.</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Open the Maintenance app and click Indicator &gt; Indicator type.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="2">
+            <li>Click the add button.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="3">
+            <li>In the Name field, type the name of the indicator type, for example "Per cent", "Per thousand", "Per ten thousand".</li>
+            <li>Type a Factor.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The factor is the numeric factor that will be multiplied by the indicator formula during the calculation of the indicator.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="5">
+            <li>Click Save.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

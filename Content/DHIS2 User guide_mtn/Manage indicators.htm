@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 33pt;" start="94">
+            <h1 class="Heading1">Manage indicators</h1>
+        </ol>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="941">
+            <h2 class="Heading2">About indicators</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>An indicator is a formula that can consist of multiple data elements, constants, organisation unit group counts and mathematical operators. The indicator consist typically of a numerator and denominator. You use indicators to calculate coverage rates, incidence and other values that are a result of data element values that have been entered into the system. Calculated totals do not have a denominator.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>&#160;</p>
+        <p>You never enter indicators directly in DHIS2, you calculate them.</p>
+        <p>&#160;</p>
+        <p>An indicator formula can consist of mathematical operators, for example plus and minus, and of the following elements:</p>
+        <p>&#160;</p>
+        <p>Table 9.8. Indicator formula</p>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Formula element</p>
+                    </th>
+                    <th>
+                        <p>Type</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Constant</p>
+                    </td>
+                    <td>
+                        <p>Component</p>
+                    </td>
+                    <td>
+                        <p>Constants are numerical values which remain the same for all indicator calculations. This is useful in order to have a single place to change values that might change over time.</p>
+                        <p>&#160;</p>
+                        <p>Constants are applied AFTER data element values have been  aggregated.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Data elements</p>
+                    </td>
+                    <td>
+                        <p>Component</p>
+                    </td>
+                    <td>
+                        <p>Data elements are substituted by the data value captured for the data element.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Days</p>
+                    </td>
+                    <td>
+                        <p>Operator</p>
+                    </td>
+                    <td>
+                        <p>"Days" is special operator that always provides the number of days for a given indicator calculation.</p>
+                        <p>&#160;</p>
+                        <p>For example: if you want to calculate the "Percentage of time vaccine refrigerator was non-functional", you could define the numerator as:</p>
+                        <p>&#160;</p>
+                        <p>("Days-"Number of days vaccine refrigerator was available"")/"Days"</p>
+                        <p>&#160;</p>
+                        <p>If the fridge was available 25 days in June, the indicator would be calculated as:</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Formula element</p>
+                    </th>
+                    <th>
+                        <p>Type</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                        <p>(30-25/25)*100 = 17 %</p>
+                        <p>&#160;</p>
+                        <p>If you want to calculate the total for Quarter 1, the number of days ("Days") would be:</p>
+                        <p>&#160;</p>
+                        <p>31+28+31 = 90</p>
+                        <p>&#160;</p>
+                        <p>The "Days" parameter will always be the number of days in the period of interest.</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Organisation unit counts</p>
+                    </td>
+                    <td>
+                        <p>Component</p>
+                    </td>
+                    <td>
+                        <p>You can use organisation unit groups in formulas. They will be replaced by the number of organisation units in the group. During aggregation, the organisation units in the group will be intersected with the part of the organisation unit hierarchy being requested.</p>
+                        <p>&#160;</p>
+                        <p>This lets you use the number of public facilities in a specific district in indicators. This is useful for example when you create facility infrastructure surveys and reports.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Programs</p>
+                    </td>
+                    <td>
+                        <p>Component</p>
+                    </td>
+                    <td>
+                        <p>Click Programs  and  select a program  to  view  all data elements, attributes and indicators related to a specific program.</p>
+                        <p>&#160;</p>
+                        <p>The program components you include in your formula will have a program tag assigned to them.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <div style="left: 1622;top: 1081;width: 95pt;height: 122pt;">
+                <p>Object type</p>
+                <p>Indicator Indicator type Indicator group</p>
+                <p>Indicator group set</p>
+            </div>
+            <div style="left: 6315;top: 1081;width: 222pt;height: 135pt;">
+                <p>Available functions</p>
+                <p>Create,  edit,  clone,  share,  delete,  show details and translate</p>
+                <p>Create, edit, clone, delete, show details and translate</p>
+                <p>Create,  edit,  clone,  share,  delete,  show details and translate</p>
+                <p>Create,  edit,  clone,  share,  delete,  show details and translate</p>
+            </div>In the Maintenance app, you manage the following indicator objects: Table 9.9. Indicator objects in the Maintenance app</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

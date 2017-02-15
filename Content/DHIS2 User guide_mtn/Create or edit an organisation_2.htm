@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="955">
+            <h2 class="Heading2">Create or edit an organisation unit group set</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>Organisation unit group sets allows you to create additional classifications of organisation units. The group sets create new dimensions so that you can make a more detailed data analysis. You an easily filter, organise or aggregate data by groups within a group set.</p>
+        <ul style="list-style-type: square;margin-left: 40pt;">
+            <li>You can have any number of organisation unit group sets.</li>
+            <li>The default organisation unit group sets are Type and Ownership.</li>
+            <li>An organisation unit group set is always exclusive: an organisation unit can't be a member of more than one group in a group set.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>You can only select a single organisation group membership for each group set when you create a new organisation unit.</p>
+        <ul style="list-style-type: square;margin-left: 40pt;">
+            <li>You can define whether an organisation unit group set is compulsory or not, which will affect the completeness of the data. Compulsory means that all organisation units must be member of a group in that group set.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Data completeness</p>
+        <p>In the Data integrity part of the Data administration app you can verify if you've accidentally assigned the same organisation unit to multiple groups within the same group set. In this app you also find information about organisation units that are not members of a compulsory organisation unit group set.</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Open the Maintenance app and click Organisation unit &gt; Organisation unit group set.</li>
+            <li>Click the add button.</li>
+            <li>Fill in:</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;margin-left: 54pt;" start="1">
+            <li>Name: Provide a precise name for the organisation unit group set.</li>
+            <li>Code</li>
+            <li>Description: Describe what the organisation unit group set measures or captures.</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="4">
+            <li>If you want all organisation units to be members of a group within the group set, select Compulsory.</li>
+            <li>(Optional) Select Data dimension.</li>
+            <li>(Optional) Select Include subhierarchy in analytics.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>If you select this, a sub-organisation unit will inherit the organisation unit group property from its closest "parent" organisation unit. Any property on the sub-organisation unit will override the inherit value.</p>
+        <p>&#160;</p>
+        <p>If an organisation unit have no associated organisation unit group, the organisation unit can inherit its closest parent's organisation unit group. If none of the parent organisation unit groups have an organisation unit group for a given org unit group set, the result will still be "blank", but if at least one parent has an organisation unit group, sub-organisation unit will inherit it.</p>
+        <p>&#160;</p>
+        <p>include subhierarchy in analytics" is enabled, which means the org units inherit their closest parents org unit group IF the org unit is white (no org unit group associated with it).</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="7">
+            <li>Select organisation unit groups and assign them.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>group set</p>
+        <p>&#160;</p>
+        <p>In the left-hand list, you find the available organisation unit groups. Use the arrows to move selected groups between the two lists.</p>
+        <p>&#160;</p>
+        <p>If there are no organisation unit groups in the left-hand list, click Add new. In the form that opens, create the organisation units group you need. When you're done, click Refresh values.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>An organisation unit can only be a member of a single organisation unit group within an organisation unit group set.</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="8">
+            <li>Click Save.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Example 9.10. Classify facilities based on ownership</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation_2.jpg" style="visibility: visible;mso-wrap-style: square;width: 503px;height: 193px;" />
+        </p>
+        <p>&#160;</p>
+        <p>You want to analyse data based on the ownership of the facilities. All facilities have an owner so you need to make sure that all organisation units get this classification. To do that you can use the Compulsory option:</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Create a group for each ownership type, for example "MoH", "Private" and "Faith-based".</li>
+            <li>Assign all facilities in the database to one of these groups.</li>
+            <li>Create an organisation unit group set called "Ownership" and select Compulsory.</li>
+            <li>Assign the organisation unit groups "MoH", "Private" and "Faith-based" to the "Ownership" organisation group set.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Example 9.11. Create parallel dynamic administrative organisation unit structure</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation_2_1.jpg" style="visibility: visible;mso-wrap-style: square;width: 498px;height: 319px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Using the Maintenance appAssign names to organisation unit levels</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation_2_2.jpg" style="visibility: visible;mso-wrap-style: square;width: 496px;height: 474px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Group you organisation unit in two ways and aggregate data on these two parallel hierarchies Use to aggregate data (only in analytics apps)</p>
+        <p>An additional setting to the organisation unit group set, creates a dynamic "membership" to a organisation unit group set.</p>
+        <p>&#160;</p>
+        <p>You don't change the organisation unit hierarchy Scalable and dynamic</p>
+        <p>Dynamic inclusion of hierarchy Dynamic additional classification</p>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 33pt;" start="93">
+            <h1 class="Heading1">Manage data sets and data entry forms</h1>
+        </ol>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="931">
+            <h2 class="Heading2">About data sets and data entry forms</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>All data entry in DHIS2 is organised in data sets. A data set is a collection of data elements grouped together for data entry and data export between instances of DHIS2. To use a data set to collect data for a specific organisation unit, you must assign the organisation unit to the data set. Once you have assigned the data set to an organisation unit, that data set is available in the Data entry app. Only the organisation units that you have assigned the data set to can use the data set for data entry.</p>
+        <p>&#160;</p>
+        <p>A category combination can link to both data elements and data sets. If you use a category combination for a data set, the category combinations is applicable for the whole form. This means that you can use categories to capture information which is common to an entire form, for example the name of the a project or grant. When a data set is linked to a category combination, those categories will be displayed as drop-down boxes in the Data entry app. Data captured in the form will then be linked to the selected category options from those drop- down boxes. For information about how to create categories and category combinations, see section "Manage data elements and categories". Make sure that you set the type of categories and category combinations to "Attribute".</p>
+        <p>&#160;</p>
+        <p>Example 9.5. Categories for data sets</p>
+        <p>&#160;</p>
+        <p>An scenario for when categories are useful is when you need to capture a data entry form for a implementing partner organisation and a project. In that case:</p>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="1">
+            <li>Create category options and categories for all partner organisations and projects and link them in a new category combination.</li>
+            <li>Assign the category combination to the data set (form) for which you need to capture this information.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>When opening this data set in data entry module, the partner organisation and project categories will automatically be rendered as drop-down boxes, allowing you to select a specific implementing partner organisation and project before continuing to do data entry.</p>
+        <p>&#160;</p>
+        <p>You create and edit data sets in the Maintenance app. Here you define, for example, which data elements you want to include in the data set and the data collection frequency.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Using the Maintenance appAbout data sets and data entry forms</p>
+        <p>You enter data in the Data entry app. The Data entry app uses data entry forms to display the data sets. There are three types of data entry forms:</p>
+        <p>&#160;</p>
+        <p>Table 9.5. Data entry form types</p>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Data entry form type</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Default form</p>
+                    </td>
+                    <td>
+                        <p>Once you have assigned a data set to an organisation unit, a default form is created automatically. The default form is then available in the Data entry app for the organisation units you have assigned it to.</p>
+                        <p>&#160;</p>
+                        <p>A default form consist of a list of the data elements belonging to the data set together with a column for inputting the values. If your data set contains data elements with a non-default category combination, for example age groups or gender, additional columns are automatically created in the default form based on the different categories.</p>
+                        <p>&#160;</p>
+                        <p>If you use more than one category combination you get multiple columns in the default form with different column headings for the options.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Section form</p>
+                    </td>
+                    <td>
+                        <p>If the default form doesn't meet your needs, you can modify it to create a section form. Section forms give you more flexibility when it comes to using tabular forms.</p>
+                        <p>&#160;</p>
+                        <p>In a section form you can, for example, create multiple tables with subheadings and disable (grey out) cells in a table.</p>
+                        <p>&#160;</p>
+                        <p>When you have added a section form to a data set, the section form is available in the Data entry app.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Custom form</p>
+                    </td>
+                    <td>
+                        <p>If the form you want to design is too complicated for default or section forms, you can create a custom form. A custom form takes more time to create than a section form, but you have full control over the design.</p>
+                        <p>&#160;</p>
+                        <p>You can, for example, mimic an existing paper aggregation form with a custom form. This makes data entry easier, and should reduce the number incorrectly entered data elements.</p>
+                        <p>&#160;</p>
+                        <p>When you have added a custom form to a data set, the custom form is available in the Data entry app.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; A data set can have both section and custom forms</p>
+        <p>If a data set has both a section form and a custom form, the system displays the custom form during data entry. Users who enter data can't select which form they want to use. In web-based data entry the order of display preference is:</p>
+        <ol style="list-style-type: decimal;margin-left: 74pt;" start="1">
+            <li>Custom form (if it exists)</li>
+            <li>Section form (if it exists)</li>
+            <li>Default form</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Mobile devices do not support custom forms. In mobile-based data entry the order of display preference is:</p>
+        <ol style="list-style-type: decimal;margin-left: 74pt;" start="1">
+            <li>Section form (if it exists)</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Using the Maintenance appWorkflow</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 74pt;" start="2">
+            <li>Default form</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <div style="left: 0;text-align: left;margin-left: 74.9pt;margin-top: 42.25pt;width: 469.55pt;height: 163.2pt;mso-position-horizontal-relative: page;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <p>Object type</p>
+                            </th>
+                            <th>
+                                <p>Available functions</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Data set</p>
+                            </td>
+                            <td>
+                                <p>Create, assign to organisation units, edit,</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>share, delete, show details and translate</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>Edit compulsory data elements</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>Add  and  remove  multiple  data  sets  to</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>organisation units at once</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Section form</p>
+                            </td>
+                            <td>
+                                <p>Create, edit and manage grey fields</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Section</p>
+                            </td>
+                            <td>
+                                <p>Change display order, delete and translate</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Custom form</p>
+                            </td>
+                            <td>
+                                <p>Create, edit and script</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>In the Maintenance app, you manage the following data set objects: Table 9.6. Data set objects in the Maintenance app</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

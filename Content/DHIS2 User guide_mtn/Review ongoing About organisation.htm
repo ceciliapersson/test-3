@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 42pt;" start="951">
+            <h2 class="Heading2">[Review ongoing] About organisation units</h2>
+        </ol>
+        <p>&#160;</p>
+        <p>The organisation unit hierarchy defines the organisation structure of DHIS2, for example how health facilities, administrative areas and other geographical areas are arranged with respect to each other. It is the "where" dimension of DHIS2, similar to how periods represent the "when" dimension.</p>
+        <p>&#160;</p>
+        <p>The organisation unit hierarchy is built up by parent-child relations. In DHIS2, each of these nodes is an organisation unit. A country might for example have eight provinces, and each</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>province might have a number of districts as children. Normally, the lowest levels consist of facilities where data is collected. Data collecting facilities can also be located at higher levels, for example national or provincial hospitals. Therefore, you can create skewed organisation trees in DHIS2.</p>
+        <ul style="list-style-type: square;margin-left: 40pt;">
+            <li>You can only have one organisation hierarchy at the same time.</li>
+            <li>You can have any number of levels in a hierarchy.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Typically national organisation hierarchies in public health have four to six levels.</p>
+        <ul style="list-style-type: square;margin-left: 40pt;">
+            <li>You can create additional classifications by using organisation groups and organisation group sets.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>For example to create parallel administrative boundaries to the health care sector.</p>
+        <ul style="list-style-type: square;margin-left: 40pt;">
+            <li>It is recommended to use organisation unit groups to create a non-geographical hierarchy.</li>
+            <li>An organisation unit can only be a member of a single organisation unit group within an organisation unit group set.</li>
+            <li>The organisation unit hierarchy is the main vehicle for data aggregation on the geographical dimension.</li>
+            <li>When you close an organisation unit, you can't register or edit events to this organisation unit in the Event Capture and Tracker Capture apps.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Review ongoing About organisation.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Changing the organisation unit hierarchy</p>
+        <p>&#160;</p>
+        <p>You can change the organisation unit hierarchy after you've created it, even organisation units that collect data. However, DHIS2 always uses the latest hierarchy for data aggregation. So if you change the hierarchy, you loose the temporal representation of the hierarchy across time.</p>
+        <p>&#160;</p>
+        <p>Example 9.9.</p>
+        <p>&#160;</p>
+        <p>District A is sub-divided into District B and District C. Facilities which belonged to District A are reassigned to District B and C. Any historical data, which you entered before the split occurred, is still registered as belonging to District B and C, not to the obsolete District A.</p>
+        <p>&#160;</p>
+        <p>In the Maintenance app, you manage the following organisation unit objects: Table 9.10. Organisation unit objects in the Maintenance app</p>
+        <p>
+            <div style="left: 0;text-align: left;margin-left: 74.9pt;width: 469.55pt;height: 148.3pt;mso-position-horizontal-relative: page;margin-top: 0pt;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="7">
+                                <p>&#160;</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Organisation</p>
+                            </td>
+                            <td>
+                                <p>unit</p>
+                            </td>
+                            <td>
+                                <p>group</p>
+                            </td>
+                            <td>
+                                <p>Create,  edit,  clone,</p>
+                            </td>
+                            <td>
+                                <p>share,</p>
+                            </td>
+                            <td>
+                                <p>delete,</p>
+                            </td>
+                            <td>
+                                <p>show</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>details and translate</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Organisation</p>
+                            </td>
+                            <td>
+                                <p>unit</p>
+                            </td>
+                            <td>
+                                <p>group set</p>
+                            </td>
+                            <td>
+                                <p>Create,  edit,  clone,</p>
+                            </td>
+                            <td>
+                                <p>share,</p>
+                            </td>
+                            <td>
+                                <p>delete,</p>
+                            </td>
+                            <td>
+                                <p>show</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>details and translate</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <p>Organisation unit levelEdit and translate</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                <p>Hierarchy operationsMove organisation units</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </div>Object typeAvailable functions</p>
+        <p>Organisation unitCreate, edit, clone, delete, show details and translate</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

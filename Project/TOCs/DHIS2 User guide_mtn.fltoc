@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Manage categories" Link="/Content/DHIS2 User guide_mtn/Chapter 9 Using the Maintenance.htm" />
+    <TocEntry Title="About categories" Link="/Content/DHIS2 User guide_mtn/About categories.htm" />
+    <TocEntry Title="Workflow" Link="/Content/DHIS2 User guide_mtn/Workflow.htm" />
+    <TocEntry Title="Create or edit a category option" Link="/Content/DHIS2 User guide_mtn/Create or edit a category.htm" />
+    <TocEntry Title="Create or edit a category" Link="/Content/DHIS2 User guide_mtn/Create or edit a category_1.htm" />
+    <TocEntry Title="Create or edit a category combination" Link="/Content/DHIS2 User guide_mtn/Create or edit a category_2.htm" />
+    <TocEntry Title="Create or edit a category option group" Link="/Content/DHIS2 User guide_mtn/Create or edit a category_3.htm" />
+    <TocEntry Title="Create or edit a category option group set" Link="/Content/DHIS2 User guide_mtn/Create or edit a category_4.htm" />
+    <TocEntry Title="Use category combinations for data sets" Link="/Content/DHIS2 User guide_mtn/Use category combinations.htm" />
+    <TocEntry Title="Assign a code to a category option combination" Link="/Content/DHIS2 User guide_mtn/Assign a code to a category.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects.htm" />
+    <TocEntry Title="Manage data elements" Link="/Content/DHIS2 User guide_mtn/Manage data elements.htm" />
+    <TocEntry Title="Workflow" Link="/Content/DHIS2 User guide_mtn/Workflow_1.htm" />
+    <TocEntry Title="Create or edit a data element" Link="/Content/DHIS2 User guide_mtn/Create or edit a data element.htm" />
+    <TocEntry Title="Create or edit a data element group" Link="/Content/DHIS2 User guide_mtn/Create or edit a data element_1.htm" />
+    <TocEntry Title="Create or edit a data element group set" Link="/Content/DHIS2 User guide_mtn/Create or edit a data element_2.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_1.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_1.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_1.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_1.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_1.htm" />
+    <TocEntry Title="Manage data sets and data entry forms" Link="/Content/DHIS2 User guide_mtn/Manage data sets and data.htm" />
+    <TocEntry Title="Workflow" Link="/Content/DHIS2 User guide_mtn/Workflow_2.htm" />
+    <TocEntry Title="Create or edit a data set" Link="/Content/DHIS2 User guide_mtn/Create or edit a data set.htm" />
+    <TocEntry Title="Override data elements' category combinations in a data set" Link="/Content/DHIS2 User guide_mtn/Override data elements category.htm" />
+    <TocEntry Title="Edit compulsory data elements in a data set" Link="/Content/DHIS2 User guide_mtn/Edit compulsory data elements.htm" />
+    <TocEntry Title="Download default data forms in PDF format" Link="/Content/DHIS2 User guide_mtn/Download default data forms.htm" />
+    <TocEntry Title="Manage section forms" Link="/Content/DHIS2 User guide_mtn/Manage section forms.htm" />
+    <TocEntry Title="Edit a section form" Link="/Content/DHIS2 User guide_mtn/Edit a section form.htm" />
+    <TocEntry Title="Manage grey fields in a section form" Link="/Content/DHIS2 User guide_mtn/Manage grey fields in a section.htm" />
+    <TocEntry Title="Change section display order in a section form" Link="/Content/DHIS2 User guide_mtn/Change section display order.htm" />
+    <TocEntry Title="Delete a section in a section form" Link="/Content/DHIS2 User guide_mtn/Delete a section in a section.htm" />
+    <TocEntry Title="Translate a section in a section form" Link="/Content/DHIS2 User guide_mtn/Translate a section in a section.htm" />
+    <TocEntry Title="Manage custom forms" Link="/Content/DHIS2 User guide_mtn/Manage custom forms.htm" />
+    <TocEntry Title="Scripting in custom forms" Link="/Content/DHIS2 User guide_mtn/Scripting in custom forms.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_2.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_2.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_2.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_2.htm" />
+    <TocEntry Title="Manage indicators" Link="/Content/DHIS2 User guide_mtn/Manage indicators.htm" />
+    <TocEntry Title="Workflow" Link="/Content/DHIS2 User guide_mtn/Workflow_3.htm" />
+    <TocEntry Title="Create or edit an indicator type" Link="/Content/DHIS2 User guide_mtn/Create or edit an indicator.htm" />
+    <TocEntry Title="Create or edit an indicator" Link="/Content/DHIS2 User guide_mtn/Create or edit an indicator_1.htm" />
+    <TocEntry Title="Create or edit an indicator group" Link="/Content/DHIS2 User guide_mtn/Create or edit an indicator_2.htm" />
+    <TocEntry Title="Create or edit an indicator group set" Link="/Content/DHIS2 User guide_mtn/Create or edit an indicator_3.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_2.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_3.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_3.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_3.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_3.htm" />
+    <TocEntry Title="Manage organisation units" Link="/Content/DHIS2 User guide_mtn/Manage organisation units.htm" />
+    <TocEntry Title="[Review ongoing] About organisation units" Link="/Content/DHIS2 User guide_mtn/Review ongoing About organisation.htm" />
+    <TocEntry Title="Workflow" Link="/Content/DHIS2 User guide_mtn/Workflow_4.htm" />
+    <TocEntry Title="Create or edit an organisation unit" Link="/Content/DHIS2 User guide_mtn/Create or edit an organisation.htm" />
+    <TocEntry Title="Create or edit an organisation unit group" Link="/Content/DHIS2 User guide_mtn/Create or edit an organisation_1.htm" />
+    <TocEntry Title="Create or edit an organisation unit group set" Link="/Content/DHIS2 User guide_mtn/Create or edit an organisation_2.htm" />
+    <TocEntry Title="Assign names to organisation unit levels" Link="/Content/DHIS2 User guide_mtn/Assign names to organisation.htm" />
+    <TocEntry Title="Move organisation units within a hierarchy" Link="/Content/DHIS2 User guide_mtn/Move organisation units within.htm" />
+    <TocEntry Title="[Review ongoing] Close an organisation unit" Link="/Content/DHIS2 User guide_mtn/Review ongoing Close an organisation.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_3.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_4.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_4.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_4.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_4.htm" />
+    <TocEntry Title="Manage program metadata" Link="/Content/DHIS2 User guide_mtn/Manage program metadata.htm" />
+    <TocEntry Title="Create or edit a tracked entity attribute" Link="/Content/DHIS2 User guide_mtn/Create or edit a tracked entity.htm" />
+    <TocEntry Title="Create or edit a tracked entity attribute group" Link="/Content/DHIS2 User guide_mtn/Create or edit a tracked entity_1.htm" />
+    <TocEntry Title="Create or edit a relationship type" Link="/Content/DHIS2 User guide_mtn/Create or edit a relationship.htm" />
+    <TocEntry Title="Create or edit a tracked entity" Link="/Content/DHIS2 User guide_mtn/Create or edit a tracked entity_2.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_4.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_5.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_5.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_5.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_5.htm" />
+    <TocEntry Title="[Work in progress] Manage validation rules" Link="/Content/DHIS2 User guide_mtn/Work in progress Manage validation.htm" />
+    <TocEntry Title="Create or edit a validation rule" Link="/Content/DHIS2 User guide_mtn/Create or edit a validation.htm" />
+    <TocEntry Title="Create or edit a validation rule group" Link="/Content/DHIS2 User guide_mtn/Create or edit a validation_1.htm" />
+    <TocEntry Title="Create or edit a validation notification" Link="/Content/DHIS2 User guide_mtn/Create or edit a validation_2.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_5.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_6.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_6.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_6.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_6.htm" />
+    <TocEntry Title="Manage attributes" Link="/Content/DHIS2 User guide_mtn/Manage attributes.htm" />
+    <TocEntry Title="Create or edit an attribute" Link="/Content/DHIS2 User guide_mtn/Create or edit an attribute.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_6.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_7.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_7.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_7.htm" />
+    <TocEntry Title="Manage constants" Link="/Content/DHIS2 User guide_mtn/Manage constants.htm" />
+    <TocEntry Title="Create or edit a constant" Link="/Content/DHIS2 User guide_mtn/Create or edit a constant.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_7.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_7.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_8.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_8.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_8.htm" />
+    <TocEntry Title="Manage option sets" Link="/Content/DHIS2 User guide_mtn/Manage option sets.htm" />
+    <TocEntry Title="Create or edit an option set" Link="/Content/DHIS2 User guide_mtn/Create or edit an option set.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_8.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_8.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_9.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_9.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_9.htm" />
+    <TocEntry Title="Manage legends" Link="/Content/DHIS2 User guide_mtn/Manage legends.htm" />
+    <TocEntry Title="Create or edit a legend" Link="/Content/DHIS2 User guide_mtn/Create or edit a legend.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_9.htm" />
+    <TocEntry Title="Change sharing settings for metadata objects" Link="/Content/DHIS2 User guide_mtn/Change sharing settings for_9.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_10.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_10.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_10.htm" />
+    <TocEntry Title="Assign a legend to indicator or data element" Link="/Content/DHIS2 User guide_mtn/Assign a legend to indicator.htm" />
+    <TocEntry Title="Manage predictors" Link="/Content/DHIS2 User guide_mtn/See also.htm" />
+    <TocEntry Title="Create or edit a predictor" Link="/Content/DHIS2 User guide_mtn/Create or edit a predictor.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_10.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_11.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_11.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_11.htm" />
+    <TocEntry Title="Manage push reports" Link="/Content/DHIS2 User guide_mtn/Manage push reports.htm" />
+    <TocEntry Title="Create or edit a push report" Link="/Content/DHIS2 User guide_mtn/Create or edit a push report.htm" />
+    <TocEntry Title="Preview push reports" Link="/Content/DHIS2 User guide_mtn/Preview push reports.htm" />
+    <TocEntry Title="Run push report jobs" Link="/Content/DHIS2 User guide_mtn/Run push report jobs.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_11.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_12.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_12.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_12.htm" />
+    <TocEntry Title="Manage external map layers" Link="/Content/DHIS2 User guide_mtn/Manage external map layers.htm" />
+    <TocEntry Title="Create or edit an external map layer" Link="/Content/DHIS2 User guide_mtn/Create or edit an external.htm" />
+    <TocEntry Title="Clone metadata objects" Link="/Content/DHIS2 User guide_mtn/Clone metadata objects_12.htm" />
+    <TocEntry Title="Delete metadata objects" Link="/Content/DHIS2 User guide_mtn/Delete metadata objects_13.htm" />
+    <TocEntry Title="Display details of metadata objects" Link="/Content/DHIS2 User guide_mtn/Display details of metadata_13.htm" />
+    <TocEntry Title="Translate metadata objects" Link="/Content/DHIS2 User guide_mtn/Translate metadata objects_13.htm" />
+    <TocEntry Title="Edit multiple object groups at once" Link="/Content/DHIS2 User guide_mtn/Edit multiple object groups.htm" />
+    <TocEntry Title="Edit multiple objects in an object group" Link="/Content/DHIS2 User guide_mtn/Edit multiple objects in an.htm" />
+    <TocEntry Title="Edit an object in multiple object groups" Link="/Content/DHIS2 User guide_mtn/Edit an object in multiple.htm" />
+</CatapultToc>

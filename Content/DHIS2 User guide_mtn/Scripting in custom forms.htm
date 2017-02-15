@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <ol style="list-style-type: decimal;margin-left: 49pt;" start="9382">
+            <h3 class="Heading3">Scripting in custom forms</h3>
+        </ol>
+        <p>&#160;</p>
+        <p>In custom data entry form you can use JavaScript to create dynamic behavior and customizations. As an example, you can hide form sections based on specific user input for data elements, or show specific information when a form loads.</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 55pt;" start="93821">
+            <h4 class="Heading4">Events</h4>
+        </ol>
+        <p>&#160;</p>
+        <p>The DHIS2 data entry module provides a range of events which you can register for and use to perform actions at certain times. The events are registered on the document element. The jQuery event object and the data set identifier are always the first two arguments provided to the callback functions. The table below provides an overview of the events and when they are triggered.</p>
+        <p>&#160;</p>
+        <p>Table 9.7. Data entry events</p>
+        <p>&#160;</p>
+        <p>KeyDescriptionArguments</p>
+        <p>&#160;</p>
+        <p>dhis2.de.event.formLoadedTriggered after the data entry form</p>
+        <p>is rendered, but before data values are set in entry fields.</p>
+        <p>dhis2.de.event.dataValuesLoadTerdiggered after data values are set</p>
+        <p>in entry fields.</p>
+        <p>dhis2.de.event.formReadyTriggered  when  the  data  entry</p>
+        <p>form is completely rendered and loaded with all elements.</p>
+        <p>dhis2.de.event.dataValueSavedTriggered when a data value is</p>
+        <p>saved successfully.</p>
+        <p>dhis2.de.event.completedTriggered  when  a  data  set  is</p>
+        <p>successfully marked as complete.</p>
+        <p>&#160;</p>
+        <p>dhis2.de.event.uncompletedTriggeredwhenadataset</p>
+        <p>issuccessfullymarkedas incomplete.</p>
+        <p>dhis2.de.event.validationSucceTsrsiggered when validation is done</p>
+        <p>and there were no violations.</p>
+        <p>dhis2.de.event.validationError Triggered when validation is done</p>
+        <p>and  there  were  one  or  more violations.</p>
+        <p>dhis2.ou.event.orgUnitSelectedTriggeredwhenoneormore</p>
+        <p>organisation units are selected in the org unit web tree.</p>
+        <p>Event | Data set ID</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Event | Data set ID Event | Data set ID</p>
+        <p>&#160;</p>
+        <p>Event | Data set ID | Data value object</p>
+        <p>Event  |  Data  set  ID</p>
+        <p>| Complete registration object</p>
+        <p>Event | Data set ID</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Event | Data set ID Event | Data set ID</p>
+        <p>&#160;</p>
+        <p>Event | Org unit IDs | Org unit names | Sub org unit IDs</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>To register for an event:</p>
+        <p>&#160;</p>
+        <p>
+            <div style="width: 469.25pt;height: 117pt;mso-left-percent: -10001;mso-top-percent: -10001;mso-position-horizontal: absolute;mso-position-horizontal-relative: char;mso-position-vertical: absolute;mso-position-vertical-relative: line;mso-left-percent: -10001;mso-top-percent: -10001;background-color: #f0f0f0;">
+                <p>&lt;script type="text/javascript"&gt;</p>
+                <p>&#160;</p>
+                <p>dhis2.util.on( 'dhis2.de.event.formReady', function( event, ds ) { console.log( 'The form with id: ' + ds + ' is loaded!' );</p>
+                <p>} );</p>
+                <p>&#160;</p>
+                <p>dhis2.util.on( 'dhis2.de.event.dataValueSaved', function( event, ds, dv ) { console.log( 'Data value: ' + dv.value + ' was saved with data element: ' + dv.de );</p>
+                <p>} );</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <p>Using the Maintenance appChange sharing settings for metadata objects</p>
+        <p>&#160;</p>
+        <p>
+            <div style="width: 469.25pt;height: 58.5pt;mso-left-percent: -10001;mso-top-percent: -10001;mso-position-horizontal: absolute;mso-position-horizontal-relative: char;mso-position-vertical: absolute;mso-position-vertical-relative: line;mso-left-percent: -10001;mso-top-percent: -10001;background-color: #f0f0f0;">
+                <p>dhis2.util.on( 'dhis2.de.event.completed', function( event, ds, cr ) { console.log( 'Form was completed for org unit: ' + cr.ou );</p>
+                <p>} );</p>
+                <p>&#160;</p>
+                <p>&lt;/script&gt;</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png" style="visibility: visible;mso-wrap-style: square;width: 19px;height: 19px;" />&#160;&#160;&#160;&#160;&#160;&#160; Note</p>
+        <p>&#160;</p>
+        <p>Be careful to only use "namespaced" events like the ones in the example above and not general ones like "click" as the dhis2.util.on method will unregister the event first.</p>
+        <p>&#160;</p>
+        <p>If your function only applies to certain data sets you can use the supplied data set identifier and shortcut your function for unwanted data sets like this:</p>
+        <p>&#160;</p>
+        <p>
+            <div style="width: 469.25pt;height: 70.2pt;mso-left-percent: -10001;mso-top-percent: -10001;mso-position-horizontal: absolute;mso-position-horizontal-relative: char;mso-position-vertical: absolute;mso-position-vertical-relative: line;mso-left-percent: -10001;mso-top-percent: -10001;background-color: #f0f0f0;">
+                <p>dhis2.de.on( 'dhis2.de.event.validationSuccess', function( event, ds ) { if ( $.inArray( ds, ['utXOiGbEj14', 'Re7qzHEThSC'] ) == -1 ) {</p>
+                <p>return false;</p>
+                <p>}</p>
+                <p>console.log( 'Form with id: ' + ds + ' validated successfully!' );</p>
+                <p>} );</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <p>The identifiers of the input fields in the data entry form is on the format described below. This format can be used to select the input fields in your script and perform actions on them:</p>
+        <p>&#160;</p>
+        <p>
+            <div style="width: 469.25pt;height: 11.7pt;mso-left-percent: -10001;mso-top-percent: -10001;mso-position-horizontal: absolute;mso-position-horizontal-relative: char;mso-position-vertical: absolute;mso-position-vertical-relative: line;mso-left-percent: -10001;mso-top-percent: -10001;background-color: #f0f0f0;">
+                <p>&lt;dataelementid&gt;-&lt;optioncomboid&gt;-val</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <p>Since the data set identifier is provided for all events a feasible alternative is to utilize the "files" Web API resource and keep your callback functions in a single file, where you let the JavaScript code take action based on which data set is currently loaded.</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 55pt;" start="93822">
+            <h4 class="Heading4">Functions</h4>
+        </ol>
+        <p>&#160;</p>
+        <p>The DHIS2 data entry module contains JavaScript API functions which can be accessed from custom data entry forms.</p>
+        <p>&#160;</p>
+        <p>dhis2.de.api.getSelections: This function returns a JavaScript object which contains properties for all dimensions with corresponding values for the identifiers of the selected options. It contains properties for "ds" (data set), "pe" (period), "ou" (organisation unit) and identifiers for all data set categories.</p>
+        <p>&#160;</p>
+        <p>An example response looks like this:</p>
+        <p>&#160;</p>
+        <p>
+            <div style="width: 469.25pt;height: 81.9pt;mso-left-percent: -10001;mso-top-percent: -10001;mso-position-horizontal: absolute;mso-position-horizontal-relative: char;mso-position-vertical: absolute;mso-position-vertical-relative: line;mso-left-percent: -10001;mso-top-percent: -10001;background-color: #f0f0f0;">
+                <p>{</p>
+                <p>+ds: "lyLU2wR22tC",</p>
+                <p>+pe: "201605",</p>
+                <p>+ou: "g8upMTyEZGZ",</p>
+                <p>+LFsZ8v5v7rq: "CW81uF03hvV",</p>
+                <p>+yY2bQYqNt0o: "yMj2MnmNI8L"</p>
+                <p>+}</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+        <p>Example JavaScript usage of this function:</p>
+        <p>&#160;</p>
+        <p>
+            <div style="width: 469.25pt;height: 35.1pt;mso-left-percent: -10001;mso-top-percent: -10001;mso-position-horizontal: absolute;mso-position-horizontal-relative: char;mso-position-vertical: absolute;mso-position-vertical-relative: line;mso-left-percent: -10001;mso-top-percent: -10001;background-color: #f0f0f0;">
+                <p>var sel = dhis2.de.api.getSelections();</p>
+                <p>+var orgUnit = sel["ou"];</p>
+                <p>+var partner = sel["LFsZ8v5v7rq"];</p>
+            </div>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

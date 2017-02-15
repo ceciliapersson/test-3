@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-02-15T06:41:04.1694597-08:00"
+  ProjectName="dhis2_ug_test_git_top_navigation_advanced_git_blue"
+  ProjectFolder="C:\Users\cecilper\Documents\My Projects\dhis2_ug_test_git_top_navigation_advanced_git_blue\"
+  AutoSync="false"
+  AutoFitTables="true"
+  UseHeaderRows="true"
+  Stylesheet="../../Content/Resources/Stylesheets/MainStyles.css"
+  LastImport="2017-02-15T06:47:02.7109784-08:00">
+  <Files>
+    <Url
+      Source="../../../../DHIS2 User guide_mtn.docx"
+      AbsoluteSource="file:///C:/Users/cecilper/Documents/DHIS2 User guide_mtn.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Chapter 9 Using the Maintenance.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/About categories.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Workflow.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit a category.png"
+      TimeStamp="2/15/2017 6:44:18 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a category.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a category_1.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a category_2.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a category_3.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a category_4.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Use category combinations.jpg"
+      TimeStamp="2/15/2017 6:44:19 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Use category combinations.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Assign a code to a category.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects.htm"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Delete metadata objects.png"
+      TimeStamp="2/15/2017 6:44:19 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Delete metadata objects_1.png"
+      TimeStamp="2/15/2017 6:44:19 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage data elements.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Workflow_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit a data element.png"
+      TimeStamp="2/15/2017 6:44:19 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a data element.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a data element_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a data element_2.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_1.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage data sets and data.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Workflow_2.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit a data set.png"
+      TimeStamp="2/15/2017 6:44:21 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a data set.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Override data elements category.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Edit compulsory data elements.htm"
+      TimeStamp="2/15/2017 6:44:36 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Download default data forms.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage section forms.png"
+      TimeStamp="2/15/2017 6:44:22 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage section forms.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Edit a section form.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage grey fields in a section.png"
+      TimeStamp="2/15/2017 6:44:23 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage grey fields in a section.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change section display order.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete a section in a section.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate a section in a section.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage custom forms.jpg"
+      TimeStamp="2/15/2017 6:44:23 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage custom forms.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Scripting in custom forms.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_2.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_2.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_2.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_2.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage indicators.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Workflow_3.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an indicator.png"
+      TimeStamp="2/15/2017 6:44:24 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an indicator.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an indicator_1.jpg"
+      TimeStamp="2/15/2017 6:44:24 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an indicator_1.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an indicator_2.jpg"
+      TimeStamp="2/15/2017 6:44:25 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an indicator_2.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an indicator_3.jpg"
+      TimeStamp="2/15/2017 6:44:25 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an indicator_3.htm"
+      TimeStamp="2/15/2017 6:44:37 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_2.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_3.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_3.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_3.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_3.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage organisation units.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Review ongoing About organisation.png"
+      TimeStamp="2/15/2017 6:44:25 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Review ongoing About organisation.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Workflow_4.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation.jpg"
+      TimeStamp="2/15/2017 6:44:26 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an organisation.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an organisation_1.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation_2.jpg"
+      TimeStamp="2/15/2017 6:44:26 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation_2_1.jpg"
+      TimeStamp="2/15/2017 6:44:27 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Create or edit an organisation_2_2.jpg"
+      TimeStamp="2/15/2017 6:44:27 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an organisation_2.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Assign names to organisation.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Move organisation units within.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Review ongoing Close an organisation.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_3.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_4.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_4.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_4.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_4.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage program metadata.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a tracked entity.htm"
+      TimeStamp="2/15/2017 6:44:38 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a tracked entity_1.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a relationship.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a tracked entity_2.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_4.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_5.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_5.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_5.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_5.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Work in progress Manage validation.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a validation.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a validation_1.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a validation_2.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_5.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_6.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_6.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_6.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_6.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage attributes.png"
+      TimeStamp="2/15/2017 6:44:30 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage attributes.htm"
+      TimeStamp="2/15/2017 6:44:39 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an attribute.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_6.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_7.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_7.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_7.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage constants.png"
+      TimeStamp="2/15/2017 6:44:30 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage constants.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a constant.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_7.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_7.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_8.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_8.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_8.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage option sets.png"
+      TimeStamp="2/15/2017 6:44:31 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage option sets.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an option set.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_8.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_8.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_9.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_9.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_9.htm"
+      TimeStamp="2/15/2017 6:44:40 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage legends.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a legend.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_9.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Change sharing settings for_9.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_10.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_10.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_10.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Assign a legend to indicator.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/See also.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a predictor.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_10.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_11.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_11.htm"
+      TimeStamp="2/15/2017 6:44:41 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_11.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DHIS2 User guide_mtn/Manage push reports.jpg"
+      TimeStamp="2/15/2017 6:44:33 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage push reports.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit a push report.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Preview push reports.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Run push report jobs.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_11.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_12.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_12.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_12.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Manage external map layers.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Create or edit an external.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Clone metadata objects_12.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Delete metadata objects_13.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Display details of metadata_13.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Translate metadata objects_13.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Edit multiple object groups.htm"
+      TimeStamp="2/15/2017 6:44:42 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Edit multiple objects in an.htm"
+      TimeStamp="2/15/2017 6:44:43 AM" />
+    <Url
+      Source="../../Content/DHIS2 User guide_mtn/Edit an object in multiple.htm"
+      TimeStamp="2/15/2017 6:44:43 AM" />
+    <Url
+      Source="../TOCs/DHIS2 User guide_mtn.fltoc"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/DHIS2 User guide_mtn.flmsp"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/MainStyles_1.css"
+      TimeStamp="2/15/2017 6:44:35 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Body Text" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="Table Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>
